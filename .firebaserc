@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-hosting-fd147": {
+      "hosting": {
+        "angular-hosting": [
+          "angular-hosting-fd147"
+        ]
+      }
+    }
+  }
+}
