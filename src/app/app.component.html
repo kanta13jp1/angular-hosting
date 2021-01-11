@@ -340,7 +340,11 @@
 
   <!-- Resources -->
   <h1>{{title}}</h1>
-  <app-heroes></app-heroes>
+  <nav>
+    <a routerLink="/dashboard">ピックアップ</a>
+    <a routerLink="/heroes">議員一覧</a>
+  </nav>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 
   <hr style="border:0;border-top:thick dotted white;background-color:black;">
@@ -566,7 +570,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-
-<router-outlet></router-outlet>

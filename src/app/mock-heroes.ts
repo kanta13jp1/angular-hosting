@@ -5,7 +5,7 @@ export const HEROES: Hero[] = [
   { id: 11, name: '山尾志桜里', role: '' },
   { id: 12, name: '伊藤孝恵', role: '副代表' },
   { id: 13, name: '矢田わか子', role: '副代表' },
-  { id: 14, name: '岸本', role: '' },
+  { id: 14, name: '岸本周平', role: '幹事長代理' },
   { id: 15, name: '西岡', role: '' },
   { id: 16, name: '浅野哲', role: '' },
   { id: 17, name: '榛葉', role: '' },
