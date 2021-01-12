@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.styl']
 })
 export class AppComponent {
-  title = '国民民主党データベース';
+  title = '国民民主党データベース（自分用）';
 }
