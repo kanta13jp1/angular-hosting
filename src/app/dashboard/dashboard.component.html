@@ -2,6 +2,8 @@
 <a *ngFor="let hero of heroes" class="col-1-4"
     routerLink="/detail/{{hero.id}}">
   <div class="module hero">
-    <h4>{{hero.name}}</h4>
+    <h2>{{hero.name}}</h2>
+    <h4>{{hero.role}}</h4>
+    <h3>{{hero.belongs}}</h3>
   </div>
 </a>
