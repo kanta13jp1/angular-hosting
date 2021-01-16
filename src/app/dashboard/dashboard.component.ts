@@ -20,4 +20,21 @@ export class DashboardComponent implements OnInit {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));
   }
+
+  // Push a search term into the observable stream.
+  search(term: string): void {
+    this.heroService.searchHeroes(term)
+      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+  }
+
+  filterShu(): void {
+    this.heroService.searchHeroesByBelongs('衆議院')
+      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+  }
+
+  filterSan(): void {
+    this.heroService.searchHeroesByBelongs('参議院')
+      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+  }
+
 }
