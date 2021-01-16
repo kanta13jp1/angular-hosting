@@ -3,4 +3,5 @@ export interface Hero {
   name: string;
   role: string;
   belongs: string;
+  almaMater: string;
 }
