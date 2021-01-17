@@ -1,15 +1,17 @@
 <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>名前:
+  <h2>{{hero.name | uppercase}} 詳細情報</h2>
+  <div class="mgr-bottom-4"><span>id: </span>{{hero.id}}</div>
+  <div class="mgr-bottom-4">
+    <label>名前 :
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
   </div>
-  <div><span>役職: </span>{{hero.role}}</div>
-  <div><span>所属: </span>{{hero.belongs}}</div>
-  <div><span>選挙区: </span>{{hero.district}}</div>
-  <div><span>出身高: </span>{{hero.almaMater}}</div>
+  <div class="mgr-bottom-4"><span>役職 : </span>{{hero.role}}</div>
+  <div class="mgr-bottom-4"><span class="mgr-left-32"> : </span>{{hero.role2}}</div>
+  <div class="mgr-bottom-4"><span>所属 : </span>{{hero.belongs}}</div>
+  <div class="mgr-bottom-4"><span>選挙区 : </span>{{hero.district}}</div>
+  <div class="mgr-bottom-4"><span>出身高 : </span>{{hero.almaMater}}</div>
+  <div class="mgr-bottom-4"><span>Twitter : </span><a href="https://twitter.com/{{hero.twitter}}">{{hero.twitter}}</a></div>
   <br>
   <button (click)="save()">保存</button>
   <button (click)="goBack()">戻る</button>
