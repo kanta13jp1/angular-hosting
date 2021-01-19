@@ -12,7 +12,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 2, name: '山尾志桜里', role: '広報局長', role2: '憲法調査会長', belongs: '衆議院', almaMater: '東京大学法学部', district: '愛知7区', twitter: 'ShioriYamao' },
       { id: 3, name: '伊藤孝恵', role: '副代表', belongs: '参議院', almaMater: '金城学院大学文学部国文学科', district: '愛知県選挙区', twitter: 'itotakae0630' },
       { id: 4, name: '矢田わか子', role: '副代表', belongs: '参議院', almaMater: '大阪府立寝屋川高等学校', district: '比例区', twitter: 'wako0501', wikipedia: '矢田稚子', birthday: '1965/9/25' },
-      { id: 5, name: '岸本周平', role: '幹事長代理', belongs: '衆議院', almaMater: '東京大学法学部', district: '和歌山1区', twitter: '' },
+      { id: 5, name: '岸本周平', role: '幹事長代理', belongs: '衆議院', almaMater: '東京大学法学部', district: '和歌山1区', twitter: 'shuheikishimoto' },
       { id: 6, name: '西岡秀子', role: '政務調査会長代理', belongs: '衆議院', almaMater: '', district: '', twitter: '' },
       { id: 7, name: '浅野哲', role: '国対委員長代理', belongs: '衆議院', almaMater: '', district: '', twitter: '' },
       { id: 8, name: '榛葉賀津也', role: '幹事長', belongs: '参議院', almaMater: '', district: '', twitter: '' },
