@@ -7,4 +7,6 @@ export interface Hero {
   almaMater: string;
   district: string;
   twitter: string;
+  wikipedia: string;
+  birthday: Date;
 }
