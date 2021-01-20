@@ -15,7 +15,6 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
-import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     BrowserModule,

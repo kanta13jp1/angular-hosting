@@ -6,6 +6,7 @@ export interface Hero {
   belongs: string;
   almaMater: string;
   district: string;
+  count: number;
   twitter: string;
   wikipedia: string;
   birthday: Date;
