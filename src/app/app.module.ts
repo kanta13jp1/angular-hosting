@@ -15,6 +15,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -37,7 +38,8 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
     MessagesComponent,
     HeroSearchComponent,
     CrisisListComponent,
-    HeroesListComponent
+    HeroesListComponent,
+    PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]
 })
