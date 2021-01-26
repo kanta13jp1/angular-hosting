@@ -6,14 +6,18 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CandidateListComponent } from './candidate-list/candidate-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes', component: HeroesComponent },
+  { path: 'candidate-list', component: CandidateListComponent },
   { path: 'heroes-list', component: HeroesListComponent },
   { path: 'crisis-list', component: CrisisListComponent },
+  { path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

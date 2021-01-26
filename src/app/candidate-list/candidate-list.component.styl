@@ -38,12 +38,10 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .count {
   text-align: center;
   font-size: x-large;
 }
-
 .district {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -64,10 +62,20 @@ button {
   border-radius: 130px;
   margin-left: 20px;
 }
-.module:hover {
+.no-entory-module {
+  padding: 10px;
+  text-align: center;
+  color: #607d8b
+  height: 200px;
+  width: 200px;
   background-color: #eee;
+  border-radius: 130px;
+  margin-left: 20px;
+}
+.module:hover {
+  background-color: #003F88;
   cursor: pointer;
-  color: #607d8b;
+  color: #FAEB00;
 }
 .grid-pad {
   padding: 10px 0;
@@ -83,12 +91,20 @@ button {
     font-size: 10px;
     width: 62px;
     height: 260px; }
+  .no-entory-module {
+    font-size: 10px;
+    width: 62px;
+    height: 260px; }
 }
 @media screen and (min-width:421px) and (max-width: 500px) {
   .grid {
     margin: 0;
   }
   .module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
+  .no-entory-module {
     font-size: 12px;
     width: 160px;
     height: 160px; }
@@ -101,6 +117,10 @@ button {
     font-size: 8px;
     width: 116px;
     height: 116px; }
+  .no-entory-module {
+    font-size: 8px;
+    width: 116px;
+    height: 116px; }
 }
 @media screen and (min-width:701px) and (max-width: 800px) {
   .grid {
@@ -110,12 +130,21 @@ button {
     font-size: 12px;
     width: 160px;
     height: 160px; }
+  .no-entory-module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
 }
 @media screen and (min-width:801px) {
   .grid {
     margin: 0;
   }
   .module {
+    font-size: 16px;
+    width: 220px;
+    height: 220px;
+  }
+  .no-entory-module {
     font-size: 16px;
     width: 220px;
     height: 220px;

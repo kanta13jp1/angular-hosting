@@ -24,11 +24,33 @@ export class HeroService {
 
   /** GET heroes from the server */
   getHeroes(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(this.heroesUrl)
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?congressman=true`)
       .pipe(
-        tap(_ => this.log('fetched heroes')),
+        tap(x => x.length ?
+          this.log(`found heroes matching candidate=true`) :
+          this.log(`no heroes matching candidate=true`)),
         catchError(this.handleError<Hero[]>('getHeroes', []))
       );
+  }
+
+  /** GET heroes from the server */
+  getCandidates(): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching candidate=true`) :
+        this.log(`no candidates matching candidate=true`)),
+      catchError(this.handleError<Hero[]>('getCandidates', []))
+    );
+  }
+
+  /** GET heroes from the server */
+  getCandidatesNoEntry(term: string): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching candidate=true`) :
+        this.log(`no candidates matching candidate=true`)),
+      catchError(this.handleError<Hero[]>('getCandidates', []))
+    );
   }
 
   /** GET hero by id. Return `undefined` when id not found */
@@ -105,11 +127,51 @@ export class HeroService {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}`).pipe(
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}&congressman=true`).pipe(
       tap(x => x.length ?
-        this.log(`found heroes matching "${term}"`) :
-        this.log(`no heroes matching "${term}"`)),
+        this.log(`found heroes matching "${term}"&congressman=true`) :
+        this.log(`no heroes matching "${term}"&congressman=true`)),
       catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+
+  searchCandidatesByBelongs(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}&candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found heroes matching "${term}"&candidate=true`) :
+        this.log(`no heroes matching "${term}"&candidate=true`)),
+      catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+
+  searchCandidatesByCandidateDistrictBlock(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidatedistrictblock=${term}&candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching "${term}"&candidate=true`) :
+        this.log(`no candidates matching "${term}"&candidate=true`)),
+      catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
+    );
+  }
+
+  searchCandidatesByCandidateDistrictBlockNoEntory(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    let noentory = '未定';
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${noentory}&candidatedistrictblock=${term}&candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching "${term}"&candidate=true`) :
+        this.log(`no candidates matching "${term}"&candidate=true`)),
+      catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
     );
   }
 

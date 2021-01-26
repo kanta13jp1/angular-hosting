@@ -10,4 +10,8 @@ export interface Hero {
   twitter: string;
   wikipedia: string;
   birthday: Date;
+  candidateType: string;
+  candidatePrefecture: string;
+  candidatedistrict: string;
+  image: string;
 }
