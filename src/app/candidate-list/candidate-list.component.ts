@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
+import { Hero } from '../heroes/hero';
+import { HeroService } from '../heroes/hero.service';
 
 @Component({
   selector: 'app-candidate-list',
@@ -15,6 +15,11 @@ export class CandidateListComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
+    // Twitterウィジェットの読み込み
+    if (window['twttr']) {
+      window[`twttr`].widgets.load();
+      console.log('window[`twttr`].widgets.load()');
+    }
     this.getCandidates();
   }
 

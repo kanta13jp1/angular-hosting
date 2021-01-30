@@ -11,7 +11,7 @@
   </div>
   <ul class="heroes">
     <li *ngFor="let hero of heroes">
-      <a routerLink="/detail/{{hero.id}}">
+      <a [routerLink]="['/detail', hero.id]">
         <div *ngIf="hero.belongs == '衆議院'; else sangiinBlock" class="shugiin">
           <span class="badge">{{hero.id}}</span> {{hero.name}}　|　{{hero.belongs}}　|　{{hero.district}}
         </div>

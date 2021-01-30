@@ -3,11 +3,11 @@ import { Hero } from '../heroes/hero';
 import { HeroService } from '../heroes/hero.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.styl' ]
+  selector: 'app-group-list',
+  templateUrl: './group-list.component.html',
+  styleUrls: [ './group-list.component.styl' ]
 })
-export class DashboardComponent implements OnInit {
+export class GroupListComponent implements OnInit {
   heroes!: Hero[];
 
   constructor(private heroService: HeroService) { }
@@ -22,23 +22,23 @@ export class DashboardComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes()
+    this.heroService.getGroupHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));
   }
 
   // Push a search term into the observable stream.
   search(term: string): void {
-    this.heroService.searchHeroes(term)
+    this.heroService.searchGroupHeroes(term)
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));
   }
 
   filterShu(): void {
-    this.heroService.searchHeroesByBelongs('衆議院')
+    this.heroService.searchGroupHeroesByBelongs('衆議院')
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));
   }
 
   filterSan(): void {
-    this.heroService.searchHeroesByBelongs('参議院')
+    this.heroService.searchGroupHeroesByBelongs('参議院')
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));
   }
 

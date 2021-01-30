@@ -5,6 +5,7 @@ export interface Hero {
   role2: string;
   belongs: string;
   almaMater: string;
+  almaMater2: string;
   district: string;
   count: number;
   twitter: string;

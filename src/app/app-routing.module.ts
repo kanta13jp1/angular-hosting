@@ -3,25 +3,34 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
+import { HeroListComponent } from './heroes/hero-list/hero-list.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CandidateListComponent } from './candidate-list/candidate-list.component';
+import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
+import { GroupListComponent } from './group-list/group-list.component';
 
-const routes: Routes = [
+const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'candidate-list', component: CandidateListComponent },
-  { path: 'heroes-list', component: HeroesListComponent },
-  { path: 'crisis-list', component: CrisisListComponent },
+  { path: 'dashboard', component: DashboardComponent, data: { animation: 'heroes' } },
+  { path: 'detail/:id', component: HeroDetailComponent, data: { animation: 'hero' } },
+  { path: 'heroes', component: HeroesComponent, data: { animation: 'heroes' } },
+  { path: 'candidate-list', component: CandidateListComponent, data: { animation: 'heroes' } },
+  { path: 'hero-list', component: HeroListComponent, data: { animation: 'heroes' } },
+  { path: 'crisis-list', component: CrisisListComponent, data: { animation: 'heroes' }  },
+  { path: 'group-list', component: GroupListComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(
+    appRoutes,
+    {
+      enableTracing: true, // <-- debugging purposes only
+      preloadingStrategy: SelectivePreloadingStrategyService,
+    }
+    ) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

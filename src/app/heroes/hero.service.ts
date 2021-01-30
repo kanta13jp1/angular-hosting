@@ -5,7 +5,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from './hero';
-import { MessageService } from './message.service';
+import { MessageService } from '../message.service';
 
 @Injectable({
   providedIn: 'root',
@@ -29,6 +29,17 @@ export class HeroService {
         tap(x => x.length ?
           this.log(`found heroes matching candidate=true`) :
           this.log(`no heroes matching candidate=true`)),
+        catchError(this.handleError<Hero[]>('getHeroes', []))
+      );
+  }
+
+  /** GET heroes from the server */
+  getGroupHeroes(): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true`)
+      .pipe(
+        tap(x => x.length ?
+          this.log(`found heroes matching group=true`) :
+          this.log(`no heroes matching group=true`)),
         catchError(this.handleError<Hero[]>('getHeroes', []))
       );
   }
@@ -68,7 +79,7 @@ export class HeroService {
   }
 
   /** GET hero by id. Will 404 if id not found */
-  getHero(id: number): Observable<Hero> {
+  getHero(id: number | string): Observable<Hero> {
     const url = `${this.heroesUrl}/${id}`;
     return this.http.get<Hero>(url).pipe(
       tap(_ => this.log(`fetched hero id=${id}`)),
@@ -122,12 +133,44 @@ export class HeroService {
     );
   }
 
+  /* GET heroes whose name contains search term */
+  searchGroupHeroes(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      // return of([]);
+      return this.http.get<Hero[]>(this.heroesUrl)
+      .pipe(
+        tap(_ => this.log('fetched heroes')),
+        catchError(this.handleError<Hero[]>('getHeroes', []))
+      );
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true&name=${term}`).pipe(
+      tap(x => x.length ?
+        this.log(`found heroes matching "${term}"`) :
+        this.log(`no heroes matching "${term}"`)),
+      catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+
   searchHeroesByBelongs(term: string): Observable<Hero[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
     return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}&congressman=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found heroes matching "${term}"&congressman=true`) :
+        this.log(`no heroes matching "${term}"&congressman=true`)),
+      catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+
+  searchGroupHeroesByBelongs(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true&belongs=${term}`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"&congressman=true`) :
         this.log(`no heroes matching "${term}"&congressman=true`)),
