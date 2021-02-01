@@ -21,7 +21,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CandidateListComponent } from './candidate-list/candidate-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GroupListComponent } from './group-list/group-list.component';
-
+import { HeroJobAdComponent } from './hero-job-ad.component';
+import { AdBannerComponent } from './ad-banner.component';
+import { HeroProfileComponent } from './hero-profile.component';
+import { AdDirective } from './ad.directive';
+import { AdService } from './ad.service';
+import { SandBoxComponent } from './sand-box/sand-box.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -37,6 +42,7 @@ import { GroupListComponent } from './group-list/group-list.component';
       { dataEncapsulation: false }
     )
   ],
+  providers: [AdService],
   declarations: [
     AppComponent,
     DashboardComponent,
@@ -48,8 +54,14 @@ import { GroupListComponent } from './group-list/group-list.component';
     HeroListComponent,
     PageNotFoundComponent,
     CandidateListComponent,
-    GroupListComponent
+    GroupListComponent,
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdDirective,
+    SandBoxComponent,
   ],
+  entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

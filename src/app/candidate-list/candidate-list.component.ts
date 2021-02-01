@@ -17,12 +17,10 @@ export class CandidateListComponent implements OnInit {
   ngOnInit(): void {
     // Twitterウィジェットの読み込み
     if (window['twttr']) {
-      window[`twttr`].widgets.load();
+      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
       console.log('window[`twttr`].widgets.load()');
-    }
-    this.getCandidates();
+    }    this.getCandidates();
   }
-
   getCandidates(): void {
     this.heroService.getCandidates()
       .subscribe(heroes => this.heroes = heroes.slice(0, 100));

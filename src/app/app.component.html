@@ -49,6 +49,10 @@
     </svg>
 
   </div>
+  <br>
+  <div>
+    <app-ad-banner [ads]="ads"></app-ad-banner>
+  </div>
   <div>
     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Share</a>
   </div>
@@ -63,7 +67,8 @@
     <a class="button" routerLink="/analize" routerLinkActive="activebutton">第48回衆院選分析</a> |
     <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton">国民民主党リンク集</a> |
     <a class="button" routerLink="/administrator" routerLinkActive="activebutton">管理者ページ</a> |
-    <a class="button" routerLink="/hero-list" routerLinkActive="activebutton">Next Steps</a>
+    <a class="button" routerLink="/hero-list" routerLinkActive="activebutton">Next Steps</a> |
+    <a class="button" routerLink="/sand-box" routerLinkActive="activebutton">SandBox</a>
   </nav>
   <div [@routeAnimation]="getAnimationData(routerOutlet)">
     <router-outlet #routerOutlet="outlet"></router-outlet>

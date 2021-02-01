@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     // Twitterウィジェットの読み込み
     if (window['twttr']) {
-      window[`twttr`].widgets.load();
+      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
       console.log('window[`twttr`].widgets.load()');
     }
     this.getHeroes();

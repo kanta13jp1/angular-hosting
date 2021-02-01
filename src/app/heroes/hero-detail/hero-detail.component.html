@@ -1,32 +1,36 @@
 <div *ngIf="hero$ | async as hero" class="hero-detail">
-  <h2>{{hero.name | uppercase}} 詳細情報</h2>
-  <div class="mgr-bottom-4">
-    <button (click)="goBack()">戻る</button>
+  <div class="profile">
+    <h2>{{hero.name | uppercase}} 詳細情報</h2>
+    <div class="mgr-bottom-4">
+      <button (click)="goBack()">戻る</button>
+    </div>
+    <div class="mgr-bottom-4">
+      <label>Id: </label>{{ hero.id }}
+    </div>
+    <div class="mgr-bottom-4">
+      <label>名前: </label>
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </div>
+    <div class="mgr-bottom-4"><span>生年月日 　　: </span>{{hero.birthday}}</div>
+    <div class="mgr-bottom-4"><span>役職 : </span>{{hero.role}}</div>
+    <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.role2}}</div>
+    <div class="mgr-bottom-4"><span>所属 : </span>{{hero.belongs}}</div>
+    <div class="mgr-bottom-4"><span>選挙区 : </span>{{hero.district}}</div>
+    <div class="mgr-bottom-4"><span>当選回数 　　: </span>{{hero.count}}回</div>
+    <div class="mgr-bottom-4"><span>出身高 : </span>{{hero.almaMater}}</div>
+    <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.almaMater2}}</div>
+    <div class="mgr-bottom-4"><span>Twitter 　　: </span><a href="https://twitter.com/{{hero.twitter}}">{{hero.twitter}}</a></div>
+    <div class="mgr-bottom-4"><span>Wikipedia 　: </span><a href="https://ja.wikipedia.org/wiki/{{hero.wikipedia || hero.name}}">{{hero.name}}</a></div>
+    <div class="mgr-bottom-4"><span>立候補選挙区 　　: </span>{{hero.candidatePrefecture}}{{hero.candidatedistrict}}</div>
+    <img
+      width=400px
+      alt="No image"
+      src={{hero.image}}
+    />
   </div>
-  <div class="mgr-bottom-4">
-    <label>Id: </label>{{ hero.id }}
+  <div class="twitter">
+    <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="800" data-theme="light" href="https://twitter.com/{{hero.twitter}}?ref_src=twsrc%5Etfw">Tweets by {{hero.twitter}}</a>
   </div>
-  <div class="mgr-bottom-4">
-    <label>名前: </label>
-    <input [(ngModel)]="hero.name" placeholder="name"/>
-  </div>
-  <div class="mgr-bottom-4"><span>生年月日 　　: </span>{{hero.birthday}}</div>
-  <div class="mgr-bottom-4"><span>役職 : </span>{{hero.role}}</div>
-  <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.role2}}</div>
-  <div class="mgr-bottom-4"><span>所属 : </span>{{hero.belongs}}</div>
-  <div class="mgr-bottom-4"><span>選挙区 : </span>{{hero.district}}</div>
-  <div class="mgr-bottom-4"><span>当選回数 　　: </span>{{hero.count}}回</div>
-  <div class="mgr-bottom-4"><span>出身高 : </span>{{hero.almaMater}}</div>
-  <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.almaMater2}}</div>
-  <div class="mgr-bottom-4"><span>Twitter 　　: </span><a href="https://twitter.com/{{hero.twitter}}">{{hero.twitter}}</a></div>
-  <div class="mgr-bottom-4"><span>Wikipedia 　: </span><a href="https://ja.wikipedia.org/wiki/{{hero.wikipedia || hero.name}}">{{hero.name}}</a></div>
-  <div class="mgr-bottom-4"><span>立候補選挙区 　　: </span>{{hero.candidatePrefecture}}{{hero.candidatedistrict}}</div>
-  <img
-    width=auto
-    alt="No image"
-    src={{hero.image}}
-  />
-  <a class="twitter-timeline" href="https://twitter.com/{{hero.twitter}}?ref_src=twsrc%5Etfw">Tweets by {{hero.twitter}}</a>
   <br>
   <button (click)="save()">保存</button>
   <button (click)="goBack()">戻る</button>

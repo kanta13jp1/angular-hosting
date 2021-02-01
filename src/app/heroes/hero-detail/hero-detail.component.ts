@@ -26,7 +26,7 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit(): void {
     // Twitterウィジェットの読み込み
     if (window['twttr']) {
-      window[`twttr`].widgets.load();
+      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
       console.log('window[`twttr`].widgets.load()');
     }
     this.hero$ = this.route.paramMap.pipe(

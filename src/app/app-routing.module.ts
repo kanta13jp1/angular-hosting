@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CandidateListComponent } from './candidate-list/candidate-list.component';
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
 import { GroupListComponent } from './group-list/group-list.component';
+import { SandBoxComponent } from './sand-box/sand-box.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'hero-list', component: HeroListComponent, data: { animation: 'heroes' } },
   { path: 'crisis-list', component: CrisisListComponent, data: { animation: 'heroes' }  },
   { path: 'group-list', component: GroupListComponent, data: { animation: 'heroes' }  },
+  { path: 'sand-box', component: SandBoxComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
