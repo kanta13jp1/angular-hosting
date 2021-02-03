@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sand-box.component.styl']
 })
 export class SandBoxComponent implements OnInit {
+  public currentCount = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public incrementCounter() {
+    this.currentCount++;
+  }
 }

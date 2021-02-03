@@ -5,18 +5,20 @@ import { AdComponent } from './ad.component';
 @Component({
   template: `
     <div class="hero-profile">
-      <h3>議員プロフィール</h3>
-      <h2>{{data.name}}</h2>
-      <p>{{data.belongs}}</p>
-      <img
-        width="160"
-        alt="No image"
-        src={{data.image}}
-      />
-      <br>
-      <strong>{{data.bio}}</strong>
+      <div class="profile">
+        <h3>議員プロフィール</h3>
+        <h2>{{data.name}}</h2>
+        <p>{{data.belongs}}</p>
+        <img
+          width="160"
+          alt="No image"
+          src={{data.image}}
+        />
+        <br>
+        <strong>{{data.bio}}</strong>
+      </div>
+      <div class="detail"><h4>{{data.detail}}</h4></div>
     </div>
-    <br>
   `,
   styleUrls: ['./hero-profile.component.styl'],
 })

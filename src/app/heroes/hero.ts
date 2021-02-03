@@ -15,4 +15,7 @@ export interface Hero {
   candidatePrefecture: string;
   candidatedistrict: string;
   image: string;
+  hp: string;
+  url: string;
+  detail: string;
 }
