@@ -27,6 +27,8 @@ import { HeroProfileComponent } from './hero-profile.component';
 import { AdDirective } from './ad.directive';
 import { AdService } from './ad.service';
 import { SandBoxComponent } from './sand-box/sand-box.component';
+import { OrganizeListComponent } from './organize-list/organize-list.component';
+import { MemberListComponent } from './member-list/member-list.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -60,6 +62,8 @@ import { SandBoxComponent } from './sand-box/sand-box.component';
     HeroProfileComponent,
     AdDirective,
     SandBoxComponent,
+    OrganizeListComponent,
+    MemberListComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]

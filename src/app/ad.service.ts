@@ -22,17 +22,18 @@ export class AdService {
       こんなに息苦しくない社会を創りたい'}),
       new AdItem(HeroProfileComponent, {id: 4, name: '矢田わか子', belongs: '参議院', district: '比例区', bio: '副代表', twitter: 'wako0501', image: 'assets/yatawakako.jpg' , detail: 'あなたと動けば、未来は変わる。'}),
       new AdItem(HeroProfileComponent, {id: 2, name: '山尾志桜里', belongs: '衆議院', district: '愛知7区', bio: '広報局長', twitter: 'ShioriYamao', image: 'assets/yamaoshiori.jpg' , detail: 'what is essential is invisible to the eye'}),
-      new AdItem(HeroProfileComponent, {id: 26, name: '田村まみ', belongs: '参議院', district: '比例区', bio: '会派', twitter: 'mamitamuratw', image: 'assets/tamuramami.jpg' , detail: '働く｢仲間｣の\
+      new AdItem(HeroProfileComponent, {id: 26, name: '田村まみ', belongs: '参議院', district: '比例区', bio: '国民民主党会派・無所属', twitter: 'mamitamuratw', image: 'assets/tamuramami.jpg' , detail: '働く｢仲間｣の\
       ｢笑顔｣のために'}),
-      new AdItem(HeroProfileComponent, {id: 20, name: '高橋みほ', belongs: '衆議院公認内定予定候補', district: '静岡1区', bio: '候補', twitter: '', image: 'assets/takahashimiho.jpg' , detail: '静岡市上足洗生まれで、静岡っ子。\
+      new AdItem(HeroProfileComponent, {id: 20, name: '高橋みほ', belongs: '衆議院公認内定予定候補', district: '静岡1区', bio: '公認内定予定候補', twitter: '', image: 'assets/takahashimiho.jpg' , detail: '静岡市上足洗生まれで、静岡っ子。\
       地元静岡を愛するちゃっきり娘！\
       「将来への不安」を解消するため、賃金アップ、非正規雇用の正規雇用化、年金制度の安心化を目指します！\
       ふじ幼稚園・千代田・千代田東小学校・麻機小学校卒業卒、観山中学校卒・静岡高校卒・神戸大学法学部卒・北海道大学公共政策大学院修了。元衆議院議員。街の法律家である行政書士。'}),
-      new AdItem(HeroProfileComponent, {id: 19, name: '佐藤由美', belongs: '衆議院公認内定予定候補', district: '東京24区', bio: '候補', twitter: 'yumibetterworld', image: 'assets/satoyumi.jpg' , detail: '元都議。日本司法支援センター（法テラス）で\
+      new AdItem(HeroProfileComponent, {id: 19, name: '佐藤由美', belongs: '衆議院公認内定予定候補', district: '東京24区', bio: '公認内定予定候補', twitter: 'yumibetterworld', image: 'assets/satoyumi.jpg' , detail: '元都議。日本司法支援センター（法テラス）で\
       個別支援と司法制度改革に取組10年「一人ひとりの声を形に」を掲げ都議初当選。\
       社会課題・構造変化に応じ政策を転換「一人ひとりの政治参画」「多様性ある社会」\
       「開かれた外交・平和」が柱。次世代に希望ある社会を。都立戸山高、京都大法卒。\
       英国ブリストル大学院公共政策修士。母としても奮闘中'}),
+      new AdItem(HeroProfileComponent, {id: 21, name: '浅野克彦', belongs: '衆議院公認内定予定候補', district: '埼玉24区', bio: '公認内定予定候補', twitter: 'katsuhikoasano', image: 'assets/asanokatsuhiko.jpg' , detail: '国民民主党埼玉県第４区総支部長'}),
 
       // new AdItem(HeroProfileComponent, {name: 'Dr IQ', bio: 'Smart as they come'}),
 

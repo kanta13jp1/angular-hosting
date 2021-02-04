@@ -11,6 +11,8 @@ import { CandidateListComponent } from './candidate-list/candidate-list.componen
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
 import { GroupListComponent } from './group-list/group-list.component';
 import { SandBoxComponent } from './sand-box/sand-box.component';
+import { OrganizeListComponent } from './organize-list/organize-list.component';
+import { MemberListComponent } from './member-list/member-list.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -20,6 +22,8 @@ const appRoutes: Routes = [
   { path: 'candidate-list', component: CandidateListComponent, data: { animation: 'heroes' } },
   { path: 'hero-list', component: HeroListComponent, data: { animation: 'heroes' } },
   { path: 'crisis-list', component: CrisisListComponent, data: { animation: 'heroes' }  },
+  { path: 'organize-list', component: OrganizeListComponent, data: { animation: 'heroes' }  },
+  { path: 'member-list', component: MemberListComponent, data: { animation: 'heroes' }  },
   { path: 'group-list', component: GroupListComponent, data: { animation: 'heroes' }  },
   { path: 'sand-box', component: SandBoxComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
