@@ -28,14 +28,18 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 10, name: '足立信也', role: '組織・団体委員長', belongs: '参議院', almaMater: '筑波大学医学専門学群', district: '大分県選挙区', count: 1, twitter: '', congressman: true, group: true, image: 'assets/adachishinya.jpg' },
       { id: 11, name: '小林正夫', role: '倫理委員長', belongs: '参議院', almaMater: '', district: '', twitter: '', congressman: true, image: 'assets/kobayashimasao.jpg' },
       { id: 12, name: '浜野喜史', role: '財務局長', belongs: '参議院', almaMater: '神戸大学経済学部', district: '比例区', count: 2, twitter: '', congressman: true, image: 'assets/hamanoyoshifumi.jpg' },
-      { id: 13, name: '舟山康江', role: '政務調査会長', role2: '農林水産調査会長', belongs: '参議院', almaMater: '北海道大学農学部農業経済学科', district: '	山形県選挙区', twitter: 'yasue_funayama0', congressman: true, image: 'assets/funayamayasue.jpg', hp: '舟山やすえオフィシャルサイト', url : 'https://www.y-funayama.jp/', detail: '国民一人ひとりが豊かさを感じられる格差のない社会へ！\
+      { id: 13, name: '舟山康江', role: '政務調査会長', role2: '農林水産調査会長', belongs: '参議院', almaMater: '北海道大学農学部農業経済学科', district: '山形県選挙区', twitter: 'yasue_funayama0', congressman: true, image: 'assets/funayamayasue.jpg', hp: '舟山やすえオフィシャルサイト', url : 'https://www.y-funayama.jp/', detail: '国民一人ひとりが豊かさを感じられる格差のない社会へ！\
       政権の暴走に歯止めをかけ、多様性のある社会を！' },
       { id: 14, name: '川合孝典', role: '参議院国会対策委員長', belongs: '参議院', almaMater: '', district: '', twitter: '', congressman: true, image: 'assets/kawaitakanori.jpg' },
       { id: 15, name: '大塚耕平', role: '代表代行', belongs: '参議院', almaMater: '早稲田大学政治経済学部経済学科', district: '愛知県選挙区', count: 4, twitter: 'kouhei1005mon', birthday: '1959/10/5', congressman: true, image: 'assets/otsukakouhei.jpg' },
       { id: 16, name: '前原誠司', role: '代表代行', belongs: '衆議院', almaMater: '', district: '京都2区', count: 9, twitter: 'Maehara2016', congressman: true, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '近畿', candidatePrefecture: '京都', candidatedistrict: '2区', image: 'assets/maeharaseiji.jpg'  },
       { id: 17, name: '樽井良和', role: '', belongs: '衆議院', almaMater: '', district: '', count: 2, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '東京', candidatePrefecture: '東京', candidatedistrict: '10区', image: 'assets/taruiyoshikazu.jpg'  },
       { id: 18, name: '円より子', role: '', belongs: '衆議院', almaMater: '津田塾大学学芸学部英文学科', district: '', count: 3, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '東京', candidatePrefecture: '東京', candidatedistrict: '17区', image: 'assets/madokayoriko.jpg' },
-      { id: 19, name: '佐藤由美', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '東京', candidatePrefecture: '東京', candidatedistrict: '24区' },
+      { id: 19, name: '佐藤由美', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '東京', candidatePrefecture: '東京', candidatedistrict: '24区', image: 'assets/satoyumi.jpg', detail: '元都議。日本司法支援センター（法テラス）で\
+      個別支援と司法制度改革に取組10年「一人ひとりの声を形に」を掲げ都議初当選。\
+      社会課題・構造変化に応じ政策を転換「一人ひとりの政治参画」「多様性ある社会」\
+      「開かれた外交・平和」が柱。次世代に希望ある社会を。都立戸山高、京都大法卒。\
+      英国ブリストル大学院公共政策修士。母としても奮闘中' },
       { id: 20, name: '高橋美穂', role: '', belongs: '衆議院', almaMater: '神戸大学法学部', almaMater2: '北海道大学公共政策大学院', district: '北海道2区', count: 1, twitter: 'mihojimukyoku', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '東海', candidatePrefecture: '静岡', candidatedistrict: '1区' ,image: 'assets/takahashimiho.jpg', hp: '高橋みほ公式webサイト', url: 'http://www.takahashi-miho.jp/', detail: '静岡市上足洗生まれで、静岡っ子。\
       地元静岡を愛するちゃっきり娘！\
       「将来への不安」を解消するため、賃金アップ、非正規雇用の正規雇用化、年金制度の安心化を目指します！\

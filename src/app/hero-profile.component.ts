@@ -9,6 +9,7 @@ import { AdComponent } from './ad.component';
         <h3>議員プロフィール</h3>
         <h2>{{data.name}}</h2>
         <p>{{data.belongs}}</p>
+        <p>{{data.district}}</p>
         <img
           width="160"
           alt="No image"
