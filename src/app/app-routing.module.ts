@@ -13,6 +13,7 @@ import { GroupListComponent } from './group-list/group-list.component';
 import { SandBoxComponent } from './sand-box/sand-box.component';
 import { OrganizeListComponent } from './organize-list/organize-list.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   { path: 'member-list', component: MemberListComponent, data: { animation: 'heroes' }  },
   { path: 'group-list', component: GroupListComponent, data: { animation: 'heroes' }  },
   { path: 'sand-box', component: SandBoxComponent, data: { animation: 'heroes' }  },
+  { path: 'chuo-keiba', component: ChuoKeibaComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
