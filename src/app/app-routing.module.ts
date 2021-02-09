@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
@@ -28,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'group-list', component: GroupListComponent, data: { animation: 'heroes' }  },
   { path: 'sand-box', component: SandBoxComponent, data: { animation: 'heroes' }  },
   { path: 'chuo-keiba', component: ChuoKeibaComponent, data: { animation: 'heroes' }  },
+  { path: 'home', component: HomeComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
   imports: [ RouterModule.forRoot(
     appRoutes,
     {
-      enableTracing: true, // <-- debugging purposes only
+      enableTracing: false, // <-- debugging purposes only
       preloadingStrategy: SelectivePreloadingStrategyService,
     }
     ) ],

@@ -30,6 +30,7 @@ import { SandBoxComponent } from './sand-box/sand-box.component';
 import { OrganizeListComponent } from './organize-list/organize-list.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
+import { HomeComponent } from './pages/home/home.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -66,6 +67,7 @@ import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
     OrganizeListComponent,
     MemberListComponent,
     ChuoKeibaComponent,
+    HomeComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]

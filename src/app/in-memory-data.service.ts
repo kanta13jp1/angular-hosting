@@ -28,7 +28,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 10, name: '足立信也', role: '組織・団体委員長', belongs: '参議院', almaMater: '筑波大学医学専門学群', district: '大分県選挙区', count: 1, twitter: '', congressman: true, group: true, image: 'assets/adachishinya.jpg' },
       { id: 11, name: '小林正夫', role: '倫理委員長', belongs: '参議院', almaMater: '', district: '', twitter: '', congressman: true, image: 'assets/kobayashimasao.jpg' },
       { id: 12, name: '浜野喜史', role: '財務局長', belongs: '参議院', almaMater: '神戸大学経済学部', district: '比例区', count: 2, twitter: '', congressman: true, group: true, image: 'assets/hamanoyoshifumi.jpg' },
-      { id: 13, name: '舟山康江', role: '政務調査会長', role2: '農林水産調査会長', belongs: '参議院', almaMater: '北海道大学農学部農業経済学科', district: '山形県選挙区', twitter: 'yasue_funayama0', congressman: true, group: true, image: 'assets/funayamayasue.jpg', hp: '舟山やすえオフィシャルサイト', url : 'https://www.y-funayama.jp/', detail: '国民一人ひとりが豊かさを感じられる格差のない社会へ！\
+      { id: 13, name: '舟山康江', role: '政務調査会長', role2: '農林水産調査会長', belongs: '参議院', almaMater: '北海道大学農学部農業経済学科', district: '山形県選挙区', count: 2, twitter: 'yasue_funayama0', congressman: true, group: true, image: 'assets/funayamayasue.jpg', hp: '舟山やすえオフィシャルサイト', url : 'https://www.y-funayama.jp/', detail: '国民一人ひとりが豊かさを感じられる格差のない社会へ！\
       政権の暴走に歯止めをかけ、多様性のある社会を！' },
       { id: 14, name: '川合孝典', role: '参議院国会対策委員長', belongs: '参議院', almaMater: '', district: '', twitter: '', congressman: true, group: true, image: 'assets/kawaitakanori.jpg' },
       { id: 15, name: '大塚耕平', role: '代表代行', belongs: '参議院', almaMater: '早稲田大学政治経済学部経済学科', district: '愛知県選挙区', count: 4, twitter: 'kouhei1005mon', birthday: '1959/10/5', congressman: true, group: true, image: 'assets/otsukakouhei.jpg' },

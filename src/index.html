@@ -23,10 +23,66 @@
   <!-- サムネイルを大きく表示する場合はSummary Card with Large Imageを指定します -->
   <!-- <meta name="twitter:card" content="summary_large_image" /> -->
   <link rel="icon" type="image/x-icon" href="/assets/kokumin.jpg">
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/shim.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8710EQ6CRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8710EQ6CRS');
   </script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js"></script>
 </head>
 <body>
+  <div id="app">
+    <h1>閲覧人数：{{ articles.length }} 人
+    <!-- <div v-for="article in articles">
+      {{ article.body }}
+    </div> -->
+    <!-- <button v-on:click="createArticle">データ追加</button> -->
+  </div>
   <app-root></app-root>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Vue({
+        el: "#app",
+        data: {
+          articles: []
+        },
+        async mounted(){
+          console.log("mounted")
+          await firebase.functions().httpsCallable('createArticle')();
+          let res = await firebase.functions().httpsCallable('listArticle')();
+          this.articles = res.data;
+          console.log(this.articles)
+        },
+        methods: {
+          createArticle: async function () {
+            // await firebase.functions().httpsCallable('createArticle')();
+          }
+        },
+      });
+    });
+  </script>
 </body>
 </html>
