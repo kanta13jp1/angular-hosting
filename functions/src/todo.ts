@@ -3,7 +3,7 @@ import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-export const createArticle = functions.https.onCall(async (data, context) => {
+export const createToDo = functions.https.onCall(async (data, context) => {
   console.log("functions.https.onCall() createArticle");
   console.log("data = ", data);
   const id = data.id;

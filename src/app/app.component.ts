@@ -19,10 +19,9 @@ export class AppComponent {
     // Twitterウィジェットの読み込み
     if (window['twttr']) {
       window[`twttr`].widgets.load(document.getElementsByClassName("sns-button"));
-      console.log('window[`twttr`].widgets.load()');
+      console.log('app.components.ts: window[`twttr`].widgets.load()');
     }
     this.ads = this.adService.getAds();
-
   }
 
   getAnimationData(outlet: RouterOutlet) {

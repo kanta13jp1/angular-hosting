@@ -51,15 +51,16 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message { background: white; max-width: 442px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
       #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
       #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
       #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #message, #message button { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
@@ -70,20 +71,14 @@
   <body>
     <div id="message">
       <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
+      <h1>国民民主党（勝手に自分用）ポータル</h1>
+      <p v-if="articles != null">登録議員数：{{ articles.length }} 人</p>
+      <button v-on:click="listArticle">reload</button>
       <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
-    <div id="app">
-      <h1>閲覧人数：{{ articles.length }} 人
-      <!-- <div v-for="article in articles">
-        {{ article.body }}
-      </div> -->
-      <!-- <button v-on:click="createArticle">データ追加</button> -->
-    </div>
     <app-root></app-root>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
@@ -121,23 +116,31 @@
           loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
         }
         new Vue({
-          el: "#app",
+          el: "#message",
           data: {
             articles: []
           },
           async mounted(){
             console.log("mounted")
-            await firebase.functions().httpsCallable('createArticle')();
-            let res = await firebase.functions().httpsCallable('listArticle')();
-            this.articles = res.data;
-            console.log(this.articles)
+            this.listArticle();
           },
           methods: {
             createArticle: async function () {
-              // await firebase.functions().httpsCallable('createArticle')();
+              console.log("index.html: createArticle()")
+              let res = await firebase.functions().httpsCallable('listArticle')();
+
+              const func = firebase.functions().httpsCallable('createArticle');
+              await func({ id: res.data.length + 1 })
+              this.listArticle();
+            },
+            listArticle: async function () {
+              console.log("index.html: listArticle()")
+              let res = await firebase.functions().httpsCallable('listArticle')();
+              this.articles = res.data;
+              console.log(this.articles)
             }
-          },
-        });
+          }
+        })
       });
     </script>
   </body>

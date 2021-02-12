@@ -31,6 +31,8 @@ import { OrganizeListComponent } from './organize-list/organize-list.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
 import { HomeComponent } from './pages/home/home.component';
+import {Angular2PromiseButtonModule} from 'angular2-promise-buttons';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    Angular2PromiseButtonModule.forRoot(),
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.

@@ -13,17 +13,17 @@
     </div>
     <div class="mgr-bottom-4"><span>生年月日 　　: </span>{{hero.birthday}}</div>
     <div class="mgr-bottom-4"><span>役職 : </span>{{hero.role}}</div>
-    <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.role2}}</div>
+    <div *ngIf="hero.role2" class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.role2}}</div>
     <div class="mgr-bottom-4"><span>所属 : </span>{{hero.belongs}}</div>
     <div class="mgr-bottom-4"><span>選挙区 : </span>{{hero.district}}</div>
     <div class="mgr-bottom-4"><span>当選回数 　　: </span>{{hero.count}}回</div>
     <div class="mgr-bottom-4"><span>出身高 : </span>{{hero.almaMater}}</div>
-    <div class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.almaMater2}}</div>
+    <div *ngIf="hero.almaMater2" class="mgr-bottom-4"><span class="mrgn-left"> : </span>{{hero.almaMater2}}</div>
     <div class="mgr-bottom-4"><span>Twitter 　　: </span><a href="https://twitter.com/{{hero.twitter}}">{{hero.twitter}}</a></div>
     <div class="mgr-bottom-4"><span>Wikipedia 　: </span><a href="https://ja.wikipedia.org/wiki/{{hero.wikipedia || hero.name}}">{{hero.name}}</a></div>
     <div class="mgr-bottom-4"><span>立候補選挙区 　　: </span>{{hero.candidatePrefecture}}{{hero.candidatedistrict}}</div>
     <div class="mgr-bottom-4"><span>公式サイト 　　: </span><a href={{hero.url}}>{{hero.hp}}</a></div>
-    <div class="mgr-bottom-4">{{hero.detail}}</div>
+    <div class="mgr-bottom-4 pre-wrap">{{hero.detail}}</div>
     <img
       width=400px
       alt="No image"

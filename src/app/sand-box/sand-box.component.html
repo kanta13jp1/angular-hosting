@@ -3,5 +3,29 @@
 <p>This is a simple example of an Angular component.</p>
 
 <p>Current count: <strong>{{ currentCount }}</strong></p>
+<div *ngIf="articles">
+  <h1>登録議員数：{{ articles.length }} 人</h1>
+</div>
 
 <button (click)="incrementCounter()">Increment</button>
+
+<!-- <button (click)="createArticle()" [promiseBtn]="promiseSetByCreateArticle">createArticle</button> -->
+
+<button (click)="deleteArticle()" [promiseBtn]="promiseSetByDeleteArticle">deleteArticle</button>
+
+<button (click)="listArticle()" [promiseBtn]="promiseSetByListArticle">reload</button>
+
+<form>
+  <label for="name">名前：</label>
+  <!--［1］テキストボックスtxtNameを変数nameでアクセスできるように-->
+  <input id="txtName" name="txtName" type="text" #name />
+  <!--［2］イベントハンドラーにテキストボックスへの入力値を引き渡す-->
+  <input type="button" value="createArticle" (click)="createArticle(name.value)" [promiseBtn]="promiseSetByCreateArticle"/>
+  <div>{{msg}}</div>
+</form>
+
+<ul>
+  <li *ngFor="let article of articles; let i = index">
+    {{ i + 1 }} - {{ article.id }} : {{ article.name }}
+  </li>
+</ul>

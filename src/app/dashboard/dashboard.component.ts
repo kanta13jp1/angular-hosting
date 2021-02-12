@@ -13,11 +13,6 @@ export class DashboardComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
-    // Twitterウィジェットの読み込み
-    if (window['twttr']) {
-      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
-      console.log('window[`twttr`].widgets.load()');
-    }
     this.getHeroes();
   }
 

@@ -15,6 +15,7 @@ import { Observable } from 'rxjs';
 export class HeroDetailComponent implements OnInit {
   hero: Hero | undefined;
   hero$: Observable<Hero>;
+  interval: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,15 +26,23 @@ export class HeroDetailComponent implements OnInit {
 
   ngOnInit(): void {
     // Twitterウィジェットの読み込み
-    if (window['twttr']) {
-      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
-      console.log('window[`twttr`].widgets.load()');
-    }
+    this.interval = setInterval(() => {
+        if (window['twttr']) {
+          window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
+          console.log('hero-detail.component.ts: window[`twttr`].widgets.load()');
+        }
+        clearInterval(this.interval);
+    }, 2000);
+
     this.hero$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
         this.service.getHero(params.get('id')))
     );
     this.getHero();
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.interval);
   }
 
   getHero(): void {

@@ -15,11 +15,7 @@ export class CandidateListComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
-    // Twitterウィジェットの読み込み
-    if (window['twttr']) {
-      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
-      console.log('window[`twttr`].widgets.load()');
-    }    this.getCandidates();
+    this.getCandidates();
   }
   getCandidates(): void {
     this.heroService.getCandidates()

@@ -40,17 +40,12 @@ export class AdBannerComponent implements OnInit, OnDestroy {
 
     const componentRef = viewContainerRef.createComponent<AdComponent>(componentFactory);
     componentRef.instance.data = adItem.data;
-
-    if (window['twttr']) {
-      window[`twttr`].widgets.load(document.getElementsByClassName("twitter-timeline"));
-      console.log('window[`twttr`].widgets.load()');
-    }
   }
 
   getAds() {
     this.interval = setInterval(() => {
       this.loadComponent();
-    }, 3000);
+    }, 10000);
   }
 }
 
