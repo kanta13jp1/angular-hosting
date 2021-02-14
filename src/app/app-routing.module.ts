@@ -15,6 +15,7 @@ import { OrganizeListComponent } from './organize-list/organize-list.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
 import { AddressFormComponent } from './address-form/address-form.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
   { path: 'chuo-keiba', component: ChuoKeibaComponent, data: { animation: 'heroes' }  },
   { path: 'home', component: HomeComponent, data: { animation: 'heroes' }  },
   { path: 'address-form', component: AddressFormComponent, data: { animation: 'heroes' }  },
+  { path: 'navigation', component: NavigationComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
