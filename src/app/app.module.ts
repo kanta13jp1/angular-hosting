@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Router } from '@angular/router';
 
@@ -33,6 +33,12 @@ import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Angular2PromiseButtonModule } from 'angular2-promise-buttons';
 import { MatSliderModule } from '@angular/material/slider';
+import { AddressFormComponent } from './address-form/address-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   imports: [
     BrowserModule,
@@ -48,7 +54,13 @@ import { MatSliderModule } from '@angular/material/slider';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService,
       { dataEncapsulation: false }
-    )
+    ),
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [AdService],
   declarations: [
@@ -72,6 +84,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MemberListComponent,
     ChuoKeibaComponent,
     HomeComponent,
+    AddressFormComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
