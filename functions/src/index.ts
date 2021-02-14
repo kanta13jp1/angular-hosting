@@ -15,7 +15,7 @@ export const createArticle = functions.https.onCall(async (data, context) => {
 
 export const listArticle = functions.https.onCall(async (data, context) => {
   console.log("functions.https.onCall() listArticle");
-  const dd = await admin.firestore().collection("articles").get();
+  const dd = await admin.firestore().collection("articles").orderBy("id").get();
   console.log("dd.docs.map((doc) => doc.data()) = ",
       dd.docs.map((doc) => doc.data()));
   return dd.docs.map((doc) => doc.data());

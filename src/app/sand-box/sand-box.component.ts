@@ -2,6 +2,10 @@ import { getAttrsForDirectiveMatching } from '@angular/compiler/src/render3/view
 import { Component, OnInit } from '@angular/core';
 import firebase from 'firebase';
 import AsyncLock from 'Async-lock';
+import { HeroService } from '../heroes/hero.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Hero } from '../heroes/hero';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-sand-box',
   templateUrl: './sand-box.component.html',
@@ -13,9 +17,16 @@ export class SandBoxComponent implements OnInit {
   public promiseSetByCreateArticle: any;
   public promiseSetByDeleteArticle: any;
   public promiseSetByListArticle: any;
+  promiseSetByCreateArticleByHero: any;
+  promiseSetByGetHero: any;
   public msg: any;
+  hero: Hero | undefined;
+  hero$: Observable<Hero>;
+  interval: any;
 
-  constructor() { }
+  constructor(
+    private service: HeroService,
+  ) {}
 
   async ngOnInit(): Promise<void> {
     console.log("ngOnInit()")
@@ -26,7 +37,13 @@ export class SandBoxComponent implements OnInit {
     } else {
       firebase.app(); // if already initialized, use that one
     }
+    this.getHero(1);
     await this.listArticle();
+  }
+
+  getHero(id: number | string): void {
+    this.service.getHero(id)
+      .subscribe(hero => this.hero = hero);
   }
 
   public incrementCounter() {
@@ -44,10 +61,27 @@ export class SandBoxComponent implements OnInit {
     await this.listArticle();
   }
 
+  public async createArticleByHero(value: any) {
+    const lock = new AsyncLock();
+    lock.acquire("createArticleByHero", () => {});
+    console.log("sand-box: createArticleByHero() >")
+    this.promiseSetByCreateArticle = this.createArticleByHeroProcess(value);
+    await this.promiseSetByCreateArticle;
+    console.log("sand-box: createArticleByHero() <")
+    this.msg = `create ${value}!!`;
+    await this.listArticle();
+  }
+
   private async createArticleProcess(value: string) {
     let res = await firebase.functions().httpsCallable('listArticle')();
     const func = firebase.functions().httpsCallable('createArticle');
     let result = await func({ id: res.data.length + 1, name: value })
+    console.log("result = ",result);
+  }
+
+  private async createArticleByHeroProcess(value: any) {
+    const func = firebase.functions().httpsCallable('createArticle');
+    let result = await func(value)
     console.log("result = ",result);
   }
 

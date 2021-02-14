@@ -11,6 +11,7 @@ export interface Hero {
   twitter: string;
   wikipedia: string;
   birthday: Date;
+  candidate: boolean;
   candidateType: string;
   candidatePrefecture: string;
   candidatedistrict: string;
