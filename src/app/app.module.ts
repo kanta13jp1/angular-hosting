@@ -53,6 +53,10 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { TreeComponent } from './tree/tree.component';
+import { MatTreeModule } from '@angular/material/tree';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 @NgModule({
   imports: [
     BrowserModule,
@@ -85,7 +89,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSortModule,
     MatProgressSpinnerModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule,
+    DragDropModule
   ],
   providers: [AdService],
   declarations: [
@@ -113,6 +119,8 @@ import { MatMenuModule } from '@angular/material/menu';
     NavigationComponent,
     TableComponent,
     MatDashboardComponent,
+    TreeComponent,
+    DragDropComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]

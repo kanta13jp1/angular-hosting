@@ -18,6 +18,8 @@ import { AddressFormComponent } from './address-form/address-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TableComponent } from './table/table.component';
 import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
+import { TreeComponent } from './tree/tree.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -37,6 +39,8 @@ const appRoutes: Routes = [
   { path: 'navigation', component: NavigationComponent, data: { animation: 'heroes' }  },
   { path: 'table', component: TableComponent, data: { animation: 'heroes' }  },
   { path: 'mat-dashboard', component: MatDashboardComponent, data: { animation: 'heroes' }  },
+  { path: 'tree', component: TreeComponent, data: { animation: 'heroes' }  },
+  { path: 'drag-drop', component: DragDropComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
