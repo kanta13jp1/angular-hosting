@@ -12,14 +12,14 @@ import { Observable } from 'rxjs';
   styleUrls: ['./sand-box.component.styl']
 })
 export class SandBoxComponent implements OnInit {
-  public currentCount = 0;
-  public articles: any;
-  public promiseSetByCreateArticle: any;
-  public promiseSetByDeleteArticle: any;
-  public promiseSetByListArticle: any;
+  currentCount = 0;
+  articles: any;
+  promiseSetByCreateArticle: any;
+  promiseSetByDeleteArticle: any;
+  promiseSetByListArticle: any;
   promiseSetByCreateArticleByHero: any;
   promiseSetByGetHero: any;
-  public msg: any;
+  msg: any;
   hero: Hero | undefined;
   hero$: Observable<Hero>;
   interval: any;

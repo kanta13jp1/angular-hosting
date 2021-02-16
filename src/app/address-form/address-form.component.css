@@ -1,3 +1,20 @@
+.mat-input-element {
+  outline: auto;
+  border: cyan;
+}
+
+.matInput::focus::placeholder {
+  color: transparent;
+}
+
+.mat-raised-button {
+  outline: auto;
+}
+
+.mat-card-title {
+  background-color:springgreen;
+}
+
 .full-width {
   width: 100%;
 }
@@ -24,4 +41,29 @@
 
 .col:last-child {
   margin-right: 0;
+}
+
+.login-card {
+  max-width: 400px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+  font-weight: bold;
+  font-size: 22px;
+  color: #3f51b5;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }

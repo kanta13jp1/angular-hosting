@@ -98,3 +98,33 @@
     </mat-card-actions>
   </mat-card>
 </form>
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title class="login-title">bitFlyer API</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="onSubmit()" class="login-form" #loginForm="ngForm">
+      <mat-form-field>
+        <input matInput placeholder="API Key" id="key" [(ngModel)]="keySet.key" name="key" #key="ngModel" required>
+        <mat-error *ngIf="key.errors?.required">You must enter a value</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [type]="hide ? 'password' : 'text'" matInput placeholder="API Secret" id="secret" [(ngModel)]="keySet.secret" name="secret"
+          #secret="ngModel" required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        <mat-error *ngIf="secret.errors?.required">You must enter a value</mat-error>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Message</mat-label>
+    <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+</form>

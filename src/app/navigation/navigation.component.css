@@ -4,6 +4,7 @@
 
 .sidenav {
   width: 200px;
+  position: inherit;
 }
 
 .sidenav .mat-toolbar {
