@@ -50,6 +50,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   imports: [
     BrowserModule,
@@ -80,7 +83,9 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [AdService],
   declarations: [
@@ -107,6 +112,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
     AddressFormComponent,
     NavigationComponent,
     TableComponent,
+    MatDashboardComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]

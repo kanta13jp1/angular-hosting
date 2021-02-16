@@ -17,6 +17,7 @@ import { ChuoKeibaComponent } from './chuo-keiba/chuo-keiba.component';
 import { AddressFormComponent } from './address-form/address-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TableComponent } from './table/table.component';
+import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'address-form', component: AddressFormComponent, data: { animation: 'heroes' }  },
   { path: 'navigation', component: NavigationComponent, data: { animation: 'heroes' }  },
   { path: 'table', component: TableComponent, data: { animation: 'heroes' }  },
+  { path: 'mat-dashboard', component: MatDashboardComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
