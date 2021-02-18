@@ -57,6 +57,9 @@ import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   imports: [
     BrowserModule,
@@ -91,7 +94,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatGridListModule,
     MatMenuModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NgbModule
   ],
   providers: [AdService],
   declarations: [
