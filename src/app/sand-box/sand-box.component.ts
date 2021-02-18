@@ -46,6 +46,15 @@ export class SandBoxComponent implements OnInit {
       .subscribe(hero => this.hero = hero);
   }
 
+  getHeroFromDB(id: number | string): void {
+    this.service.getHero(id)
+      .subscribe(hero => this.hero = hero);
+    this.promiseSetByListArticle = firebase.functions().httpsCallable('getArticle')();
+    let res = this.promiseSetByListArticle;
+    this.articles = res.data;
+    console.log(this.articles)
+  }
+
   public incrementCounter() {
     this.currentCount++;
   }

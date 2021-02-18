@@ -21,6 +21,18 @@ export const listArticle = functions.https.onCall(async (data, context) => {
   return dd.docs.map((doc) => doc.data());
 });
 
+export const getArticle = functions.https.onCall(async (data, context) => {
+  console.log("data = ", data);
+  const id = data.id;
+  console.log("id = ", id);
+  const dd = await admin.firestore().collection("articles").get();
+  dd.docs.forEach((doc) =>
+    console.log("doc.id = ", doc.id));
+  const doc = await admin.firestore().collection("articles").doc(String(id));
+  console.log("doc().id = ", doc.id);
+  return doc;
+});
+
 export const deleteArticle = functions.https.onCall(async (data, context) => {
   console.log("functions.https.onCall() deleteArticle");
   console.log("data = ", data);

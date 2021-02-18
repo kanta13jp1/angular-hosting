@@ -4,13 +4,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Hero } from './hero';
+import { Member } from './member';
 import { MessageService } from '../message.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class HeroService {
+export class MemberService {
 
   private heroesUrl = 'api/heroes';  // URL to web api
 
@@ -23,215 +23,215 @@ export class HeroService {
     private messageService: MessageService) { }
 
   /** GET heroes from the server */
-  getAllHeroes(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}`)
+  getAllMemberes(): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.heroesUrl}`)
       .pipe(
         tap(x => x.length ?
           this.log(`found heroes`) :
           this.log(`no heroes found`)),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Member[]>('getMemberes', []))
       );
   }
 
   /** GET heroes from the server */
-  getHeroes(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?congressman=true`)
+  getMemberes(): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.heroesUrl}/?congressman=true`)
       .pipe(
         tap(x => x.length ?
           this.log(`found heroes matching candidate=true`) :
           this.log(`no heroes matching candidate=true`)),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Member[]>('getMemberes', []))
       );
   }
 
   /** GET heroes from the server */
-  getGroupHeroes(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true`)
+  getGroupMemberes(): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.heroesUrl}/?group=true`)
       .pipe(
         tap(x => x.length ?
           this.log(`found heroes matching group=true`) :
           this.log(`no heroes matching group=true`)),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Member[]>('getMemberes', []))
       );
   }
 
   /** GET heroes from the server */
-  getCandidates(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidate=true`).pipe(
+  getCandidates(): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.heroesUrl}/?candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found candidates matching candidate=true`) :
         this.log(`no candidates matching candidate=true`)),
-      catchError(this.handleError<Hero[]>('getCandidates', []))
+      catchError(this.handleError<Member[]>('getCandidates', []))
     );
   }
 
   /** GET heroes from the server */
-  getCandidatesNoEntry(term: string): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
+  getCandidatesNoEntry(term: string): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found candidates matching candidate=true`) :
         this.log(`no candidates matching candidate=true`)),
-      catchError(this.handleError<Hero[]>('getCandidates', []))
+      catchError(this.handleError<Member[]>('getCandidates', []))
     );
   }
 
   /** GET hero by id. Return `undefined` when id not found */
-  getHeroNo404<Data>(id: number): Observable<Hero> {
+  getMemberNo404<Data>(id: number): Observable<Member> {
     const url = `${this.heroesUrl}/?id=${id}`;
-    return this.http.get<Hero[]>(url)
+    return this.http.get<Member[]>(url)
       .pipe(
         map(heroes => heroes[0]), // returns a {0|1} element array
         tap(h => {
           const outcome = h ? `fetched` : `did not find`;
           this.log(`${outcome} hero id=${id}`);
         }),
-        catchError(this.handleError<Hero>(`getHero id=${id}`))
+        catchError(this.handleError<Member>(`getMember id=${id}`))
       );
   }
 
   /** GET hero by id. Will 404 if id not found */
-  getHero(id: number | string): Observable<Hero> {
+  getMember(id: number | string): Observable<Member> {
     const url = `${this.heroesUrl}/${id}`;
-    return this.http.get<Hero>(url).pipe(
+    return this.http.get<Member>(url).pipe(
       tap(_ => this.log(`fetched hero id=${id}`)),
-      catchError(this.handleError<Hero>(`getHero id=${id}`))
+      catchError(this.handleError<Member>(`getMember id=${id}`))
     );
   }
 
   /** PUT: update the hero on the server */
-  updateHero(hero: Hero): Observable<any> {
+  updateMember(hero: Member): Observable<any> {
     return this.http.put(this.heroesUrl, hero, this.httpOptions).pipe(
       tap(_ => this.log(`updated hero id=${hero.id}`)),
-      catchError(this.handleError<any>('updateHero'))
+      catchError(this.handleError<any>('updateMember'))
     );
   }
 
   /** POST: add a new hero to the server */
-  addHero(hero: Hero): Observable<Hero> {
-    return this.http.post<Hero>(this.heroesUrl, hero, this.httpOptions).pipe(
-      tap((newHero: Hero) => this.log(`added hero w/ id=${newHero.id}`)),
-      catchError(this.handleError<Hero>('addHero'))
+  addMember(hero: Member): Observable<Member> {
+    return this.http.post<Member>(this.heroesUrl, hero, this.httpOptions).pipe(
+      tap((newMember: Member) => this.log(`added hero w/ id=${newMember.id}`)),
+      catchError(this.handleError<Member>('addMember'))
     );
   }
 
   /** DELETE: delete the hero from the server */
-  deleteHero(hero: Hero | number): Observable<Hero> {
+  deleteMember(hero: Member | number): Observable<Member> {
     const id = typeof hero === 'number' ? hero : hero.id;
     const url = `${this.heroesUrl}/${id}`;
 
-    return this.http.delete<Hero>(url, this.httpOptions).pipe(
+    return this.http.delete<Member>(url, this.httpOptions).pipe(
       tap(_ => this.log(`deleted hero id=${id}`)),
-      catchError(this.handleError<Hero>('deleteHero'))
+      catchError(this.handleError<Member>('deleteMember'))
     );
   }
 
   /* GET heroes whose name contains search term */
-  searchHeroes(term: string): Observable<Hero[]> {
+  searchMemberes(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       // return of([]);
-      return this.http.get<Hero[]>(this.heroesUrl)
+      return this.http.get<Member[]>(this.heroesUrl)
       .pipe(
         tap(_ => this.log('fetched heroes')),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Member[]>('getMemberes', []))
       );
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?name=${term}`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"`) :
         this.log(`no heroes matching "${term}"`)),
-      catchError(this.handleError<Hero[]>('searchHeroes', []))
+      catchError(this.handleError<Member[]>('searchMemberes', []))
     );
   }
 
   /* GET heroes whose name contains search term */
-  searchGroupHeroes(term: string): Observable<Hero[]> {
+  searchGroupMemberes(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       // return of([]);
-      return this.http.get<Hero[]>(this.heroesUrl)
+      return this.http.get<Member[]>(this.heroesUrl)
       .pipe(
         tap(_ => this.log('fetched heroes')),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Member[]>('getMemberes', []))
       );
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true&name=${term}`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?group=true&name=${term}`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"`) :
         this.log(`no heroes matching "${term}"`)),
-      catchError(this.handleError<Hero[]>('searchHeroes', []))
+      catchError(this.handleError<Member[]>('searchMemberes', []))
     );
   }
 
-  searchHeroesByBelongs(term: string): Observable<Hero[]> {
+  searchMemberesByBelongs(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}&congressman=true`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?belongs=${term}&congressman=true`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"&congressman=true`) :
         this.log(`no heroes matching "${term}"&congressman=true`)),
-      catchError(this.handleError<Hero[]>('searchHeroes', []))
+      catchError(this.handleError<Member[]>('searchMemberes', []))
     );
   }
 
-  searchGroupHeroesByBelongs(term: string): Observable<Hero[]> {
+  searchGroupMemberesByBelongs(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?group=true&belongs=${term}`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?group=true&belongs=${term}`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"&congressman=true`) :
         this.log(`no heroes matching "${term}"&congressman=true`)),
-      catchError(this.handleError<Hero[]>('searchHeroes', []))
+      catchError(this.handleError<Member[]>('searchMemberes', []))
     );
   }
 
-  searchCandidatesByBelongs(term: string): Observable<Hero[]> {
+  searchCandidatesByBelongs(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?belongs=${term}&candidate=true`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?belongs=${term}&candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found heroes matching "${term}"&candidate=true`) :
         this.log(`no heroes matching "${term}"&candidate=true`)),
-      catchError(this.handleError<Hero[]>('searchHeroes', []))
+      catchError(this.handleError<Member[]>('searchMemberes', []))
     );
   }
 
-  searchCandidatesByCandidateDistrictBlock(term: string): Observable<Hero[]> {
+  searchCandidatesByCandidateDistrictBlock(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidatedistrictblock=${term}&candidate=true`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?candidatedistrictblock=${term}&candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found candidates matching "${term}"&candidate=true`) :
         this.log(`no candidates matching "${term}"&candidate=true`)),
-      catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
+      catchError(this.handleError<Member[]>('searchCandidatesByCandidateDistrictBlock', []))
     );
   }
 
-  searchCandidatesByCandidateDistrictBlockNoEntory(term: string): Observable<Hero[]> {
+  searchCandidatesByCandidateDistrictBlockNoEntory(term: string): Observable<Member[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
     }
     let noentory = '未定';
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${noentory}&candidatedistrictblock=${term}&candidate=true`).pipe(
+    return this.http.get<Member[]>(`${this.heroesUrl}/?name=${noentory}&candidatedistrictblock=${term}&candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found candidates matching "${term}"&candidate=true`) :
         this.log(`no candidates matching "${term}"&candidate=true`)),
-      catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
+      catchError(this.handleError<Member[]>('searchCandidatesByCandidateDistrictBlock', []))
     );
   }
 
-  /** Log a HeroService message with the MessageService */
+  /** Log a MemberService message with the MessageService */
   private log(message: string) {
-    this.messageService.add(`HeroService: ${message}`);
+    this.messageService.add(`MemberService: ${message}`);
   }
 
   /**

@@ -1,1 +1,46 @@
-<p>member-list works!</p>
+<div class="content">
+  <h2>第49回衆院選公認候補者一覧</h2>
+  <div id="filter">
+    <button (click)="getCandidates()">全候補者</button>
+    <button (click)="filterBlock('北海道')">北海道ブロック</button>
+    <button (click)="filterBlock('東北')">東北ブロック</button>
+    <button (click)="filterBlock('北陸信越')">北陸信越ブロック</button>
+    <button (click)="filterBlock('北関東')">北関東ブロック</button>
+    <button (click)="filterBlock('東京')">東京ブロック</button>
+    <button (click)="filterBlock('南関東')">南関東ブロック</button>
+    <button (click)="filterBlock('東海')">東海ブロック</button>
+    <button (click)="filterBlock('近畿')">近畿ブロック</button>
+    <button (click)="filterBlock('中国')">中国ブロック</button>
+    <button (click)="filterBlock('四国')">四国ブロック</button>
+    <button (click)="filterBlock('九州')">九州ブロック</button>
+  </div>
+  <div *ngIf="heroes && noentories" ng-controller="heroes" class="count">
+    <span>{{block}}　{{heroes.length - noentories.length}}名</span>
+  </div>
+  <div *ngIf="heroes" class="grid grid-pad">
+    <a *ngFor="let hero of heroes" class="col-1-4"
+        routerLink="/detail/{{hero.id}}">
+      <div *ngIf="hero.name == '未定'; else entoryBlock" class="no-entory-module hero">
+        <h2>{{hero.name}}</h2>
+        <h4>{{hero.candidateType}}</h4>
+        <h4 class="district">{{hero.candidatePrefecture}}{{hero.candidatedistrict}}</h4>
+        <h3>{{hero.belongs}}</h3>
+        <h4>当選{{hero.count}}回</h4>
+      </div>
+      <ng-template #entoryBlock>
+      <div class="module hero">
+        <h2>{{hero.name}}</h2>
+        <h4>{{hero.candidateType}}</h4>
+        <h4 class="district">{{hero.candidatePrefecture}}{{hero.candidatedistrict}}</h4>
+        <h3>{{hero.belongs}}</h3>
+        <h4>当選{{hero.count}}回</h4>
+        <img
+          width="40"
+          alt="No image"
+          src={{hero.image}}
+        />
+      </div>
+    </ng-template>
+    </a>
+  </div>
+</div>
