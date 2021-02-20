@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './animations';
 import { AdService } from './ad.service';
 import { AdItem } from './ad-item';
+import { Comment } from './class/chat';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

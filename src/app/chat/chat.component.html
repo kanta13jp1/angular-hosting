@@ -4,16 +4,18 @@
       NgChat
     </div>
     <div class="card-body">
+      <ng-container *ngFor="let comment of comments"><!--追加-->
       <div class="media">
         <div class="media-left">
           <a href="#" class="icon-rounded">S</a>
         </div>
         <div class="media-body">
-          <h4 class="media-heading">Suzuki Taro Date:2016/09/01</h4>
-          <div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+          <h4 class="media-heading">{{comment.name}} Date:2016/09/01</h4><!--comment.nameに変更-->
+          <div>{{comment.content}}</div><!--comment.contentに変更-->
         </div>
       </div>
       <hr>
+      </ng-container>
       <div class="media">
         <div class="media-body">
           <h4 class="media-heading">Tanaka Jiro Date:2016/09/01</h4>
