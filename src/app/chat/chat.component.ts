@@ -18,11 +18,17 @@ const COMMENTS: Comment[] = [ // クラスを元にコメントを作成
 export class ChatComponent implements OnInit {
   public content = '';
   public comments = COMMENTS;
-  public currentUser = CURRENT_USER; // 追加
+  public current_user = CURRENT_USER;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  // 新しいコメントを追加
+  addComment(comment: string) {
+    if (comment) {
+      this.comments.push(new Comment(this.current_user, comment));
+    }
+  }
 }
