@@ -15,7 +15,7 @@
   <div *ngIf="heroes" class="grid grid-pad">
     <a *ngFor="let hero of heroes" class="col-1-4"
         routerLink="/detail/{{hero.id}}">
-      <div class="module hero">
+      <div class="module hero" [style.background-color]="hero.belongs !== '衆議院' ? '#f5f5dc' : '#f0f8ff'">
         <h2>{{hero.name}}</h2>
         <h4>{{hero.role}}</h4>
         <h4 *ngIf="hero.role2">{{hero.role2}}</h4>
