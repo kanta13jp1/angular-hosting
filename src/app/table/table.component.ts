@@ -44,7 +44,7 @@ export class TableComponent implements AfterViewInit, OnInit {
   public async listArticle() {
     const lock = new AsyncLock();
     lock.acquire("listArticle", async () => {});
-    console.log("sand-box: listArticle()")
+    console.log("table: listArticle()")
     this.promiseSetByListArticle = await firebase.functions().httpsCallable('listArticle')();
     let res = await this.promiseSetByListArticle;
     this.articles = res.data;

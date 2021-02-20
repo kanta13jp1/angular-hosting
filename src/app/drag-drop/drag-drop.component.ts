@@ -63,8 +63,8 @@ export class DragDropComponent implements AfterViewInit, OnInit  {
   public async listArticle() {
     const lock = new AsyncLock();
     lock.acquire("listArticle", async () => {});
-    console.log("sand-box: listArticle()")
-    this.promiseSetByListArticle = await firebase.functions().httpsCallable('listArticle');
+    console.log("drag-drop.component.ts: listArticle()")
+    this.promiseSetByListArticle = await firebase.functions().httpsCallable('listArticle')();
     let res = await this.promiseSetByListArticle;
     this.db = res.data;
     console.log(this.db)

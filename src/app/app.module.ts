@@ -60,6 +60,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChatComponent } from './chat/chat.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -126,6 +127,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatDashboardComponent,
     TreeComponent,
     DragDropComponent,
+    ChatComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]

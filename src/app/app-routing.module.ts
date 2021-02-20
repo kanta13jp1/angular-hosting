@@ -20,6 +20,7 @@ import { TableComponent } from './table/table.component';
 import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
 import { TreeComponent } from './tree/tree.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { ChatComponent } from './chat/chat.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   { path: 'mat-dashboard', component: MatDashboardComponent, data: { animation: 'heroes' }  },
   { path: 'tree', component: TreeComponent, data: { animation: 'heroes' }  },
   { path: 'drag-drop', component: DragDropComponent, data: { animation: 'heroes' }  },
+  { path: 'chat', component: ChatComponent, data: { animation: 'heroes' }  },
   { path: '**', component: PageNotFoundComponent}
 ];
 
