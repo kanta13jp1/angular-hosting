@@ -11,7 +11,8 @@
           <a href="#" class="icon-rounded">{{comment.initial}}</a>
         </div>
         <div class="media-body">
-          <h4 class="media-heading">{{comment.user.name}} Date:2016/09/01</h4>
+          <!--DatePipeを追加-->
+          <h4 class="media-heading">{{comment.user.name}} Date:{{comment.date | date:'medium'}}</h4>
           <div>{{comment.content}}</div>
         </div>
         <!--current_user.uidとcomment.user.uidが等しい場合に表示-->
