@@ -12,7 +12,7 @@
         </div>
         <div class="media-body">
           <!--DatePipeを追加-->
-          <h4 class="media-heading">{{comment.user.name}} Date:{{comment.date | date:'medium'}}</h4>
+          <h4 class="media-heading">{{comment.user.name}}  Date: {{comment.date | chatDate}}</h4>
           <div>{{comment.content}}</div>
         </div>
         <!--current_user.uidとcomment.user.uidが等しい場合に表示-->

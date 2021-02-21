@@ -61,6 +61,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './chat/chat.component';
+import { ChatDatePipe } from './pipe/chat-date.pipe';
 @NgModule({
   imports: [
     BrowserModule,
@@ -128,6 +129,7 @@ import { ChatComponent } from './chat/chat.component';
     TreeComponent,
     DragDropComponent,
     ChatComponent,
+    ChatDatePipe,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
