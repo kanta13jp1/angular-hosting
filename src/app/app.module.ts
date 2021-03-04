@@ -63,7 +63,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './chat/chat.component';
-import { SharedModule } from './shared/shared.module'; // 追加
+import { SharedModule } from './shared/shared.module';
+import { HeaderComponent } from './header/header.component'; // 追加
 @NgModule({
   imports: [
     BrowserModule,
@@ -134,6 +135,7 @@ import { SharedModule } from './shared/shared.module'; // 追加
     TreeComponent,
     DragDropComponent,
     ChatComponent,
+    HeaderComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
