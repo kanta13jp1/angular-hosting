@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment'; // 追加
+import { AngularFireModule } from '@angular/fire'; // 追加
+import { AngularFirestoreModule } from '@angular/fire/firestore'; // 追加
+import { AngularFireAuthModule } from '@angular/fire/auth'; // 追加
 import { Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -58,14 +61,15 @@ import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './chat/chat.component';
-import { ChatDatePipe } from './pipe/chat-date.pipe';
+import { SharedModule } from './shared/shared.module'; // 追加
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase), // 追加,
+    AngularFirestoreModule,  // 追加
+    AngularFireAuthModule,  // 追加
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -98,7 +102,8 @@ import { ChatDatePipe } from './pipe/chat-date.pipe';
     MatTreeModule,
     DragDropModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NgbModule
+    NgbModule,
+    SharedModule, // 追加
   ],
   providers: [AdService],
   declarations: [
@@ -129,7 +134,6 @@ import { ChatDatePipe } from './pipe/chat-date.pipe';
     TreeComponent,
     DragDropComponent,
     ChatComponent,
-    ChatDatePipe,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
