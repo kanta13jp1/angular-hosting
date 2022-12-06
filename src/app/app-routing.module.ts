@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { JiminComponent } from './jimin/jimin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
@@ -23,7 +24,8 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { ChatComponent } from './chat/chat.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/jimin', pathMatch: 'full' },
+  { path: 'jimin', component: JiminComponent, data: { animation: 'heroes' } },
   { path: 'dashboard', component: DashboardComponent, data: { animation: 'heroes' } },
   { path: 'detail/:id', component: HeroDetailComponent, data: { animation: 'hero' } },
   { path: 'heroes', component: HeroesComponent, data: { animation: 'heroes' } },

@@ -64,7 +64,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './chat/chat.component';
 import { SharedModule } from './shared/shared.module';
-import { HeaderComponent } from './header/header.component'; // 追加
+import { HeaderComponent } from './header/header.component';
+import { JiminComponent } from './jimin/jimin.component'; // 追加
 @NgModule({
   imports: [
     BrowserModule,
@@ -109,6 +110,7 @@ import { HeaderComponent } from './header/header.component'; // 追加
   providers: [AdService],
   declarations: [
     AppComponent,
+    JiminComponent,
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
@@ -136,6 +138,7 @@ import { HeaderComponent } from './header/header.component'; // 追加
     DragDropComponent,
     ChatComponent,
     HeaderComponent,
+    JiminComponent,
   ],
   entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],
   bootstrap: [ AppComponent ]
