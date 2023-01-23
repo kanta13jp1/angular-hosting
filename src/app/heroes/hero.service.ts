@@ -56,8 +56,28 @@ export class HeroService {
   }
 
   /** GET heroes from the server */
+  getLocalCandidates(): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?localcandidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching candidate=true`) :
+        this.log(`no candidates matching candidate=true`)),
+      catchError(this.handleError<Hero[]>('getLocalCandidates', []))
+    );
+  }
+
+  /** GET heroes from the server */
   getCandidates(): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${this.heroesUrl}/?candidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching candidate=true`) :
+        this.log(`no candidates matching candidate=true`)),
+      catchError(this.handleError<Hero[]>('getCandidates', []))
+    );
+  }
+
+  /** GET heroes from the server */
+  getLocalCandidatesNoEntry(term: string): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
       tap(x => x.length ?
         this.log(`found candidates matching candidate=true`) :
         this.log(`no candidates matching candidate=true`)),
@@ -199,6 +219,19 @@ export class HeroService {
         this.log(`found heroes matching "${term}"&candidate=true`) :
         this.log(`no heroes matching "${term}"&candidate=true`)),
       catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+
+  searchLocalCandidatesByCandidateDistrictBlock(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidatedistrictblock=${term}&localcandidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching "${term}"&candidate=true`) :
+        this.log(`no candidates matching "${term}"&candidate=true`)),
+      catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
     );
   }
 

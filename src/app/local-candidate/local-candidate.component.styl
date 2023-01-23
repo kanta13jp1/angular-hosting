@@ -1,0 +1,156 @@
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h4 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  margin:10px;
+}
+#search-component {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.count {
+  text-align: center;
+  font-size: x-large;
+}
+.district {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.grid {
+  margin: 0;
+  width: 960px;
+}
+.col-1-4 {
+  width: 240px;
+}
+.module {
+  padding: 10px;
+  text-align: center;
+  color: #003F88;
+  height: 200px;
+  width: 200px;
+  background-color: #FAEB00;
+  border-radius: 130px;
+  margin-left: 20px;
+}
+.no-entory-module {
+  padding: 10px;
+  text-align: center;
+  color: #607d8b
+  height: 200px;
+  width: 200px;
+  background-color:lightgray;
+  border-radius: 130px;
+  margin-left: 20px;
+}
+.module:hover {
+  background-color: #003F88;
+  cursor: pointer;
+  color: #FAEB00;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media screen and (max-width:420px) {
+  .col-1-4 {
+    width: 68px;
+  }
+  .module {
+    font-size: 10px;
+    width: 62px;
+    height: 260px; }
+  .no-entory-module {
+    font-size: 10px;
+    width: 62px;
+    height: 260px; }
+}
+@media screen and (min-width:421px) and (max-width: 500px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
+  .no-entory-module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
+}
+@media screen and (min-width:501px) and (max-width: 700px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    font-size: 8px;
+    width: 116px;
+    height: 116px; }
+  .no-entory-module {
+    font-size: 8px;
+    width: 116px;
+    height: 116px; }
+}
+@media screen and (min-width:701px) and (max-width: 800px) {
+  .content {
+    display: inline-flex;
+  }
+  .grid {
+    margin: 0;
+  }
+  .module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
+  .no-entory-module {
+    font-size: 12px;
+    width: 160px;
+    height: 160px; }
+}
+@media screen and (min-width:801px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    font-size: 16px;
+    width: 220px;
+    height: 220px;
+  }
+  .no-entory-module {
+    font-size: 16px;
+    width: 220px;
+    height: 220px;
+  }
+}

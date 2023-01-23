@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { JiminComponent } from './jimin/jimin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
@@ -22,13 +21,16 @@ import { MatDashboardComponent } from './mat-dashboard/mat-dashboard.component';
 import { TreeComponent } from './tree/tree.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { ChatComponent } from './chat/chat.component';
+import { LocalCandidateComponent } from './local-candidate/local-candidate.component';
+import { JiminComponent } from './jimin/jimin.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/jimin', pathMatch: 'full' },
+  { path: '', redirectTo: '/local-candidate', pathMatch: 'full' },
   { path: 'jimin', component: JiminComponent, data: { animation: 'heroes' } },
   { path: 'dashboard', component: DashboardComponent, data: { animation: 'heroes' } },
   { path: 'detail/:id', component: HeroDetailComponent, data: { animation: 'hero' } },
   { path: 'heroes', component: HeroesComponent, data: { animation: 'heroes' } },
+  { path: 'local-candidate', component: LocalCandidateComponent, data: { animation: 'heroes' } },
   { path: 'candidate-list', component: CandidateListComponent, data: { animation: 'heroes' } },
   { path: 'hero-list', component: HeroListComponent, data: { animation: 'heroes' } },
   { path: 'crisis-list', component: CrisisListComponent, data: { animation: 'heroes' }  },
