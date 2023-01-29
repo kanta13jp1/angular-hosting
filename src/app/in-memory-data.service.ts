@@ -82,13 +82,48 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 51, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '4区' },
       { id: 52, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '5区' },
       { id: 53, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '6区' },
-      { id: 54, name: '大内一也', role: '', belongs: '山口県議会', almaMater: '', district: '周南市', count: 0, twitter: 'ouchi_kazuya', congressman: false, candidate: true, localcandidate: true, candidateType: '山口県議会議員選挙', candidatedistrictblock: '中国', candidatePrefecture: '山口県', candidatedistrict: '周南市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/28c7b5986dcdd248f4ae69b2194d5c33.jpg' },
-      { id: 55, name: '黒田太郎', role: '', belongs: '愛知県議会', almaMater: '', district: '名古屋市千種区', count: 0, twitter: 'kuroda__taro', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市千種区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/62553641afa5e1e0423d5433bc782049-e1666146906691.jpg' },
-      { id: 56, name: '森井元志', role: '', belongs: '愛知県議会', almaMater: '', district: '名古屋市守山区', count: 0, twitter: 'motoshimorii', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市守山区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/de24898cddb751a4459aa76c8650657e-scaled-e1665113999493.jpg' },
-      { id: 57, name: '吉村大志郎', role: '', belongs: '宮崎県議会', almaMater: '', district: '宮崎市', count: 0, twitter: 'Shiro117385631', congressman: false, candidate: true, localcandidate: true, candidateType: '宮崎県議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '宮崎市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/b24da5ed64f6211e448a7fb02074d10f-scaled-e1665131017481.jpg' },
-      { id: 58, name: '中村健太郎', role: '', belongs: '田原市議会', almaMater: '', district: '田原市', count: 0, twitter: 'nkm27', birthday: '1993/07/25',congressman: false, candidate: true, localcandidate: true, candidateType: '田原市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '田原市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/IMG_0290-e1672116228794.jpg' },
-      { id: 59, name: '松本怜子', role: '', belongs: '福岡市議会', almaMater: '', district: '福岡市', count: 0, twitter: 'reiko_mtsmt', birthday: '1995/03/17',congressman: false, candidate: true, localcandidate: true, candidateType: '福岡市議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '福岡県', candidatedistrict: '福岡市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/a88cfde7c2b863f894355db0dbcff514-e1667355369416.jpeg' },
-      { id: 60, name: '岡田光正', role: '', belongs: '焼津市議会', almaMater: '', district: '焼津市', count: 0, twitter: 'sizuoka35bank', birthday: '1952/12/09',congressman: false, candidate: true, localcandidate: true, candidateType: '焼津市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '焼津市', image: 'https://new-kokumin.jp/wp-content/uploads/2020/11/12ef64742fde89fb0594f0e371ce4818-e1671605011490.jpg' },
+      { id: 54, name: '大内一也', role: '', election: '山口県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', belongs: '', almaMater: '', district: '', count: 0, birthday: '1973/10/10', twitter: 'ouchi_kazuya', congressman: false, candidate: true, localcandidate: true, candidateType: '山口県議会議員選挙', license:'公認', newcomer:'新人', continuecount: 0, candidatedistrictblock: '中国', candidatePrefecture: '山口県', candidatedistrict: '周南市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/28c7b5986dcdd248f4ae69b2194d5c33.jpg', hp: '大内 一也', url: 'https://www.ouchikazuya.com/', detail: '1973年10月生まれ（周南市出身）\n\
+      徳山幼稚園～ 徳山小学校～ 岐陽中学校～ 徳山高等学校を経て\n\
+      1996年\n\
+      山口大学経済学部卒業\n\
+      同年、NTT（現NTT西日本）に入社\n\
+      フレッツ立ち上げメンバーの一人\n\
+      2005年\n\
+      株式会社FCEエデュケーションに入社\n\
+      子どものやる気と自信を育む教材作成\n\
+      2012年\n\
+      株式会社キャリア・クロップを設立\n\
+      主に学生、若者向けに就職支援、研修を行う\n\
+      2015年\n\
+      千葉県鎌ケ谷市議会議員初当選\n\
+      2017年\n\
+      3月に民進党山口県第1区総支部長に着任\n\
+      10月の第48回衆院選に山口1区から出馬\n\
+      36,582票をいただくも敗戦\n\
+      その後地元周南市にて介護職に関わる\n\
+      2018年\n\
+      6月に国民民主党山口県第1区総支部長に着任​\n\
+      2019年\n\
+      7月の第25回参院選に山口県選挙区から出馬\n\
+      118,491票をいただくも落選\n\
+      2021年　\n\
+      10月に行われた第49回衆院選に山口1区から出馬\n\
+      50,684票をいただくも落選\n\
+      2022年　\n\
+      3月に国民民主党山口県総支部連合会代表\n\
+      4月に山口県参議院選挙区第1総支部長に着任' },
+      { id: 55, name: '黒田太郎', role: '', election: '愛知県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', belongs: '', almaMater: '', district: '名古屋市千種区', count: 0, twitter: 'kuroda__taro', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', license:'公認', newcomer:'現職', continuecount: 2, candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市千種区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/62553641afa5e1e0423d5433bc782049-e1666146906691.jpg', detail: '1990年　東大経済学部卒業、日銀入行\n\
+      2002年　大塚耕平参議院議員秘書\n\
+      2014年　古川元久衆議院議員秘書\n\
+      2015年　愛知県議会議員' },
+      { id: 56, name: '森井元志', role: '', election: '愛知県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 4, belongs: '愛知県議会', almaMater: '', district: '', count: 0, twitter: 'motoshimorii', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市守山区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/de24898cddb751a4459aa76c8650657e-scaled-e1665113999493.jpg' },
+      { id: 57, name: '吉村大志郎', role: '', election: '宮崎県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'Shiro117385631', congressman: false, candidate: true, localcandidate: true, candidateType: '宮崎県議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '宮崎市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/b24da5ed64f6211e448a7fb02074d10f-scaled-e1665131017481.jpg' },
+      { id: 58, name: '中村健太郎', role: '', election: '田原市議会議員選挙', kokujibi: '2023/1/22', tohyobi: '2023/1/29', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'nkm27', birthday: '1993/07/25',congressman: false, candidate: true, localcandidate: false, candidateType: '田原市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '田原市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/IMG_0290-e1672116228794.jpg' },
+      { id: 59, name: '松本怜子', role: '', election: '福岡市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'reiko_mtsmt', birthday: '1995/03/17',congressman: false, candidate: true, localcandidate: true, candidateType: '福岡市議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '福岡県', candidatedistrict: '福岡市西区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/a88cfde7c2b863f894355db0dbcff514-e1667355369416.jpeg' },
+      { id: 60, name: '岡田光正', role: '', election: '焼津市議会議員選挙', kokujibi: '2023/1/29', tohyobi: '2023/2/5', belongs: '焼津市議会', almaMater: '', district: '焼津市', count: 0, twitter: 'sizuoka35bank', birthday: '1952/12/09',congressman: false, candidate: true, localcandidate: true, candidateType: '焼津市議会議員選挙', license:'推薦', newcomer:'現職', continuecount: 3, candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '焼津市', image: 'https://new-kokumin.jp/wp-content/uploads/2020/11/12ef64742fde89fb0594f0e371ce4818-e1671605011490.jpg' },
+      { id: 61, name: '小名木勇人', role: '', election: '浜松市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'推薦', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'isato_konagi', birthday: '1978/07/16',congressman: false, candidate: true, localcandidate: true, candidateType: '浜松市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '浜松市南区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/d95784511884eae025a9c3e867694240-scaled.jpg' },
+      { id: 62, name: '岩佐祐一', role: '', election: '門川町議会議員選挙', kokujibi: '2023/2/14', tohyobi: '2023/2/19', license:'公認', newcomer:'現職', continuecount: 3, belongs: '門川町議会', almaMater: '', district: '', count: 0, twitter: '', birthday: '1951/09/05',congressman: false, candidate: true, localcandidate: true, candidateType: '門川町議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '門川町', image: 'https://new-kokumin.jp/wp-content/uploads/2022/08/4ef54f1c9534aed6dc7b6d3a9fb9d3a2-scaled-e1668043348618.jpg' },
+      { id: 63, name: '小川陽平', role: '', election: '北海道議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'yoheiogawa_DPFP', birthday: '1990/01/10',congressman: false, candidate: true, localcandidate: true, candidateType: '北海道議会議員選挙', candidatedistrictblock: '北海道', candidatePrefecture: '北海道', candidatedistrict: '札幌市中央区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/f05c363e6bd1fa8ae802a3b2c35869cc-scaled-e1668133350492.jpg', detail: '株式会社オガワヤ　代表取締役' },
     ];
     return {heroes};
   }
