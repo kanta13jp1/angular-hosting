@@ -76,16 +76,6 @@ export class HeroService {
   }
 
   /** GET heroes from the server */
-  getLocalCandidatesNoEntry(term: string): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
-      tap(x => x.length ?
-        this.log(`found candidates matching candidate=true`) :
-        this.log(`no candidates matching candidate=true`)),
-      catchError(this.handleError<Hero[]>('getCandidates', []))
-    );
-  }
-
-  /** GET heroes from the server */
   getCandidatesNoEntry(term: string): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}&candidate=true`).pipe(
       tap(x => x.length ?
