@@ -138,6 +138,7 @@
   },
   "defaultProject": "angular-hosting",
   "cli": {
-    "analytics": "19851ba7-556d-4ad5-aa0a-abb9e5438b20"
+    "analytics": "19851ba7-556d-4ad5-aa0a-abb9e5438b20",
+    "packageManager": "pnpm"
   }
 }
