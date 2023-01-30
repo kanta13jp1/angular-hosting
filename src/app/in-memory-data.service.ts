@@ -124,6 +124,24 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 61, name: '小名木勇人', role: '', election: '浜松市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'推薦', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'isato_konagi', birthday: '1978/07/16',congressman: false, candidate: true, localcandidate: true, candidateType: '浜松市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '浜松市南区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/d95784511884eae025a9c3e867694240-scaled.jpg' },
       { id: 62, name: '岩佐祐一', role: '', election: '門川町議会議員選挙', kokujibi: '2023/2/14', tohyobi: '2023/2/19', license:'公認', newcomer:'現職', continuecount: 3, belongs: '門川町議会', almaMater: '', district: '', count: 0, twitter: '', birthday: '1951/09/05',congressman: false, candidate: true, localcandidate: true, candidateType: '門川町議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '門川町', image: 'https://new-kokumin.jp/wp-content/uploads/2022/08/4ef54f1c9534aed6dc7b6d3a9fb9d3a2-scaled-e1668043348618.jpg' },
       { id: 63, name: '小川陽平', role: '', election: '北海道議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'yoheiogawa_DPFP', birthday: '1990/01/10',congressman: false, candidate: true, localcandidate: true, candidateType: '北海道議会議員選挙', candidatedistrictblock: '北海道', candidatePrefecture: '北海道', candidatedistrict: '札幌市中央区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/f05c363e6bd1fa8ae802a3b2c35869cc-scaled-e1668133350492.jpg', detail: '株式会社オガワヤ　代表取締役' },
+      { id: 64, name: '浅岡志麻', role: '', election: '愛媛県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'mirailabo0913', birthday: '1974/11/01',congressman: false, candidate: true, localcandidate: true, candidateType: '愛媛県議会議員選挙', candidatedistrictblock: '四国', candidatePrefecture: '愛媛県', candidatedistrict: '松山市・上浮穴郡', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/dbfb83af6f81d0fbd3d05c130500f9f0-e1668421112462.jpg', detail: '1997年　松山大学人文学部英語英米文学科卒業\n\
+      1998年　株式会社Egg & Chick入社\n\
+      2000年　株式会社コンベックス入社\n\
+      2018年　株式会社ミライ・ラボ創業\n\
+      大学卒業後、子ども英語教室講師を経て、\n\
+      採用コンサルティング会社に\n\
+      創業メンバーとして参画。\n\
+      中小企業の新卒・中途採用サポートや、\n\
+      大学生の就職支援業務等に約１２年従事。\n\
+      その後、2018年10月に\n\
+      「自ら考え、自ら選び、自ら学ぶ」\n\
+      “教えない”学習塾「STUDY BASEミライ∞ラボ」\n\
+      を開校し5年目。\n\
+      株式会社ミライ・ラボ 代表取締役\n\
+      NPO法人こどものみらいプロジェクト\n\
+      ゆめドリ愛媛サテライト 副事務局長\n\
+      カナエルエヒメ 代表' },
+      { id: 65, name: '鈴木一正', role: '', election: '秋田市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1985/08/20',congressman: false, candidate: true, localcandidate: true, candidateType: '秋田市議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '秋田県', candidatedistrict: '秋田市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/1b2af150c88ff4794789b191cad51f75-scaled-e1670890234420.jpg', detail: 'ー' },
     ];
     return {heroes};
   }

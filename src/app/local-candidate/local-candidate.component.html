@@ -1,5 +1,16 @@
 <div class="content">
-  <h2>統一地方選　国民民主党公認/推薦候補者一覧</h2>
+  <div class="m-4 keepall">
+    <h1>国民民主党　統一地方選　公認 / 推薦 候補者一覧</h1>
+  </div>
+  <div class="m-4 count keepall">
+    <h3>本日は <span class="today">{{nowDate | date:'yyyy年MM月dd日'}}</span> です。</h3>
+  </div>
+  <div class="m-4 count keepall">
+    <h3>統一地方選の告示日 <span class="today">{{koujibi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="kokujibi">{{getDiffDays(nowDate,koujibi)}}</span> 日です。</h3>
+  </div>
+  <div class="m-4 count keepall">
+    <h3>統一地方選の投票日 <span class="today">{{tohyobi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="tohyobi">{{getDiffDays(nowDate,tohyobi)}}</span> 日です。</h3>
+  </div>
   <div id="filter">
     <button (click)="getLocalCandidates()">全候補者</button>
     <button (click)="filterBlock('北海道')">北海道ブロック</button>
@@ -16,6 +27,12 @@
   </div>
   <div *ngIf="heroes" ng-controller="heroes" class="count">
     <span>{{block}}　{{heroes.length}}名</span>
+  </div>
+  <div *ngIf="heroes && recommends" ng-controller="heroes" class="count">
+    <span>公認　{{heroes.length - recommends.length}}名</span>
+  </div>
+  <div *ngIf="recommends" ng-controller="recommends" class="count">
+    <span>推薦　{{recommends.length}}名</span>
   </div>
   <div *ngIf="heroes" class="grid grid-pad">
     <a *ngFor="let hero of heroes" class="col-1-4"

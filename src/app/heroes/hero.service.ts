@@ -65,6 +65,19 @@ export class HeroService {
     );
   }
 
+  searchLocalCandidatesByLisence(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?license=${term}&localcandidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found heroes matching "${term}"&congressman=true`) :
+        this.log(`no heroes matching "${term}"&congressman=true`)),
+      catchError(this.handleError<Hero[]>('searchLocalCandidatesByLisence', []))
+    );
+  }
+
   /** GET heroes from the server */
   getCandidates(): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${this.heroesUrl}/?candidate=true`).pipe(
@@ -213,6 +226,7 @@ export class HeroService {
   }
 
   searchLocalCandidatesByCandidateDistrictBlock(term: string): Observable<Hero[]> {
+    console.log("searchLocalCandidatesByCandidateDistrictBlock()" + term);
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
@@ -222,6 +236,20 @@ export class HeroService {
         this.log(`found candidates matching "${term}"&candidate=true`) :
         this.log(`no candidates matching "${term}"&candidate=true`)),
       catchError(this.handleError<Hero[]>('searchCandidatesByCandidateDistrictBlock', []))
+    );
+  }
+
+  searchRecommendLocalCandidatesByCandidateDistrictBlock(term: string, license: string): Observable<Hero[]> {
+    console.log("searchRecommendLocalCandidatesByCandidateDistrictBlock()" + term);
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?candidatedistrictblock=${term}&localcandidate=true&license=${license}`).pipe(
+      tap(x => x.length ?
+        this.log(`found candidates matching "${term}"&candidate=true`) :
+        this.log(`no candidates matching "${term}"&candidate=true`)),
+      catchError(this.handleError<Hero[]>('searchRecommendLocalCandidatesByCandidateDistrictBlock', []))
     );
   }
 
