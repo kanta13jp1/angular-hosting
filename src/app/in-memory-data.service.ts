@@ -142,6 +142,7 @@ export class InMemoryDataService implements InMemoryDbService {
       ゆめドリ愛媛サテライト 副事務局長\n\
       カナエルエヒメ 代表' },
       { id: 65, name: '鈴木一正', role: '', election: '秋田市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1985/08/20',congressman: false, candidate: true, localcandidate: true, candidateType: '秋田市議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '秋田県', candidatedistrict: '秋田市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/1b2af150c88ff4794789b191cad51f75-scaled-e1670890234420.jpg', detail: 'ー' },
+      { id: 66, name: '三澤寛人', role: '', election: '長岡市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'New__wind', birthday: '1996/01/20',congressman: false, candidate: true, localcandidate: true, candidateType: '長岡市議会議員選挙', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟県', candidatedistrict: '長岡市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/e75c78947d11ed00cbbb0cc7f3658583.jpeg', detail: 'ー' },
     ];
     return {heroes};
   }
