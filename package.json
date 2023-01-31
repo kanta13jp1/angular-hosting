@@ -38,9 +38,9 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "^0.1303.10",
-    "@angular-devkit/build-angular": "^13.3.10",
-    "@angular/cli": "^13.3.10",
+    "@angular-devkit/architect": "^0.1402.10",
+    "@angular-devkit/build-angular": "^14.2.10",
+    "@angular/cli": "^14.2.10",
     "@angular/compiler-cli": "^15.1.2",
     "@types/google.analytics": "0.0.41",
     "@types/jasmine": "^3.6.3",
