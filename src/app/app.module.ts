@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment'; // 追加
-import { AngularFireModule } from '@angular/fire'; // 追加
-import { AngularFirestoreModule } from '@angular/fire/firestore'; // 追加
-import { AngularFireAuthModule } from '@angular/fire/auth'; // 追加
+import { AngularFireModule } from '@angular/fire/compat'; // 追加
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore'; // 追加
+import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // 追加
 import { Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
