@@ -13,7 +13,7 @@ specifiers:
   '@angular/fire': ^6.1.0-rc.4
   '@angular/forms': ^13.3.12
   '@angular/localize': ^13.3.12
-  '@angular/material': ^11.2.1
+  '@angular/material': ^12.2.13
   '@angular/platform-browser': ^13.3.12
   '@angular/platform-browser-dynamic': ^13.3.12
   '@angular/router': ^13.3.12
@@ -59,7 +59,7 @@ dependencies:
   '@angular/fire': 6.1.5_kwnrxa6agqqlnttnmn77jnzq6y
   '@angular/forms': 13.3.12_e6wakku33legfqejr4rjdmi2ia
   '@angular/localize': 13.3.12_wwj3ipeewgdqb6xiftqmhz3som
-  '@angular/material': 11.2.13_dv4lg62rrhlok37dmof4uiubqi
+  '@angular/material': 12.2.13_cxf63wkyd66edvpgrzaxo3iyyu
   '@angular/platform-browser': 13.3.12_acwdh3s5scpi27yetsnk333ipe
   '@angular/platform-browser-dynamic': 13.3.12_lfh4sfbrsw42sg4wkiqtq6co5y
   '@angular/router': 13.3.12_e6wakku33legfqejr4rjdmi2ia
@@ -456,20 +456,22 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@angular/material/11.2.13_dv4lg62rrhlok37dmof4uiubqi:
-    resolution: {integrity: sha512-FqFdGSkOtqsmeLyTSousodDGUy2NqbtxCIKv2rwbsIRwHNKB0KpR/UQhA2gMRuGa5hxhMJ0DW0Tf9neMRuLCTg==}
+  /@angular/material/12.2.13_cxf63wkyd66edvpgrzaxo3iyyu:
+    resolution: {integrity: sha512-6g2GyN4qp2D+DqY2AwrQuPB3cd9gybvQVXvNRbTPXEulHr+LgGei00ySdFHFp6RvdGSMZ4i3LM1Fq3VkFxhCfQ==}
     peerDependencies:
-      '@angular/animations': ^11.0.0 || ^12.0.0-0
-      '@angular/cdk': 11.2.13
-      '@angular/common': ^11.0.0 || ^12.0.0-0
-      '@angular/core': ^11.0.0 || ^12.0.0-0
-      '@angular/forms': ^11.0.0 || ^12.0.0-0
+      '@angular/animations': ^12.0.0 || ^13.0.0-0
+      '@angular/cdk': 12.2.13
+      '@angular/common': ^12.0.0 || ^13.0.0-0
+      '@angular/core': ^12.0.0 || ^13.0.0-0
+      '@angular/forms': ^12.0.0 || ^13.0.0-0
+      rxjs: ^6.5.3 || ^7.0.0
     dependencies:
       '@angular/animations': 13.3.12_@angular+core@13.3.12
       '@angular/cdk': 12.2.13_z4nykmp3odrxeiuqyotofuweji
       '@angular/common': 13.3.12_pixirh7g3by66kv7ahwbldqsmq
       '@angular/core': 13.3.12_rxjs@6.6.7+zone.js@0.11.8
       '@angular/forms': 13.3.12_e6wakku33legfqejr4rjdmi2ia
+      rxjs: 6.6.7
       tslib: 2.5.0
     dev: false
 
