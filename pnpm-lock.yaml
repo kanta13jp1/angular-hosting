@@ -4,7 +4,7 @@ specifiers:
   '@angular-devkit/architect': ^0.1303.10
   '@angular-devkit/build-angular': ^13.3.10
   '@angular/animations': ^13.3.12
-  '@angular/cdk': ^12.2.13
+  '@angular/cdk': ^13.3.9
   '@angular/cli': ^13.3.10
   '@angular/common': ^13.3.12
   '@angular/compiler': ^13.3.12
@@ -52,14 +52,14 @@ specifiers:
 
 dependencies:
   '@angular/animations': 13.3.12_@angular+core@13.3.12
-  '@angular/cdk': 12.2.13_z4nykmp3odrxeiuqyotofuweji
+  '@angular/cdk': 13.3.9_z4nykmp3odrxeiuqyotofuweji
   '@angular/common': 13.3.12_pixirh7g3by66kv7ahwbldqsmq
   '@angular/compiler': 13.3.12
   '@angular/core': 13.3.12_rxjs@6.6.7+zone.js@0.11.8
   '@angular/fire': 7.5.0_2tetxg3nfcyjt32vewsyk43gfq
   '@angular/forms': 13.3.12_e6wakku33legfqejr4rjdmi2ia
   '@angular/localize': 13.3.12_wwj3ipeewgdqb6xiftqmhz3som
-  '@angular/material': 12.2.13_cxf63wkyd66edvpgrzaxo3iyyu
+  '@angular/material': 12.2.13_ode6za3e5vjt5pzzwtlfilyojy
   '@angular/platform-browser': 13.3.12_acwdh3s5scpi27yetsnk333ipe
   '@angular/platform-browser-dynamic': 13.3.12_lfh4sfbrsw42sg4wkiqtq6co5y
   '@angular/router': 13.3.12_e6wakku33legfqejr4rjdmi2ia
@@ -309,12 +309,12 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@angular/cdk/12.2.13_z4nykmp3odrxeiuqyotofuweji:
-    resolution: {integrity: sha512-zSKRhECyFqhingIeyRInIyTvYErt4gWo+x5DQr0b7YLUbU8DZSwWnG4w76Ke2s4U8T7ry1jpJBHoX/e8YBpGMg==}
+  /@angular/cdk/13.3.9_z4nykmp3odrxeiuqyotofuweji:
+    resolution: {integrity: sha512-XCuCbeuxWFyo3EYrgEYx7eHzwl76vaWcxtWXl00ka8d+WAOtMQ6Tf1D98ybYT5uwF9889fFpXAPw98mVnlo3MA==}
     peerDependencies:
-      '@angular/common': ^12.0.0 || ^13.0.0-0
-      '@angular/core': ^12.0.0 || ^13.0.0-0
-      rxjs: ^6.5.3 || ^7.0.0
+      '@angular/common': ^13.0.0 || ^14.0.0-0
+      '@angular/core': ^13.0.0 || ^14.0.0-0
+      rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 13.3.12_pixirh7g3by66kv7ahwbldqsmq
       '@angular/core': 13.3.12_rxjs@6.6.7+zone.js@0.11.8
@@ -479,7 +479,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@angular/material/12.2.13_cxf63wkyd66edvpgrzaxo3iyyu:
+  /@angular/material/12.2.13_ode6za3e5vjt5pzzwtlfilyojy:
     resolution: {integrity: sha512-6g2GyN4qp2D+DqY2AwrQuPB3cd9gybvQVXvNRbTPXEulHr+LgGei00ySdFHFp6RvdGSMZ4i3LM1Fq3VkFxhCfQ==}
     peerDependencies:
       '@angular/animations': ^12.0.0 || ^13.0.0-0
@@ -490,7 +490,7 @@ packages:
       rxjs: ^6.5.3 || ^7.0.0
     dependencies:
       '@angular/animations': 13.3.12_@angular+core@13.3.12
-      '@angular/cdk': 12.2.13_z4nykmp3odrxeiuqyotofuweji
+      '@angular/cdk': 13.3.9_z4nykmp3odrxeiuqyotofuweji
       '@angular/common': 13.3.12_pixirh7g3by66kv7ahwbldqsmq
       '@angular/core': 13.3.12_rxjs@6.6.7+zone.js@0.11.8
       '@angular/forms': 13.3.12_e6wakku33legfqejr4rjdmi2ia
