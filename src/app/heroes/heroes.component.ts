@@ -7,7 +7,7 @@ import { MessageService } from '../message.service';
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.styl']
+  styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];

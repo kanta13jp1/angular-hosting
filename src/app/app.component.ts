@@ -7,7 +7,7 @@ import { Comment } from './class/chat';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.styl'],
+  styleUrls: ['./app.component.scss'],
   animations: [ slideInAnimation ]
 })
 export class AppComponent {

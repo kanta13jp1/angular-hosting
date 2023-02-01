@@ -21,7 +21,7 @@ import { AdComponent } from './ad.component';
       <div class="detail"><h4>{{data.detail}}</h4></div>
     </div>
   `,
-  styleUrls: ['./hero-profile.component.styl'],
+  styleUrls: ['./hero-profile.component.scss'],
 })
 export class HeroProfileComponent implements AdComponent {
   @Input() data: any;

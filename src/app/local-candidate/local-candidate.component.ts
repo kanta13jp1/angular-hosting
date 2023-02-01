@@ -5,7 +5,7 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-local-candidate',
   templateUrl: './local-candidate.component.html',
-  styleUrls: ['./local-candidate.component.styl']
+  styleUrls: ['./local-candidate.component.scss']
 })
 export class LocalCandidateComponent implements OnInit {
   heroes!: Hero[];

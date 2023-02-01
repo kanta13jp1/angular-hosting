@@ -5,7 +5,7 @@ import { HeroService } from '../heroes/hero.service';
 @Component({
   selector: 'app-group-list',
   templateUrl: './group-list.component.html',
-  styleUrls: [ './group-list.component.styl' ]
+  styleUrls: [ './group-list.component.scss' ]
 })
 export class GroupListComponent implements OnInit {
   heroes!: Hero[];

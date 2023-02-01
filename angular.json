@@ -31,8 +31,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.styl"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
             "vendorChunk": true,
@@ -105,7 +104,6 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.styl"
             ],
             "scripts": []
           }

@@ -48,7 +48,7 @@ button {
 }
 .grid {
   margin: 0;
-  width: auto;
+  width: 960px;
 }
 .col-1-4 {
   width: 240px;
@@ -59,54 +59,24 @@ button {
   color: #003F88;
   height: 200px;
   width: 200px;
-  background-color: #ffc505;
+  background-color: #FAEB00;
   border-radius: 130px;
   margin-left: 20px;
 }
 .no-entory-module {
   padding: 10px;
   text-align: center;
-  color: #607d8b
+  color: #607d8b;
   height: 200px;
   width: 200px;
   background-color:lightgray;
   border-radius: 130px;
   margin-left: 20px;
 }
-.new-module {
-  padding: 10px;
-  text-align: center;
-  color: #003F88;
-  height: 200px;
-  width: 200px;
-  background-color: #FAEB00;
-  border-radius: 130px;
-  margin-left: 20px;
-}
-.recommendation-module {
-  padding: 10px;
-  text-align: center;
-  color: #003F88;
-  height: 200px;
-  width: 200px;
-  background-color: #acd8ec;
-  border-radius: 130px;
-  margin-left: 20px;
-}
 .module:hover {
   background-color: #003F88;
   cursor: pointer;
-  color: #ffc505;
-}
-.new-module:hover {
-  background-color: #003F88;
-  cursor: pointer;
   color: #FAEB00;
-}
-.recommendation-module:hover {
-  background-color: #003F88;
-  cursor: pointer;
-  color: #acd8ec;
 }
 .grid-pad {
   padding: 10px 0;
@@ -114,49 +84,18 @@ button {
 .grid-pad > [class*='col-']:last-of-type {
   padding-right: 20px;
 }
-.keepall {
-  word-break: keep-all;
-}
-.today {
-    font-size: 40px;
-}
-.kokujibi {
-  font-size: 60px;
-  color: blue;
-}
-.tohyobi {
-  font-size: 60px;
-  color: red;
-}
 @media screen and (max-width:420px) {
-  .grid {
-    width: max-content;
-    margin: 0;
-    width: 420px;
-  }
   .col-1-4 {
-    width: 210px;
+    width: 68px;
   }
   .module {
-    font-size: 16px;
-    width: 200px;
-    height: 240px;
-  }
-  .new-module {
-    font-size: 16px;
-    width: 200px;
-    height: 240px;
-  }
-  .recommendation-module {
-    font-size: 16px;
-    width: 200px;
-    height: 240px;
-  }
+    font-size: 10px;
+    width: 62px;
+    height: 260px; }
   .no-entory-module {
-    font-size: 16px;
-    width: 200px;
-    height: 240px;
-  }
+    font-size: 10px;
+    width: 62px;
+    height: 260px; }
 }
 @media screen and (min-width:421px) and (max-width: 500px) {
   .grid {
@@ -166,11 +105,6 @@ button {
     font-size: 12px;
     width: 160px;
     height: 160px; }
-  .new-module {
-    font-size: 12px;
-    width: 160px;
-    height: 160px;
-  }
   .no-entory-module {
     font-size: 12px;
     width: 160px;
@@ -184,20 +118,12 @@ button {
     font-size: 8px;
     width: 116px;
     height: 116px; }
-  .new-module {
-    font-size: 8px;
-    width: 116px;
-    height: 116px;
-  }
   .no-entory-module {
     font-size: 8px;
     width: 116px;
     height: 116px; }
 }
 @media screen and (min-width:701px) and (max-width: 800px) {
-  .content {
-    display: initial;
-  }
   .grid {
     margin: 0;
   }
@@ -205,11 +131,6 @@ button {
     font-size: 12px;
     width: 160px;
     height: 160px; }
-  .new-module {
-    font-size: 12px;
-    width: 160px;
-    height: 160px;
-  }
   .no-entory-module {
     font-size: 12px;
     width: 160px;
@@ -222,17 +143,7 @@ button {
   .module {
     font-size: 16px;
     width: 220px;
-    height: 240px;
-  }
-  .new-module {
-    font-size: 16px;
-    width: 220px;
-    height: 240px;
-  }
-  .recommendation-module {
-    font-size: 16px;
-    width: 220px;
-    height: 240px;
+    height: 220px;
   }
   .no-entory-module {
     font-size: 16px;

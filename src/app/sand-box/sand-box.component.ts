@@ -1,4 +1,3 @@
-import { getAttrsForDirectiveMatching } from '@angular/compiler/src/render3/view/util';
 import { Component, OnInit } from '@angular/core';
 import firebase from 'firebase';
 import AsyncLock from 'Async-lock';
@@ -9,7 +8,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-sand-box',
   templateUrl: './sand-box.component.html',
-  styleUrls: ['./sand-box.component.styl']
+  styleUrls: ['./sand-box.component.scss']
 })
 export class SandBoxComponent implements OnInit {
   currentCount = 0;
