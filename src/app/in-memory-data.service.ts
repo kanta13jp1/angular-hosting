@@ -144,6 +144,19 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 65, name: '鈴木一正', role: '', election: '秋田市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1985/08/20',congressman: false, candidate: true, localcandidate: true, candidateType: '秋田市議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '秋田県', candidatedistrict: '秋田市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/1b2af150c88ff4794789b191cad51f75-scaled-e1670890234420.jpg', detail: 'ー' },
       { id: 66, name: '三澤寛人', role: '', election: '長岡市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'New__wind', birthday: '1996/01/20',congressman: false, candidate: true, localcandidate: true, candidateType: '長岡市議会議員選挙', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟県', candidatedistrict: '長岡市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/e75c78947d11ed00cbbb0cc7f3658583.jpeg', detail: 'ー' },
       { id: 67, name: '鎌田泰春', role: '', election: '和光市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'KamadaYasuharu', birthday: '1995/04/28',congressman: false, candidate: true, localcandidate: true, candidateType: '和光市議会議員選挙', candidatedistrictblock: '北関東', candidatePrefecture: '埼玉県', candidatedistrict: '和光市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/a83376b9e5cdef9700372e003e9c1279-e1669788919671.jpg', detail: 'ー' },
+      { id: 68, name: '吉野正人', role: '', election: '目黒区議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'推薦', newcomer:'現職', continuecount: 3, belongs: '', almaMater: '', district: '', count: 0, twitter: 'yoshinomasato', birthday: '1966/07/30',congressman: false, candidate: true, localcandidate: true, candidateType: '目黒区議会議員選挙', candidatedistrictblock: '東京', candidatePrefecture: '東京都', candidatedistrict: '目黒区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/1ef3ca677c5c710800efacd4a0db3d64-scaled-e1665113846580.jpg', detail: '八雲学童保育クラブ父母会長\n\
+      八雲小PTA会長\n\
+      区立小学校PTA連合会会長\n\
+      目黒十中PTA会長\n\
+      区立中学校PTA連合会役員\n\
+      八雲小学校評議員\n\
+      八雲の夏まつり実行委員長\n\
+      目黒消防団第12分団部長\n\
+      柿の木坂商和会副会長\n\
+      八雲町会会計理事\n\
+      東京高等学校親師会副会長\n\
+      中央大学父母連絡会役員\n\
+      駒澤大学教育後援会厚生部部長' },
     ];
     return {heroes};
   }

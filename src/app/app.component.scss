@@ -43,7 +43,7 @@
   }
 
   .content {
-    display: table-row-group;
+    display: contents;
     margin: 82px auto 32px;
     padding: 0 16px;
     max-width: 960px;
@@ -128,6 +128,10 @@
     margin-left: 60px;
   }
 
+  .mat-slider {
+    display: block;
+  }
+
   .sns-button　{
     margin-top: 20px;
   }
@@ -178,8 +182,13 @@
     width: 1920px;
   }
 
-
   /* Responsive Styles */
+  @media screen and (max-width: 420px) {
+    .content {
+      display: table-row-group;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) {
       width: 100%;
