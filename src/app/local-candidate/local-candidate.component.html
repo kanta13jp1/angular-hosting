@@ -54,14 +54,20 @@
       </div>
     </div>
   </div>
-  <div *ngIf="heroes" ng-controller="heroes" class="count">
+  <div *ngIf="heroes && heroes.length != 0" ng-controller="heroes" class="count">
     <span>{{dispblock}}　{{heroes.length}}名</span>
   </div>
-  <div *ngIf="heroes && recommends" ng-controller="heroes" class="count">
-    <span>公認　{{heroes.length - recommends.length}}名</span>
+  <div *ngIf="gens && gens.length != 0" ng-controller="gens" class="count">
+    <span>公認（現職）{{gens.length}}名</span>
   </div>
-  <div *ngIf="recommends" ng-controller="recommends" class="count">
-    <span>推薦　{{recommends.length}}名</span>
+  <div *ngIf="shins && shins.length != 0" ng-controller="shins" class="count">
+    <span>公認（新人）{{shins.length}}名</span>
+  </div>
+  <div *ngIf="recomgens && recomgens.length != 0" ng-controller="recomgens" class="count">
+    <span>推薦（現職）{{recomgens.length}}名</span>
+  </div>
+  <div *ngIf="recomshins && recomshins.length != 0" ng-controller="recomshins" class="count">
+    <span>推薦（新人）{{recomshins.length}}名</span>
   </div>
   <div *ngIf="heroes" class="grid grid-pad">
     <a *ngFor="let hero of heroes" class="col-1-4"
