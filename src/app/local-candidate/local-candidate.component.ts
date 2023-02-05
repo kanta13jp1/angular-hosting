@@ -11,19 +11,20 @@ export class LocalCandidateComponent implements OnInit {
   heroes!: Hero[];
   recommends!: Hero[];
   block: string;
+  dispblock: string;
   nowDate: Date;
   koujibi: Date;
   tohyobi: Date;
+  checkboxes: {genshoku: boolean, shinjin: boolean, suigen: boolean, suishin: boolean};
 
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
-    this.getLocalCandidates();
     this.nowDate = new Date();
     this.koujibi = new Date("2023/3/31");
     this.tohyobi = new Date("2023/4/9");
+    this.checkboxes = { genshoku: true, shinjin: true, suigen: true, suishin: true};
     this.getLocalCandidates();
-    this.filterRecommend();
   }
 
   getDiffDays(sDate, eDate) {
@@ -34,11 +35,43 @@ export class LocalCandidateComponent implements OnInit {
     return Math.floor(Time / (1000 * 3600 * 24));
   }
 
+  onCheckedChange(e: any) {
+    const selectedInput: string = e.target.id;
+    if (/genshoku/.test(selectedInput)) {
+        console.log("genshoku " + !this.checkboxes.genshoku)
+        this.checkboxes.genshoku = !this.checkboxes.genshoku;
+    }
+    else if (/shinjin/.test(selectedInput)) {
+      console.log("shinjin " + !this.checkboxes.shinjin)
+      this.checkboxes.shinjin = !this.checkboxes.shinjin;
+    }
+    else if (/suigen/.test(selectedInput)) {
+      console.log("suigen " + !this.checkboxes.suigen)
+      this.checkboxes.suigen = !this.checkboxes.suigen;
+    }
+    else if (/suishin/.test(selectedInput)) {
+      console.log("suishin " + !this.checkboxes.suishin)
+      this.checkboxes.suishin = !this.checkboxes.suishin;
+    }
+    this.updateList();
+}
+
+  updateList(): void {
+    if (this.block == '全候補者') {
+      this.getLocalCandidates();
+    } else {
+      this.filterBlock(this.block)
+    }
+  }
+
   getLocalCandidates(): void {
-    this.heroService.getLocalCandidates()
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+    if (this.checkboxes.genshoku && this.checkboxes.shinjin && this.checkboxes.suigen && this.checkboxes.suishin) {
+      this.heroService.getLocalCandidates()
+        .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+    }
     this.filterRecommend();
     this.block = '全候補者'
+    this.dispblock = this.block;
   }
 
   filterRecommend(): void {
@@ -48,67 +81,15 @@ export class LocalCandidateComponent implements OnInit {
 
   filterBlock(block: string) {
     console.log("filterBlock()" + block);
-    this.heroService.searchLocalCandidatesByCandidateDistrictBlock(block)
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-    console.log(this.heroes);
+    if (this.checkboxes.genshoku && this.checkboxes.shinjin && this.checkboxes.suigen && this.checkboxes.suishin) {
+      this.heroService.searchLocalCandidatesByCandidateDistrictBlock(block)
+        .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+      console.log(this.heroes);
+    }
     this.heroService.searchRecommendLocalCandidatesByCandidateDistrictBlock(block, '推薦')
       .subscribe(recommends => this.recommends = recommends.slice(0, 100));
     console.log(this.recommends);
-    this.block = block + 'ブロック'
-  }
-
-  filterHokkaido(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('北海道')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterTohoku(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('東北')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-    filterHokurikuShinetsu(): void {
-      this.heroService.searchCandidatesByCandidateDistrictBlock('北陸信越')
-        .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-    }
-
-  filterKitaKantou(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('北関東')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterTokyo(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('東京')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterMinamiKantou(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('南関東')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterTokai(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('東海')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterKinki(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('近畿')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterChugoku(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('中国')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterShikoku(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('四国')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
-  }
-
-  filterKyushu(): void {
-    this.heroService.searchCandidatesByCandidateDistrictBlock('九州')
-      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+    this.block = block;
+    this.dispblock = this.block + 'ブロック'
   }
 }

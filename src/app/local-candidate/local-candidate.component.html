@@ -25,8 +25,37 @@
     <button (click)="filterBlock('四国')">四国ブロック</button>
     <button (click)="filterBlock('九州')">九州ブロック</button>
   </div>
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <div class="m-4">
+        <span class="mr-2 license-only">公認　現職</span>
+        <label class="switch">
+          <input id="genshoku" type="checkbox" class="genshoku" [checked]="checkboxes.genshoku" (change)="onCheckedChange($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="m-4">
+        <span class="mr-2 license-only">公認　新人</span>
+        <label class="switch"><input id="shinjin" type="checkbox" class="shinjin"  [checked]="checkboxes.shinjin" (change)="onCheckedChange($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="m-4">
+        <span class="mr-2 license-only">推薦　現職</span>
+        <label class="switch"><input id="suigen" type="checkbox" class="suigen"  [checked]="checkboxes.suigen" (change)="onCheckedChange($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="m-4">
+        <span class="mr-2 license-only">推薦　新人</span>
+        <label class="switch"><input id="suishin" type="checkbox" class="suishin"  [checked]="checkboxes.suishin" (change)="onCheckedChange($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
   <div *ngIf="heroes" ng-controller="heroes" class="count">
-    <span>{{block}}　{{heroes.length}}名</span>
+    <span>{{dispblock}}　{{heroes.length}}名</span>
   </div>
   <div *ngIf="heroes && recommends" ng-controller="heroes" class="count">
     <span>公認　{{heroes.length - recommends.length}}名</span>
