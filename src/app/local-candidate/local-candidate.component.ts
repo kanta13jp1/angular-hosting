@@ -68,8 +68,112 @@ export class LocalCandidateComponent implements OnInit {
     if (this.checkboxes.genshoku && this.checkboxes.shinjin && this.checkboxes.suigen && this.checkboxes.suishin) {
       this.heroService.getLocalCandidates()
         .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+        this.filterRecommend();
+      } else if (this.checkboxes.genshoku && this.checkboxes.shinjin && this.checkboxes.suigen) {
+        console.log("現職 + 新人 + 推薦現職")
+        this.heroService.searchLocalCandidatesByLisence('公認')
+            .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+        this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','現職')
+            .subscribe(recommends => {
+              this.recommends = recommends.slice(0, 100)
+              this.heroes = this.heroes.concat(this.recommends)
+            })
+    } else if (this.checkboxes.genshoku && this.checkboxes.shinjin && this.checkboxes.suishin) {
+            console.log("現職 + 新人 + 推薦新人")
+            this.heroService.searchLocalCandidatesByLisence('公認')
+                .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+            this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','新人')
+                .subscribe(recommends => {
+                  this.recommends = recommends.slice(0, 100)
+                  this.heroes = this.heroes.concat(this.recommends)
+                })
+
+    } else if (this.checkboxes.genshoku && this.checkboxes.shinjin ) {
+        console.log("現職 + 新人")
+        this.heroService.searchLocalCandidatesByLisence('公認')
+          .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+        this.recommends = [];
+      } else if (this.checkboxes.shinjin && this.checkboxes.suigen && this.checkboxes.suishin) {
+        console.log("新人 + 推薦現職 + 推薦新人")
+        this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','新人')
+          .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+        this.heroService.searchLocalCandidatesByLisence('推薦')
+          .subscribe(recommends => {
+            this.recommends = recommends.slice(0, 100)
+            this.heroes = this.heroes.concat(this.recommends)});
+          } else if (this.checkboxes.shinjin && this.checkboxes.suigen) {
+            console.log("新人 + 推薦現職")
+            this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','新人')
+                .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+            this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','現職')
+                .subscribe(recommends => {
+                  this.recommends = recommends.slice(0, 100)
+                  this.heroes = this.heroes.concat(this.recommends)
+                })
+              } else if (this.checkboxes.shinjin && this.checkboxes.suishin) {
+                console.log("新人 + 推薦新人")
+                this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','新人')
+                    .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+                this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','新人')
+                    .subscribe(recommends => {
+                      this.recommends = recommends.slice(0, 100)
+                      this.heroes = this.heroes.concat(this.recommends)
+                    })
+          } else if (this.checkboxes.shinjin) {
+            console.log("新人のみ")
+            this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','新人')
+      .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+      this.recommends = [];
+    } else if (this.checkboxes.genshoku && this.checkboxes.suigen && this.checkboxes.suishin) {
+      console.log("現職 + 推薦現職 + 推薦新人")
+      this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','現職')
+        .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+      this.heroService.searchLocalCandidatesByLisence('推薦')
+        .subscribe(recommends => {
+          this.recommends = recommends.slice(0, 100)
+          this.heroes = this.heroes.concat(this.recommends)});
+    } else if (this.checkboxes.suigen && this.checkboxes.suishin) {
+      console.log("推薦現職 + 推薦新人")
+      this.heroService.searchLocalCandidatesByLisence('推薦')
+        .subscribe(heroes => {
+          this.heroes = heroes.slice(0, 100)
+          this.recommends = this.heroes});
+    } else if (this.checkboxes.genshoku && this.checkboxes.suigen) {
+      console.log("現職 + 推薦現職")
+      this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','現職')
+          .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+      this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','現職')
+          .subscribe(recommends => {
+            this.recommends = recommends.slice(0, 100)
+            this.heroes = this.heroes.concat(this.recommends)
+          })
+        } else if (this.checkboxes.genshoku && this.checkboxes.suishin) {
+          console.log("現職 + 推薦新人")
+          this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','現職')
+              .subscribe(heroes => this.heroes = heroes.slice(0, 100))
+          this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','新人')
+              .subscribe(recommends => {
+                this.recommends = recommends.slice(0, 100)
+                this.heroes = this.heroes.concat(this.recommends)
+              })
+        } else if (this.checkboxes.genshoku) {
+        console.log("現職のみ")
+        this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','現職')
+          .subscribe(heroes => this.heroes = heroes.slice(0, 100));
+        this.recommends = [];
+    }else if (this.checkboxes.suigen) {
+      console.log("推薦現職のみ")
+      this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','現職')
+        .subscribe(heroes => {
+          this.heroes = heroes.slice(0, 100)
+          this.recommends = this.heroes});
+    } else if (this.checkboxes.suishin) {
+      console.log("推薦新人のみ")
+      this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','新人')
+      .subscribe(heroes => {
+        this.heroes = heroes.slice(0, 100)
+        this.recommends = this.heroes});
     }
-    this.filterRecommend();
     this.block = '全候補者'
     this.dispblock = this.block;
   }

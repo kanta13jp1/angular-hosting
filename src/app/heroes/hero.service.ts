@@ -78,6 +78,19 @@ export class HeroService {
     );
   }
 
+  searchLocalCandidatesByLisenceAndNewcomer(license: string, newcomer: string): Observable<Hero[]> {
+    if (!license.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?license=${license}&newcomer=${newcomer}&localcandidate=true`).pipe(
+      tap(x => x.length ?
+        this.log(`found heroes matching license="${license}"&localcandidate=true`) :
+        this.log(`no heroes matching license="${license}"&localcandidate=true`)),
+      catchError(this.handleError<Hero[]>('searchLocalCandidatesByLisenceAndNewcomer', []))
+    );
+  }
+
   /** GET heroes from the server */
   getCandidates(): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${this.heroesUrl}/?candidate=true`).pipe(
