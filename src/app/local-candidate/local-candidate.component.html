@@ -1,15 +1,17 @@
 <div class="content">
   <div class="m-4 keepall">
-    <h1>国民民主党　統一地方選　公認 / 推薦 候補者一覧</h1>
+    <h1>国民民主党</h1>
+    <h2>統一地方選</h2>
+    <h3>公認 / 推薦 候補者一覧</h3>
   </div>
   <div class="m-4 count keepall">
-    <h3>本日は <span class="today">{{nowDate | date:'yyyy年MM月dd日'}}</span> です。</h3>
+    <h4>本日は <span class="today">{{nowDate | date:'yyyy年MM月dd日'}}</span> です。</h4>
   </div>
   <div class="m-4 count keepall">
-    <h3>統一地方選の告示日 <span class="today">{{koujibi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="kokujibi">{{getDiffDays(nowDate,koujibi)}}</span> 日です。</h3>
+    <h4>統一地方選の告示日 <span class="today">{{koujibi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="kokujibi">{{getDiffDays(nowDate,koujibi)}}</span> 日です。</h4>
   </div>
   <div class="m-4 count keepall">
-    <h3>統一地方選の投票日 <span class="today">{{tohyobi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="tohyobi">{{getDiffDays(nowDate,tohyobi)}}</span> 日です。</h3>
+    <h4>統一地方選の投票日 <span class="today">{{tohyobi | date:'yyyy年MM月dd日'}}</span> まで、あと <span class="tohyobi">{{getDiffDays(nowDate,tohyobi)}}</span> 日です。</h4>
   </div>
   <div id="filter">
     <button (click)="getLocalCandidates()">全候補者</button>

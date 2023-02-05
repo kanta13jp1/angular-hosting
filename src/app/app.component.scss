@@ -43,7 +43,7 @@
   }
 
   .content {
-    display: contents;
+    display: inherit;
     margin: 82px auto 32px;
     padding: 0 16px;
     max-width: 960px;
@@ -185,7 +185,7 @@
   /* Responsive Styles */
   @media screen and (max-width: 420px) {
     .content {
-      display: table-row-group;
+      display: inherit;
     }
   }
 

@@ -132,12 +132,12 @@ export class LocalCandidateComponent implements OnInit {
         })
       this.heroService.searchLocalCandidatesByLisenceAndNewcomer('公認','新人')
         .subscribe(shins => {
+          this.recomgens = []
+          this.recomshins = []
+          this.recommends = this.recomgens.concat(this.recomshins)
           this.shins = shins.slice(0, 100)
           this.heroes = this.gens.concat(this.shins)
           this.heroes = this.heroes.concat(this.recommends).sort((a, b)=> a.id - b.id)
-          this.recommends = [];
-          this.recomgens = [];
-          this.recomshins = [];
         })
     } else if (this.checkboxes.shinjin && this.checkboxes.suigen && this.checkboxes.suishin) {
       console.log("新人 + 推薦現職 + 推薦新人")
@@ -241,7 +241,7 @@ export class LocalCandidateComponent implements OnInit {
         this.gens = gens.slice(0, 100)
         this.shins = []
     });
-    this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','現職')
+    this.heroService.searchLocalCandidatesByLisenceAndNewcomer('推薦','新人')
       .subscribe(recomshins => {
         this.recomshins = recomshins.slice(0, 100)
         this.recomgens = []
