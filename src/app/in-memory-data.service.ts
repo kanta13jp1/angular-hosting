@@ -162,6 +162,10 @@ export class InMemoryDataService implements InMemoryDbService {
       町青少年健全育成協議会副会長' },
       { id: 70, name: '梅津庸成', role: '', election: '山形県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 1, belongs: '山形県議会', almaMater: '', district: '', count: 0, twitter: 'umetsuyosei', birthday: '1967/02/23',congressman: false, candidate: true, localcandidate: true, candidateType: '山形県議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '山形県', candidatedistrict: '山形市', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/4f606141d769635874791a06664fc7f9-scaled-e1668044727653.jpg', detail: '国民民主党山形県総支部連合会　政務調査会長（現）\n\
       山形県議会議員（現' },
+      { id: 71, name: '小粥康弘', role: '', election: '横浜市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 5, belongs: '横浜市議会', almaMater: '', district: '', count: 0, twitter: 'yasuhirokogayu', birthday: '1967/09/10',congressman: false, candidate: true, localcandidate: true, candidateType: '横浜市議会議員選挙', candidatedistrictblock: '南関東', candidatePrefecture: '神奈川県', candidatedistrict: '横浜市旭区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/08/042fd9e1ec47ddc689ca697b4c351782-2-e1668047907797.png', detail: '2005年 三菱重工労組　横製支部　特別執行委員\n\
+      　　　　 民主党神奈川県第6区総支部副幹事長\n\
+      2006年 横浜市会議員初当選\n\
+      2019年 横浜市会議員5期目当選' },
     ];
     return {heroes};
   }
