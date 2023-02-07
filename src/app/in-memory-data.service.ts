@@ -166,7 +166,11 @@ export class InMemoryDataService implements InMemoryDbService {
       　　　　 民主党神奈川県第6区総支部副幹事長\n\
       2006年 横浜市会議員初当選\n\
       2019年 横浜市会議員5期目当選' },
-    ];
+      { id: 72, name: '北岡千はる', role: '', election: '京都府議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 8, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1958/03/26',congressman: false, candidate: true, localcandidate: true, candidateType: '京都府議会議員選挙', candidatedistrictblock: '近畿', candidatePrefecture: '京都府', candidatedistrict: '京都府左京区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/361007097270050865c68ae0be535a73-e1674520690625.jpg', hp: '北岡　ちはる', url: 'https://www.chiharu26.com/', detail: '京都市立 紫野高等学校 普通科 卒業\n\
+      帝塚山大学 教養学部 卒業\n\
+      佛教大学 通信教育課程（幼稚園教育）修了\n\
+      私立幼稚園勤務（旧 洛北せいか幼稚園・1981年から2002年）' },
+      ];
     return {heroes};
   }
 
