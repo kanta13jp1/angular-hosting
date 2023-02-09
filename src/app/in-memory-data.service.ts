@@ -170,7 +170,8 @@ export class InMemoryDataService implements InMemoryDbService {
       帝塚山大学 教養学部 卒業\n\
       佛教大学 通信教育課程（幼稚園教育）修了\n\
       私立幼稚園勤務（旧 洛北せいか幼稚園・1981年から2002年）' },
-      ];
+      { id: 73, name: '小林裕史', role: '', election: '新潟市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'推薦', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1977/07/29',congressman: false, candidate: true, localcandidate: true, candidateType: '新潟市議会議員選挙', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟県', candidatedistrict: '新潟市秋葉区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/258b49c5660c6fd8cd037f7f85390d72-scaled.jpg', detail: 'ー' },
+    ];
     return {heroes};
   }
 

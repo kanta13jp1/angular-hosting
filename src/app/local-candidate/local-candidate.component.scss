@@ -192,6 +192,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.btn-toolbar {
+  justify-content: center;
+}
 @media screen and (max-width:420px) {
   .grid {
     width: max-content;
