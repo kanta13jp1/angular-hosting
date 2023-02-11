@@ -76,9 +76,9 @@
         routerLink="/detail/{{hero.id}}">
       <div *ngIf="hero.license == '推薦'; else entoryBlock" class="recommendation-module hero">
         <h2>{{hero.name}}</h2>
-        {{hero.candidateType}}
+        {{hero.election}}
         <br/>
-        {{hero.candidatePrefecture}}{{hero.candidatedistrict}}
+        {{hero.candidatedistrict}}
         <br/>
         <div>
           <b>{{hero.license}}</b>
@@ -91,14 +91,15 @@
           width="100"
           alt="No image"
           src={{hero.image}}
+          onerror="this.src = 'https://new-kokumin.jp/wp-content/uploads/2022/01/bb3ac606b65fc16e8511b6799753e216.png'; this.removeAttribute('onerror')"
         />
       </div>
       <ng-template #entoryBlock>
         <div *ngIf="hero.newcomer == '新人'; else notNew" class="new-module hero">
           <h2>{{hero.name}}</h2>
-          {{hero.candidateType}}
+          {{hero.election}}
           <br/>
-          {{hero.candidatePrefecture}}{{hero.candidatedistrict}}
+          {{hero.candidatedistrict}}
           <div>
             <b>{{hero.license}}</b>
             <b>　{{hero.newcomer}}</b>
@@ -107,14 +108,15 @@
             width="100"
             alt="No image"
             src={{hero.image}}
+            onerror="this.src = 'https://new-kokumin.jp/wp-content/uploads/2022/01/bb3ac606b65fc16e8511b6799753e216.png'; this.removeAttribute('onerror')"
           />
         </div>
         <ng-template #notNew>
           <div class="module hero">
             <h2>{{hero.name}}</h2>
-            {{hero.candidateType}}
+            {{hero.election}}
             <br/>
-            {{hero.candidatePrefecture}}{{hero.candidatedistrict}}
+            {{hero.candidatedistrict}}
             <div>
               <b>{{hero.license}}</b>
               <b>　{{hero.newcomer}}・{{hero.continuecount}}期</b>
@@ -123,6 +125,7 @@
               width="100"
               alt="No image"
               src={{hero.image}}
+              onerror="this.src = 'https://new-kokumin.jp/wp-content/uploads/2022/01/bb3ac606b65fc16e8511b6799753e216.png'; this.removeAttribute('onerror')"
             />
           </div>
           </ng-template>
