@@ -82,123 +82,39 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 51, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '4区' },
       { id: 52, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '5区' },
       { id: 53, name: '未定', role: '', belongs: '衆議院', almaMater: '', district: '', count: 0, twitter: '', congressman: false, candidate: true, candidateType: '小選挙区', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟', candidatedistrict: '6区' },
-      { id: 54, name: '大内一也', role: '', election: '山口県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', belongs: '', almaMater: '', district: '', count: 0, birthday: '1973/10/10', twitter: 'ouchi_kazuya', congressman: false, candidate: true, localcandidate: true, candidateType: '山口県議会議員選挙', license:'公認', newcomer:'新人', continuecount: 0, candidatedistrictblock: '中国', candidatePrefecture: '山口県', candidatedistrict: '周南市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/28c7b5986dcdd248f4ae69b2194d5c33.jpg', hp: '大内 一也', url: 'https://www.ouchikazuya.com/', detail: '1973年10月生まれ（周南市出身）\n\
-      徳山幼稚園～ 徳山小学校～ 岐陽中学校～ 徳山高等学校を経て\n\
-      1996年\n\
-      山口大学経済学部卒業\n\
-      同年、NTT（現NTT西日本）に入社\n\
-      フレッツ立ち上げメンバーの一人\n\
-      2005年\n\
-      株式会社FCEエデュケーションに入社\n\
-      子どものやる気と自信を育む教材作成\n\
-      2012年\n\
-      株式会社キャリア・クロップを設立\n\
-      主に学生、若者向けに就職支援、研修を行う\n\
-      2015年\n\
-      千葉県鎌ケ谷市議会議員初当選\n\
-      2017年\n\
-      3月に民進党山口県第1区総支部長に着任\n\
-      10月の第48回衆院選に山口1区から出馬\n\
-      36,582票をいただくも敗戦\n\
-      その後地元周南市にて介護職に関わる\n\
-      2018年\n\
-      6月に国民民主党山口県第1区総支部長に着任​\n\
-      2019年\n\
-      7月の第25回参院選に山口県選挙区から出馬\n\
-      118,491票をいただくも落選\n\
-      2021年\n\
-      10月に行われた第49回衆院選に山口1区から出馬\n\
-      50,684票をいただくも落選\n\
-      2022年\n\
-      3月に国民民主党山口県総支部連合会代表\n\
-      4月に山口県参議院選挙区第1総支部長に着任' },
-      { id: 55, name: '黒田太郎', role: '', election: '愛知県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', belongs: '', almaMater: '', district: '名古屋市千種区', count: 0, twitter: 'kuroda__taro', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', license:'公認', newcomer:'現職', continuecount: 2, candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市千種区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/62553641afa5e1e0423d5433bc782049-e1666146906691.jpg', detail: '1990年東大経済学部卒業、日銀入行\n\
-      2002年大塚耕平参議院議員秘書\n\
-      2014年古川元久衆議院議員秘書\n\
-      2015年愛知県議会議員' },
-      { id: 56, name: '森井元志', role: '', election: '愛知県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 4, belongs: '愛知県議会', almaMater: '', district: '', count: 0, twitter: 'motoshimorii', congressman: false, candidate: true, localcandidate: true, candidateType: '愛知県議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '名古屋市守山区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/de24898cddb751a4459aa76c8650657e-scaled-e1665113999493.jpg' },
-      { id: 57, name: '吉村大志郎', role: '', election: '宮崎県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'Shiro117385631', congressman: false, candidate: true, localcandidate: true, candidateType: '宮崎県議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '宮崎市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/b24da5ed64f6211e448a7fb02074d10f-scaled-e1665131017481.jpg' },
-      { id: 58, name: '中村健太郎', role: '', election: '田原市議会議員選挙', kokujibi: '2023/1/22', tohyobi: '2023/1/29', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'nkm27', birthday: '1993/07/25',congressman: false, candidate: true, localcandidate: false, candidateType: '田原市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '愛知県', candidatedistrict: '田原市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/IMG_0290-e1672116228794.jpg' },
-      { id: 59, name: '松本怜子', role: '', election: '福岡市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'reiko_mtsmt', birthday: '1995/03/17',congressman: false, candidate: true, localcandidate: true, candidateType: '福岡市議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '福岡県', candidatedistrict: '福岡市西区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/a88cfde7c2b863f894355db0dbcff514-e1667355369416.jpeg' },
-      { id: 60, name: '岡田光正', role: '', election: '焼津市議会議員選挙', kokujibi: '2023/1/29', tohyobi: '2023/2/5', belongs: '焼津市議会', almaMater: '', district: '焼津市', count: 0, twitter: 'sizuoka35bank', birthday: '1952/12/09',congressman: false, candidate: true, localcandidate: false, candidateType: '焼津市議会議員選挙', license:'推薦', newcomer:'現職', continuecount: 3, candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '焼津市', image: 'https://new-kokumin.jp/wp-content/uploads/2020/11/12ef64742fde89fb0594f0e371ce4818-e1671605011490.jpg' },
-      { id: 61, name: '小名木勇人', role: '', election: '浜松市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'推薦', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'isato_konagi', birthday: '1978/07/16',congressman: false, candidate: true, localcandidate: true, candidateType: '浜松市議会議員選挙', candidatedistrictblock: '東海', candidatePrefecture: '静岡県', candidatedistrict: '浜松市南区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/d95784511884eae025a9c3e867694240-scaled.jpg' },
-      { id: 62, name: '金野貴泰', role: '', election: '岩見沢市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1986/08/01',congressman: false, candidate: true, localcandidate: true, candidateType: '岩見沢市議会議員選挙', candidatedistrictblock: '北海道', candidatePrefecture: '北海道', candidatedistrict: '岩見沢市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/d01346d7352c029f49830e1b8e50399e.jpg' },
-      { id: 63, name: '小川陽平', role: '', election: '北海道議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'yoheiogawa_DPFP', birthday: '1990/01/10',congressman: false, candidate: true, localcandidate: true, candidateType: '北海道議会議員選挙', candidatedistrictblock: '北海道', candidatePrefecture: '北海道', candidatedistrict: '札幌市中央区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/f05c363e6bd1fa8ae802a3b2c35869cc-scaled-e1668133350492.jpg', detail: '株式会社オガワヤ代表取締役' },
-      { id: 64, name: '浅岡志麻', role: '', election: '愛媛県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'mirailabo0913', birthday: '1974/11/01',congressman: false, candidate: true, localcandidate: true, candidateType: '愛媛県議会議員選挙', candidatedistrictblock: '四国', candidatePrefecture: '愛媛県', candidatedistrict: '松山市・上浮穴郡', image: 'https://new-kokumin.jp/wp-content/uploads/2022/09/dbfb83af6f81d0fbd3d05c130500f9f0-e1668421112462.jpg', detail: '1997年松山大学人文学部英語英米文学科卒業\n\
-      1998年株式会社Egg & Chick入社\n\
-      2000年株式会社コンベックス入社\n\
-      2018年株式会社ミライ・ラボ創業\n\
-      大学卒業後、子ども英語教室講師を経て、\n\
-      採用コンサルティング会社に\n\
-      創業メンバーとして参画。\n\
-      中小企業の新卒・中途採用サポートや、\n\
-      大学生の就職支援業務等に約１２年従事。\n\
-      その後、2018年10月に\n\
-      「自ら考え、自ら選び、自ら学ぶ」\n\
-      “教えない”学習塾「STUDY BASEミライ∞ラボ」\n\
-      を開校し5年目。\n\
-      株式会社ミライ・ラボ 代表取締役\n\
-      NPO法人こどものみらいプロジェクト\n\
-      ゆめドリ愛媛サテライト 副事務局長\n\
-      カナエルエヒメ 代表' },
-      { id: 65, name: '鈴木一正', role: '', election: '秋田市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1985/08/20',congressman: false, candidate: true, localcandidate: true, candidateType: '秋田市議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '秋田県', candidatedistrict: '秋田市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/1b2af150c88ff4794789b191cad51f75-scaled-e1670890234420.jpg', detail: 'ー' },
-      { id: 66, name: '三澤寛人', role: '', election: '長岡市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'New__wind', birthday: '1996/01/20',congressman: false, candidate: true, localcandidate: true, candidateType: '長岡市議会議員選挙', candidatedistrictblock: '北陸信越', candidatePrefecture: '新潟県', candidatedistrict: '長岡市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/10/e75c78947d11ed00cbbb0cc7f3658583.jpeg', detail: 'ー' },
-      { id: 67, name: '鎌田泰春', role: '', election: '和光市議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'公認', newcomer:'新人', continuecount: 0, belongs: '', almaMater: '', district: '', count: 0, twitter: 'KamadaYasuharu', birthday: '1995/04/28',congressman: false, candidate: true, localcandidate: true, candidateType: '和光市議会議員選挙', candidatedistrictblock: '北関東', candidatePrefecture: '埼玉県', candidatedistrict: '和光市', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/a83376b9e5cdef9700372e003e9c1279-e1669788919671.jpg', detail: 'ー' },
-      { id: 68, name: '吉野正人', role: '', election: '目黒区議会議員選挙', kokujibi: '2023/4/16', tohyobi: '2023/4/23', license:'推薦', newcomer:'現職', continuecount: 3, belongs: '', almaMater: '', district: '', count: 0, twitter: 'yoshinomasato', birthday: '1966/07/30',congressman: false, candidate: true, localcandidate: true, candidateType: '目黒区議会議員選挙', candidatedistrictblock: '東京', candidatePrefecture: '東京都', candidatedistrict: '目黒区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/1ef3ca677c5c710800efacd4a0db3d64-scaled-e1665113846580.jpg', detail: '八雲学童保育クラブ父母会長\n\
-      八雲小PTA会長\n\
-      区立小学校PTA連合会会長\n\
-      目黒十中PTA会長\n\
-      区立中学校PTA連合会役員\n\
-      八雲小学校評議員\n\
-      八雲の夏まつり実行委員長\n\
-      目黒消防団第12分団部長\n\
-      柿の木坂商和会副会長\n\
-      八雲町会会計理事\n\
-      東京高等学校親師会副会長\n\
-      中央大学父母連絡会役員\n\
-      駒澤大学教育後援会厚生部部長' },
-      { id: 69, name: '岩佐祐一', role: '', election: '門川町議会議員選挙', kokujibi: '2023/2/14', tohyobi: '2023/2/19', license:'公認', newcomer:'現職', continuecount: 3, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1995/04/28',congressman: false, candidate: true, localcandidate: true, candidateType: '門川町議会議員選挙', candidatedistrictblock: '九州', candidatePrefecture: '宮崎県', candidatedistrict: '門川町', image: 'https://new-kokumin.jp/wp-content/uploads/2022/08/4ef54f1c9534aed6dc7b6d3a9fb9d3a2-scaled-e1668043348618.jpg', detail: '旭化成社員（延岡勤務）\n\
-      門川町議会議員\n\
-      町青少年健全育成協議会副会長' },
-      { id: 70, name: '梅津庸成', role: '', election: '山形県議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 1, belongs: '山形県議会', almaMater: '', district: '', count: 0, twitter: 'umetsuyosei', birthday: '1967/02/23',congressman: false, candidate: true, localcandidate: true, candidateType: '山形県議会議員選挙', candidatedistrictblock: '東北', candidatePrefecture: '山形県', candidatedistrict: '山形市', image: 'https://new-kokumin.jp/wp-content/uploads/2021/03/4f606141d769635874791a06664fc7f9-scaled-e1668044727653.jpg', detail: '国民民主党山形県総支部連合会政務調査会長（現）\n\
-      山形県議会議員（現' },
-      { id: 71, name: '小粥康弘', role: '', election: '横浜市議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 5, belongs: '横浜市議会', almaMater: '', district: '', count: 0, twitter: 'yasuhirokogayu', birthday: '1967/09/10',congressman: false, candidate: true, localcandidate: true, candidateType: '横浜市議会議員選挙', candidatedistrictblock: '南関東', candidatePrefecture: '神奈川県', candidatedistrict: '横浜市旭区', image: 'https://new-kokumin.jp/wp-content/uploads/2021/08/042fd9e1ec47ddc689ca697b4c351782-2-e1668047907797.png', detail: '2005年 三菱重工労組横製支部特別執行委員\n\
-       民主党神奈川県第6区総支部副幹事長\n\
-      2006年 横浜市会議員初当選\n\
-      2019年 横浜市会議員5期目当選' },
-      { id: 72, name: '北岡千はる', role: '', election: '京都府議会議員選挙', kokujibi: '2023/3/31', tohyobi: '2023/4/9', license:'公認', newcomer:'現職', continuecount: 8, belongs: '', almaMater: '', district: '', count: 0, twitter: '', birthday: '1958/03/26',congressman: false, candidate: true, localcandidate: true, candidateType: '京都府議会議員選挙', candidatedistrictblock: '近畿', candidatePrefecture: '京都府', candidatedistrict: '京都府左京区', image: 'https://new-kokumin.jp/wp-content/uploads/2022/11/361007097270050865c68ae0be535a73-e1674520690625.jpg', hp: '北岡ちはる', url: 'https://www.chiharu26.com/', detail: '京都市立 紫野高等学校 普通科 卒業\n\
-        帝塚山大学 教養学部 卒業\n\
-        佛教大学 通信教育課程（幼稚園教育）修了\n\
-        私立幼稚園勤務（旧 洛北せいか幼稚園・1981年から2002年）'
+      {
+        "id": 0,
+        "candidatePrefecture": "都道府県",
+        "election": "選挙名",
+        "electiondistrict": "選挙区名",
+        "teisu": "定数",
+        "name": "候補者名",
+        "kana": "フリガナ",
+        "gender": "性別",
+        "age": "年齢",
+        "newcomer": "現元新",
+        "continuecount": "期数",
+        "touseki": "党籍",
+        "license": "公認\n推薦",
+        "kokujibi": "告示日",
+        "tohyobi": "投票日",
+        "tousen": "当選",
+        "twitter": "twitter",
+        "candidatedistrictblock": "ブロック",
+        "localcandidate": "地方選候補者",
+        "birthday": "誕生日",
+        "portal": "ポータル",
+        "candidatedistrict": "立候補自治体",
+        "image": "画像",
+        "hp": "HP名称",
+        "url": "HPURL",
+        "instagram": "instagram",
+        "facebook": "facebook",
+        "almaMater": "出身校",
+        "detail": "経歴"
       },
       {
-        id: 73,
-        "name": "小林裕史",
-        role: '',
-        "election": '新潟市議会議員選挙',
-        kokujibi: '2023/3/31',
-        tohyobi: '2023/4/9',
-        "license":"推薦",
-        "newcomer":'新人',
-        continuecount: 0,
-        belongs: '',
-        almaMater: '',
-        district: '',
-        count: 0,
-        twitter: '',
-        birthday: '1977/07/29',
-        congressman: false,
-        candidate: true,
-        localcandidate: true,
-        candidateType: '新潟市議会議員選挙',
-        candidatedistrictblock: '北陸信越',
-        "candidatePrefecture": '新潟県',
-        candidatedistrict: '新潟市秋葉区',
-        image: 'https://new-kokumin.jp/wp-content/uploads/2022/12/258b49c5660c6fd8cd037f7f85390d72-scaled.jpg',
-        detail: 'ー'
-      },
-      {
-        "id": 74,
+        "id": 54,
         "candidatePrefecture": "三重県",
         "election": "津市議会議員選挙",
         "electiondistrict": "",
@@ -220,10 +136,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 75,
+        "id": 55,
         "candidatePrefecture": "栃木県",
         "election": "壬生町議会議員選挙",
         "electiondistrict": "",
@@ -232,7 +154,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵﾁｱｲｾｲｷ",
         "gender": "男",
         "age": "58",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "5",
         "touseki": "有",
         "license": "公認",
@@ -245,10 +167,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "栃木県壬生町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 76,
+        "id": 56,
         "candidatePrefecture": "福井県",
         "election": "坂井市議会議員選挙",
         "electiondistrict": "",
@@ -257,7 +185,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｶﾜﾊﾞﾀﾀｶﾊﾙ",
         "gender": "男",
         "age": "65",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "4",
         "touseki": "有",
         "license": "推薦",
@@ -270,10 +198,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県坂井市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 77,
+        "id": 57,
         "candidatePrefecture": "大阪府",
         "election": "河内長野市議会議員選挙",
         "electiondistrict": "",
@@ -282,7 +216,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾎﾘｶﾜｶｽﾞﾋﾛ",
         "gender": "男",
         "age": "63",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "無",
         "license": "推薦",
@@ -295,10 +229,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大阪府河内長野市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 78,
+        "id": 58,
         "candidatePrefecture": "愛媛県",
         "election": "松山市議会議員選挙",
         "electiondistrict": "",
@@ -315,15 +255,21 @@ export class InMemoryDataService implements InMemoryDbService {
         "tohyobi": "2022/4/24",
         "tousen": "◎",
         "twitter": "one_ehime",
-        "candidatedistrictblock": "",
+        "candidatedistrictblock": "四国",
         "localcandidate": "FALSE",
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛媛県松山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 79,
+        "id": 59,
         "candidatePrefecture": "千葉県",
         "election": "野田市議会議員選挙",
         "electiondistrict": "",
@@ -332,7 +278,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｸﾞﾗﾅｵｷ",
         "gender": "男",
         "age": "57",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -345,10 +291,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県野田市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 80,
+        "id": 60,
         "candidatePrefecture": "長崎県",
         "election": "南島原市議会議員選挙",
         "electiondistrict": "",
@@ -370,10 +322,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県南島原市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 81,
+        "id": 61,
         "candidatePrefecture": "東京都",
         "election": "立川市議会議員選挙",
         "electiondistrict": "",
@@ -382,7 +340,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｵｲｼﾌﾐｵ",
         "gender": "男",
         "age": "62",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "4",
         "touseki": "有",
         "license": "公認",
@@ -395,10 +353,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都立川市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 82,
+        "id": 62,
         "candidatePrefecture": "福井県",
         "election": "越前市議会議員選挙",
         "electiondistrict": "",
@@ -407,7 +371,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｺﾀﾞﾏｼｭﾝｲﾁ",
         "gender": "男",
         "age": "72",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "推薦",
@@ -420,10 +384,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県越前市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 83,
+        "id": 63,
         "candidatePrefecture": "滋賀県",
         "election": "長浜市議会議員選挙",
         "electiondistrict": "",
@@ -432,7 +402,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾌｼﾞｲﾉﾎﾞﾙ",
         "gender": "男",
         "age": "64",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "1",
         "touseki": "無",
         "license": "推薦",
@@ -445,10 +415,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県長浜市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 84,
+        "id": 64,
         "candidatePrefecture": "新潟県",
         "election": "胎内市議会議員選挙",
         "electiondistrict": "",
@@ -470,10 +446,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "新潟県胎内市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 85,
+        "id": 65,
         "candidatePrefecture": "茨城県",
         "election": "茨城県議会議員選挙",
         "electiondistrict": "ひたちなか市",
@@ -482,7 +464,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾌﾀｶﾜﾄｼﾋﾃﾞ",
         "gender": "男",
         "age": "44",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -495,10 +477,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県ひたちなか市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 86,
+        "id": 66,
         "candidatePrefecture": "茨城県",
         "election": "茨城県議会議員選挙",
         "electiondistrict": "日立市",
@@ -507,7 +495,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｻｲﾄｳﾋﾃﾞｱｷ",
         "gender": "男",
         "age": "62",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -520,10 +508,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県日立市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 87,
+        "id": 67,
         "candidatePrefecture": "茨城県",
         "election": "茨城県議会議員選挙",
         "electiondistrict": "日立市",
@@ -532,7 +526,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾀｶﾔｽﾋﾛｱｷ",
         "gender": "男",
         "age": "57",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -545,10 +539,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県日立市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 88,
+        "id": 68,
         "candidatePrefecture": "千葉県",
         "election": "八千代市議会議員選挙",
         "electiondistrict": "",
@@ -570,10 +570,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県八千代市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 89,
+        "id": 69,
         "candidatePrefecture": "福岡県",
         "election": "福津市議会議員選挙",
         "electiondistrict": "",
@@ -595,10 +601,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県福津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 90,
+        "id": 70,
         "candidatePrefecture": "東京都",
         "election": "西東京市議会議員選挙",
         "electiondistrict": "",
@@ -620,10 +632,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都西東京市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 91,
+        "id": 71,
         "candidatePrefecture": "茨城県",
         "election": "かすみがうら市議会議員選挙",
         "electiondistrict": "",
@@ -632,7 +650,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｻｸﾗｲｹﾝｲﾁ",
         "gender": "男",
         "age": "51",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -645,10 +663,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県かすみがうら市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 92,
+        "id": 72,
         "candidatePrefecture": "愛知県",
         "election": "田原市議会議員選挙",
         "electiondistrict": "",
@@ -670,10 +694,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "愛知県田原市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 93,
+        "id": 73,
         "candidatePrefecture": "静岡県",
         "election": "焼津市議会議員選挙",
         "electiondistrict": "",
@@ -682,7 +712,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｶﾀﾞﾐﾂﾏｻ",
         "gender": "男",
         "age": "69",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "推薦",
@@ -695,10 +725,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "静岡県焼津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 94,
+        "id": 74,
         "candidatePrefecture": "宮崎県",
         "election": "門川町議会議員選挙",
         "electiondistrict": "",
@@ -707,7 +743,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲﾜｻﾕｳｲﾁ",
         "gender": "男",
         "age": "71",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -720,10 +756,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "宮崎県門川町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 95,
+        "id": 75,
         "candidatePrefecture": "愛知県",
         "election": "愛知県議会議員選挙",
         "electiondistrict": "名古屋市千種区",
@@ -732,7 +774,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｸﾛﾀﾞﾀﾛｳ",
         "gender": "男",
         "age": "55",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -745,10 +787,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "愛知県名古屋市千種区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 96,
+        "id": 76,
         "candidatePrefecture": "愛知県",
         "election": "愛知県議会議員選挙",
         "electiondistrict": "名古屋市守山区",
@@ -757,7 +805,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾓﾘｲﾓﾄｼ",
         "gender": "男",
         "age": "58",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "4",
         "touseki": "有",
         "license": "公認",
@@ -770,10 +818,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "愛知県名古屋市守山区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 97,
+        "id": 77,
         "candidatePrefecture": "愛知県",
         "election": "愛知県議会議員選挙",
         "electiondistrict": "名古屋市名東区",
@@ -782,7 +836,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾄﾐﾀﾞｱｷｵ",
         "gender": "男",
         "age": "63",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "5",
         "touseki": "有",
         "license": "公認",
@@ -795,10 +849,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県名古屋市名東区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 98,
+        "id": 78,
         "candidatePrefecture": "愛知県",
         "election": "名古屋市議会議員選挙",
         "electiondistrict": "西区",
@@ -807,7 +867,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｳｴｿﾞﾉｼﾝｽｹ",
         "gender": "男",
         "age": "46",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -820,10 +880,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県西区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 99,
+        "id": 79,
         "candidatePrefecture": "愛知県",
         "election": "名古屋市議会議員選挙",
         "electiondistrict": "千種区",
@@ -832,7 +898,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾔﾏﾀﾞﾏｻﾋﾛ",
         "gender": "男",
         "age": "51",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -845,10 +911,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県千種区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 100,
+        "id": 80,
         "candidatePrefecture": "愛知県",
         "election": "名古屋市議会議員選挙",
         "electiondistrict": "守山区",
@@ -857,7 +929,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｶﾞﾜﾄｼﾕｷ",
         "gender": "男",
         "age": "46",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "4",
         "touseki": "有",
         "license": "公認",
@@ -870,10 +942,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県守山区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 101,
+        "id": 81,
         "candidatePrefecture": "愛知県",
         "election": "名古屋市議会議員選挙",
         "electiondistrict": "名東区",
@@ -882,7 +960,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾋﾋﾞﾐｻｷ",
         "gender": "女",
         "age": "37",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -895,10 +973,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県名東区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 102,
+        "id": 82,
         "candidatePrefecture": "山口県",
         "election": "山口県議会議員選挙",
         "electiondistrict": "周南市",
@@ -920,10 +1004,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "山口県周南市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 103,
+        "id": 83,
         "candidatePrefecture": "宮崎県",
         "election": "宮崎県議会議員選挙",
         "electiondistrict": "宮崎市",
@@ -945,10 +1035,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "宮崎県宮崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 104,
+        "id": 84,
         "candidatePrefecture": "宮崎県",
         "election": "宮崎県議会議員選挙",
         "electiondistrict": "延岡市",
@@ -970,10 +1066,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 105,
+        "id": 85,
         "candidatePrefecture": "埼玉県",
         "election": "さいたま市議会議員選挙",
         "electiondistrict": "南区",
@@ -982,7 +1084,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾆﾜﾀｶﾋﾛ",
         "gender": "男",
         "age": "41",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "",
         "touseki": "有",
         "license": "公認",
@@ -995,10 +1097,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "埼玉県南区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 106,
+        "id": 86,
         "candidatePrefecture": "鹿児島県",
         "election": "鹿児島県議会議員選挙",
         "electiondistrict": "鹿児島市・鹿児島郡区",
@@ -1020,10 +1128,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "鹿児島県鹿児島市・鹿児島郡区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 107,
+        "id": 87,
         "candidatePrefecture": "岐阜県",
         "election": "岐阜県議会議員選挙",
         "electiondistrict": "大垣市",
@@ -1032,7 +1146,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾉﾑﾗﾐﾎ",
         "gender": "女",
         "age": "53",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -1045,10 +1159,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岐阜県大垣市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 108,
+        "id": 88,
         "candidatePrefecture": "岐阜県",
         "election": "岐阜県議会議員選挙",
         "electiondistrict": "各務原市",
@@ -1057,7 +1177,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲﾄｳﾏｻﾋﾛ",
         "gender": "男",
         "age": "71",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "6",
         "touseki": "有",
         "license": "公認",
@@ -1070,10 +1190,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岐阜県各務原市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 109,
+        "id": 89,
         "candidatePrefecture": "岐阜県",
         "election": "岐阜県議会議員選挙",
         "electiondistrict": "可児市",
@@ -1082,7 +1208,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲﾄｳﾋﾃﾞｵ",
         "gender": "男",
         "age": "50",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -1095,10 +1221,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岐阜県可児市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 110,
+        "id": 90,
         "candidatePrefecture": "愛媛県",
         "election": "愛媛県議会議員選挙",
         "electiondistrict": "松山市・上浮穴郡",
@@ -1107,7 +1239,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｱｻｵｶｼﾏ",
         "gender": "女",
         "age": "47",
-        "newcomer": "新",
+        "newcomer": "新人",
         "continuecount": "",
         "touseki": "有",
         "license": "公認",
@@ -1120,10 +1252,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛媛県松山市・上浮穴郡",
-        "image": ""
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/09/dbfb83af6f81d0fbd3d05c130500f9f0-e1668421112462.jpg",
+        "hp": "ミライ∞ラボ",
+        "url": "https://sb-mirailabo.net/",
+        "instagram": "shima.asaoka",
+        "facebook": "shima.asaoka",
+        "almaMater": "松山大学",
+        "detail": "1997年松山大学人文学部英語英米文学科卒業\n1998年株式会社Egg & Chick入社\n2000年株式会社コンベックス入社\n2018年株式会社ミライ・ラボ創業\n大学卒業後、子ども英語教室講師を経て、採用コンサルティング会社に創業メンバーとして参画。中小企業の新卒・中途採用サポートや、大学生の就職支援業務等に約１２年従事。 その後、2018年10月に「自ら考え、自ら選び、自ら学ぶ」“教えない”学習塾「STUDY BASEミライ∞ラボ」を開校し5年目。\n株式会社ミライ・ラボ 代表取締役\nNPO法人こどものみらいプロジェクトゆめドリ愛媛サテライト 副事務局長\nカナエルエヒメ 代表"
       },
       {
-        "id": 111,
+        "id": 91,
         "candidatePrefecture": "島根県",
         "election": "島根県議会議員選挙",
         "electiondistrict": "松江市",
@@ -1132,7 +1270,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲﾜﾀﾋﾛﾀｶ",
         "gender": "男",
         "age": "46",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -1145,10 +1283,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "島根県松江市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 112,
+        "id": 92,
         "candidatePrefecture": "長崎県",
         "election": "長崎県議会議員選挙",
         "electiondistrict": "長崎市",
@@ -1157,7 +1301,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾌｶﾎﾘﾋﾛｼ",
         "gender": "男",
         "age": "57",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -1170,10 +1314,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 113,
+        "id": 93,
         "candidatePrefecture": "長崎県",
         "election": "長崎県議会議員選挙",
         "electiondistrict": "諫早市",
@@ -1182,7 +1332,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾔﾏｸﾞﾁﾊﾂﾐ",
         "gender": "男",
         "age": "74",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -1195,10 +1345,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県諫早市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 114,
+        "id": 94,
         "candidatePrefecture": "香川県",
         "election": "香川県議会選挙",
         "electiondistrict": "高松市",
@@ -1207,7 +1363,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾔﾏﾓﾄｻﾄｼ",
         "gender": "男",
         "age": "53",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -1220,10 +1376,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県高松市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 115,
+        "id": 95,
         "candidatePrefecture": "香川県",
         "election": "香川県議会選挙",
         "electiondistrict": "高松市",
@@ -1245,10 +1407,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県高松市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 116,
+        "id": 96,
         "candidatePrefecture": "香川県",
         "election": "香川県議会選挙",
         "electiondistrict": "東かがわ市",
@@ -1257,7 +1425,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｶｶﾞﾐﾊﾗｼﾝｲﾁﾛｳ",
         "gender": "男",
         "age": "37",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -1270,10 +1438,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県東かがわ市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 117,
+        "id": 97,
         "candidatePrefecture": "香川県",
         "election": "香川県議会選挙",
         "electiondistrict": "観音寺市",
@@ -1295,10 +1469,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県観音寺市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 118,
+        "id": 98,
         "candidatePrefecture": "静岡県",
         "election": "浜松市議会議員選挙",
         "electiondistrict": "南区",
@@ -1320,10 +1500,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "静岡県南区",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2022/10/d95784511884eae025a9c3e867694240-scaled.jpg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/10/d95784511884eae025a9c3e867694240-scaled.jpg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 119,
+        "id": 99,
         "candidatePrefecture": "福岡県",
         "election": "福岡県議会議員選挙",
         "electiondistrict": "南区",
@@ -1332,7 +1518,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｵﾀｷｮｳｺ",
         "gender": "女",
         "age": "43",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "2",
         "touseki": "有",
         "license": "公認",
@@ -1345,10 +1531,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県南区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 120,
+        "id": 100,
         "candidatePrefecture": "福岡県",
         "election": "福岡県議会議員選挙",
         "electiondistrict": "城南区",
@@ -1357,7 +1549,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾓﾘﾔﾏｻﾄ",
         "gender": "男",
         "age": "57",
-        "newcomer": "現",
+        "newcomer": "現職",
         "continuecount": "4",
         "touseki": "有",
         "license": "推薦",
@@ -1370,10 +1562,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県城南区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 121,
+        "id": 101,
         "candidatePrefecture": "福岡県",
         "election": "福岡市議会議員選挙",
         "electiondistrict": "博多区",
@@ -1395,10 +1593,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県博多区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 122,
+        "id": 102,
         "candidatePrefecture": "福岡県",
         "election": "福岡市議会議員選挙",
         "electiondistrict": "西区",
@@ -1420,10 +1624,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "福岡県西区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 123,
+        "id": 103,
         "candidatePrefecture": "福岡県",
         "election": "福岡市議会議員選挙",
         "electiondistrict": "早良区",
@@ -1445,10 +1655,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県早良区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 124,
+        "id": 104,
         "candidatePrefecture": "福岡県",
         "election": "福岡市議会議員選挙",
         "electiondistrict": "中央区",
@@ -1470,10 +1686,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県中央区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 125,
+        "id": 105,
         "candidatePrefecture": "大分県",
         "election": "大分県議会議員選挙",
         "electiondistrict": "大分市",
@@ -1495,10 +1717,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大分県大分市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 126,
+        "id": 106,
         "candidatePrefecture": "高知県",
         "election": "高知県議会議員選挙",
         "electiondistrict": "高知市",
@@ -1507,7 +1735,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾏｴﾀﾞﾂﾖｼ",
         "gender": "男",
         "age": "39",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -1520,10 +1748,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "高知県高知市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 127,
+        "id": 107,
         "candidatePrefecture": "北海道",
         "election": "北海道議会議員選挙",
         "electiondistrict": "札幌市中央区",
@@ -1545,10 +1779,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "北海道札幌市中央区",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2022/10/f05c363e6bd1fa8ae802a3b2c35869cc-scaled-e1668133350492.jpg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/10/f05c363e6bd1fa8ae802a3b2c35869cc-scaled-e1668133350492.jpg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 128,
+        "id": 108,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "旭区",
@@ -1570,10 +1810,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県旭区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 129,
+        "id": 109,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "戸塚区",
@@ -1595,10 +1841,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県戸塚区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 130,
+        "id": 110,
         "candidatePrefecture": "神奈川県",
         "election": "神奈川県議会議員選挙",
         "electiondistrict": "横浜市戸塚区",
@@ -1620,10 +1872,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県横浜市戸塚区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 131,
+        "id": 111,
         "candidatePrefecture": "神奈川県",
         "election": "川崎市議会議員選挙",
         "electiondistrict": "川崎区",
@@ -1645,10 +1903,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県川崎区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 132,
+        "id": 112,
         "candidatePrefecture": "愛知県",
         "election": "愛知県議会議員選挙",
         "electiondistrict": "名古屋市西区",
@@ -1670,10 +1934,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県名古屋市西区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 133,
+        "id": 113,
         "candidatePrefecture": "愛知県",
         "election": "名古屋市議会議員選挙",
         "electiondistrict": "天白区",
@@ -1682,7 +1952,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾎｯﾀﾀｲｷ",
         "gender": "男",
         "age": "47",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -1695,10 +1965,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県天白区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 134,
+        "id": 114,
         "candidatePrefecture": "和歌山県",
         "election": "和歌山県議会議員選挙",
         "electiondistrict": "和歌山市",
@@ -1720,10 +1996,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "和歌山県和歌山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 135,
+        "id": 115,
         "candidatePrefecture": "長崎県",
         "election": "長崎県議会議員選挙",
         "electiondistrict": "佐世保・北松浦郡",
@@ -1745,10 +2027,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県佐世保・北松浦郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 136,
+        "id": 116,
         "candidatePrefecture": "長崎県",
         "election": "長崎県議会議員選挙",
         "electiondistrict": "東彼杵郡",
@@ -1770,10 +2058,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県東彼杵郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 137,
+        "id": 117,
         "candidatePrefecture": "岡山県",
         "election": "岡山県議会議員選挙",
         "electiondistrict": "岡山市中区",
@@ -1795,10 +2089,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岡山県岡山市中区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 138,
+        "id": 118,
         "candidatePrefecture": "滋賀県",
         "election": "滋賀県議会議員選挙",
         "electiondistrict": "大津市",
@@ -1820,10 +2120,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 139,
+        "id": 119,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "横浜市神奈川区",
@@ -1845,10 +2151,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県横浜市神奈川区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 140,
+        "id": 120,
         "candidatePrefecture": "神奈川県",
         "election": "神奈川県議会議員選挙",
         "electiondistrict": "横浜市泉区",
@@ -1870,10 +2182,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県横浜市泉区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 141,
+        "id": 121,
         "candidatePrefecture": "神奈川県",
         "election": "川崎市議会議員選挙",
         "electiondistrict": "川崎市高津区",
@@ -1895,10 +2213,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県川崎市高津区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 142,
+        "id": 122,
         "candidatePrefecture": "熊本県",
         "election": "熊本市議会議員選挙",
         "electiondistrict": "熊本市西区",
@@ -1920,10 +2244,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "熊本県熊本市西区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 143,
+        "id": 123,
         "candidatePrefecture": "兵庫県",
         "election": "兵庫県議会議員選挙",
         "electiondistrict": "神戸市北区",
@@ -1945,10 +2275,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県神戸市北区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 144,
+        "id": 124,
         "candidatePrefecture": "兵庫県",
         "election": "兵庫県議会議員選挙",
         "electiondistrict": "川西市・川辺郡",
@@ -1970,10 +2306,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県川西市・川辺郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 145,
+        "id": 125,
         "candidatePrefecture": "兵庫県",
         "election": "神戸市議会議員選挙",
         "electiondistrict": "神戸市垂水区",
@@ -1995,10 +2337,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県神戸市垂水区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 146,
+        "id": 126,
         "candidatePrefecture": "兵庫県",
         "election": "神戸市議会議員選挙",
         "electiondistrict": "神戸市垂水区",
@@ -2020,10 +2368,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県神戸市垂水区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 147,
+        "id": 127,
         "candidatePrefecture": "岡山県",
         "election": "岡山市議会議員選挙",
         "electiondistrict": "岡山市中区",
@@ -2045,10 +2399,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岡山県岡山市中区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 148,
+        "id": 128,
         "candidatePrefecture": "埼玉県",
         "election": "埼玉県議会議員選挙",
         "electiondistrict": "西第7区",
@@ -2070,10 +2430,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "埼玉県西第7区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 149,
+        "id": 129,
         "candidatePrefecture": "京都府",
         "election": "京都府議会議員選挙",
         "electiondistrict": "京都市左京区",
@@ -2095,10 +2461,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府京都市左京区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 150,
+        "id": 130,
         "candidatePrefecture": "京都府",
         "election": "京都府議会議員選挙",
         "electiondistrict": "京都市山科区",
@@ -2120,10 +2492,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府京都市山科区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 151,
+        "id": 131,
         "candidatePrefecture": "京都府",
         "election": "京都府議会議員選挙",
         "electiondistrict": "城陽市",
@@ -2145,10 +2523,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府城陽市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 152,
+        "id": 132,
         "candidatePrefecture": "京都府",
         "election": "京都府議会議員選挙",
         "electiondistrict": "京田辺市・綴喜郡",
@@ -2170,10 +2554,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府京田辺市・綴喜郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 153,
+        "id": 133,
         "candidatePrefecture": "京都府",
         "election": "京都市議会議員選挙",
         "electiondistrict": "左京区",
@@ -2182,7 +2572,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵﾝﾂﾞｶｲｻｵ",
         "gender": "男",
         "age": "59",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "4",
         "touseki": "有",
         "license": "公認",
@@ -2195,10 +2585,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府左京区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 154,
+        "id": 134,
         "candidatePrefecture": "京都府",
         "election": "京都市議会議員選挙",
         "electiondistrict": "東山区",
@@ -2220,10 +2616,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府東山区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 155,
+        "id": 135,
         "candidatePrefecture": "京都府",
         "election": "京都市議会議員選挙",
         "electiondistrict": "山科区",
@@ -2245,10 +2647,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府山科区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 156,
+        "id": 136,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "栄区",
@@ -2257,7 +2665,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲｼﾜﾀﾕｷｵ",
         "gender": "男",
         "age": "59",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -2270,10 +2678,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県栄区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 157,
+        "id": 137,
         "candidatePrefecture": "三重県",
         "election": "三重県議会議員選挙",
         "electiondistrict": "鈴鹿市",
@@ -2295,10 +2709,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県鈴鹿市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 158,
+        "id": 138,
         "candidatePrefecture": "三重県",
         "election": "三重県議会議員選挙",
         "electiondistrict": "津市",
@@ -2320,10 +2740,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 159,
+        "id": 139,
         "candidatePrefecture": "三重県",
         "election": "三重県議会議員選挙",
         "electiondistrict": "伊勢市",
@@ -2345,10 +2771,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県伊勢市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 160,
+        "id": 140,
         "candidatePrefecture": "静岡県",
         "election": "静岡県議会議員選挙",
         "electiondistrict": "静岡市清水区",
@@ -2370,10 +2802,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "静岡県静岡市清水区",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2022/11/f9f1b7d6f06824717bfad3046a060539-e1670923332113.jpeg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/11/f9f1b7d6f06824717bfad3046a060539-e1670923332113.jpeg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 161,
+        "id": 141,
         "candidatePrefecture": "千葉県",
         "election": "千葉県議会議員選挙",
         "electiondistrict": "野田市",
@@ -2395,10 +2833,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県野田市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 162,
+        "id": 142,
         "candidatePrefecture": "千葉県",
         "election": "千葉県議会議員選挙",
         "electiondistrict": "成田市",
@@ -2420,10 +2864,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県成田市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 163,
+        "id": 143,
         "candidatePrefecture": "新潟県",
         "election": "新潟市議会議員選挙",
         "electiondistrict": "秋葉区",
@@ -2445,10 +2895,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "新潟県秋葉区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 164,
+        "id": 144,
         "candidatePrefecture": "神奈川県",
         "election": "神奈川県議会議員選挙",
         "electiondistrict": "港南区",
@@ -2470,10 +2926,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県港南区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 165,
+        "id": 145,
         "candidatePrefecture": "新潟県",
         "election": "新潟県議会議員選挙",
         "electiondistrict": "新潟市中央区",
@@ -2495,10 +2957,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "新潟県新潟市中央区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 166,
+        "id": 146,
         "candidatePrefecture": "香川県",
         "election": "香川県議会議員選挙",
         "electiondistrict": "さぬき市",
@@ -2520,10 +2988,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県さぬき市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 167,
+        "id": 147,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "都筑区",
@@ -2545,10 +3019,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県都筑区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 168,
+        "id": 148,
         "candidatePrefecture": "三重県",
         "election": "三重県議会議員選挙",
         "electiondistrict": "四日市市",
@@ -2570,10 +3050,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県四日市市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 169,
+        "id": 149,
         "candidatePrefecture": "三重県",
         "election": "三重県議会議員選挙",
         "electiondistrict": "多気郡",
@@ -2595,10 +3081,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県多気郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 170,
+        "id": 150,
         "candidatePrefecture": "長崎県",
         "election": "長崎県議会議員選挙",
         "electiondistrict": "長崎市",
@@ -2620,10 +3112,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 171,
+        "id": 151,
         "candidatePrefecture": "山形県",
         "election": "山形県議会議員選挙",
         "electiondistrict": "山形市",
@@ -2645,10 +3143,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "山形県山形市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 172,
+        "id": 152,
         "candidatePrefecture": "山形県",
         "election": "山形県議会議員選挙",
         "electiondistrict": "村山市",
@@ -2670,10 +3174,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県村山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 173,
+        "id": 153,
         "candidatePrefecture": "神奈川県",
         "election": "相模原市議会議員選挙",
         "electiondistrict": "南区",
@@ -2695,10 +3205,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県南区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 174,
+        "id": 154,
         "candidatePrefecture": "愛媛県",
         "election": "愛媛県議会議員選挙",
         "electiondistrict": "西条市",
@@ -2720,10 +3236,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛媛県西条市",
-        "image": ""
+        "image": "https://new-kokumin.jp/wp-content/uploads/2023/01/6210f5f35e1c0dd454a6bd7127599d5e-scaled-e1675387389607.jpg",
+        "hp": "愛媛県議会議員塩出 崇",
+        "url": "http://www.shiode-takashi.com/",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "皇學館大学",
+        "detail": "愛媛県議会議員（現職）\n【経歴】皇學館大学卒業\n新居浜市立商業高等学校教諭\n愛媛県立新居浜東高等学校教諭\n愛媛県立丹原高等学校教諭\n愛媛県立新居浜西高等学校教諭\n西条市議会議員（１期）\n西條神社宮司 保護司"
       },
       {
-        "id": 175,
+        "id": 155,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "磯子区",
@@ -2745,10 +3267,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県磯子区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 176,
+        "id": 156,
         "candidatePrefecture": "神奈川県",
         "election": "横浜市議会議員選挙",
         "electiondistrict": "鶴見区",
@@ -2757,7 +3285,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｱﾀﾞﾁﾋﾃﾞｷ",
         "gender": "男",
         "age": "51",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "1",
         "touseki": "有",
         "license": "公認",
@@ -2770,10 +3298,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県鶴見区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 177,
+        "id": 157,
         "candidatePrefecture": "神奈川県",
         "election": "相模原市議会議員選挙",
         "electiondistrict": "緑区",
@@ -2795,10 +3329,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県緑区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 178,
+        "id": 158,
         "candidatePrefecture": "福岡県",
         "election": "福岡県議会議員選挙",
         "electiondistrict": "行橋市",
@@ -2807,7 +3347,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｵｶﾀﾞﾋﾛﾄｼ",
         "gender": "男",
         "age": "75",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "3",
         "touseki": "有",
         "license": "推薦",
@@ -2820,10 +3360,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県行橋市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 179,
+        "id": 159,
         "candidatePrefecture": "神奈川県",
         "election": "相模原市議会議員選挙",
         "electiondistrict": "中央区",
@@ -2845,10 +3391,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県中央区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 180,
+        "id": 160,
         "candidatePrefecture": "愛知県",
         "election": "愛知県議会議員選挙",
         "electiondistrict": "小牧市",
@@ -2870,10 +3422,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県小牧市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 181,
+        "id": 161,
         "candidatePrefecture": "大分県",
         "election": "大分県議会議員選挙",
         "electiondistrict": "宇佐市",
@@ -2895,10 +3453,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大分県宇佐市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 182,
+        "id": 162,
         "candidatePrefecture": "山形県",
         "election": "山形県議会議員選挙",
         "electiondistrict": "東根市",
@@ -2920,10 +3484,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県東根市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 183,
+        "id": 163,
         "candidatePrefecture": "山形県",
         "election": "山形県議会議員選挙",
         "electiondistrict": "酒田市・飽海郡",
@@ -2945,10 +3515,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県酒田市・飽海郡",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 184,
+        "id": 164,
         "candidatePrefecture": "千葉県",
         "election": "千葉県議会議員選挙",
         "electiondistrict": "千葉市稲毛区",
@@ -2970,10 +3546,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県千葉市稲毛区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 185,
+        "id": 165,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -2995,10 +3577,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 186,
+        "id": 166,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -3020,10 +3608,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 187,
+        "id": 167,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -3045,10 +3639,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 188,
+        "id": 168,
         "candidatePrefecture": "宮崎県",
         "election": "日向市議会議員選挙",
         "electiondistrict": "",
@@ -3070,10 +3670,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県日向市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 189,
+        "id": 169,
         "candidatePrefecture": "宮崎県",
         "election": "日向市議会議員選挙",
         "electiondistrict": "",
@@ -3095,10 +3701,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県日向市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 190,
+        "id": 170,
         "candidatePrefecture": "宮崎県",
         "election": "宮崎市議会議員選挙",
         "electiondistrict": "",
@@ -3120,10 +3732,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県宮崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 191,
+        "id": 171,
         "candidatePrefecture": "愛知県",
         "election": "一宮市議会議員選挙",
         "electiondistrict": "",
@@ -3145,10 +3763,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県一宮市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 192,
+        "id": 172,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -3170,10 +3794,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 193,
+        "id": 173,
         "candidatePrefecture": "宮崎県",
         "election": "宮崎市議会議員選挙",
         "electiondistrict": "",
@@ -3195,10 +3825,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県宮崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 194,
+        "id": 174,
         "candidatePrefecture": "岐阜県",
         "election": "大垣市議会議員選挙",
         "electiondistrict": "",
@@ -3220,10 +3856,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岐阜県大垣市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 195,
+        "id": 175,
         "candidatePrefecture": "東京都",
         "election": "港区議会議員選挙",
         "electiondistrict": "",
@@ -3245,10 +3887,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都港区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 196,
+        "id": 176,
         "candidatePrefecture": "東京都",
         "election": "港区議会議員選挙",
         "electiondistrict": "",
@@ -3270,10 +3918,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都港区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 197,
+        "id": 177,
         "candidatePrefecture": "東京都",
         "election": "港区議会議員選挙",
         "electiondistrict": "",
@@ -3295,10 +3949,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都港区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 198,
+        "id": 178,
         "candidatePrefecture": "東京都",
         "election": "文京区議会議員選挙",
         "electiondistrict": "",
@@ -3320,10 +3980,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都文京区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 199,
+        "id": 179,
         "candidatePrefecture": "東京都",
         "election": "目黒区議会議員選挙",
         "electiondistrict": "",
@@ -3345,10 +4011,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都目黒区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 200,
+        "id": 180,
         "candidatePrefecture": "東京都",
         "election": "世田谷区議会議員選挙",
         "electiondistrict": "",
@@ -3370,10 +4042,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都世田谷区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 201,
+        "id": 181,
         "candidatePrefecture": "東京都",
         "election": "練馬区議会議員選挙",
         "electiondistrict": "",
@@ -3395,10 +4073,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都練馬区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 202,
+        "id": 182,
         "candidatePrefecture": "東京都",
         "election": "板橋区議会議員選挙",
         "electiondistrict": "",
@@ -3420,10 +4104,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都板橋区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 203,
+        "id": 183,
         "candidatePrefecture": "東京都",
         "election": "江東区議会議員選挙",
         "electiondistrict": "",
@@ -3445,10 +4135,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都江東区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 204,
+        "id": 184,
         "candidatePrefecture": "東京都",
         "election": "八王子市議会議員選挙",
         "electiondistrict": "",
@@ -3470,10 +4166,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都八王子市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 205,
+        "id": 185,
         "candidatePrefecture": "福井県",
         "election": "福井市議会議員選挙",
         "electiondistrict": "",
@@ -3495,10 +4197,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県福井市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 206,
+        "id": 186,
         "candidatePrefecture": "福井県",
         "election": "敦賀市議会議員選挙",
         "electiondistrict": "",
@@ -3520,10 +4228,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県敦賀市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 207,
+        "id": 187,
         "candidatePrefecture": "千葉県",
         "election": "流山市議会議員選挙",
         "electiondistrict": "",
@@ -3545,10 +4259,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県流山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 208,
+        "id": 188,
         "candidatePrefecture": "千葉県",
         "election": "佐倉市議会議員選挙",
         "electiondistrict": "",
@@ -3570,10 +4290,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県佐倉市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 209,
+        "id": 189,
         "candidatePrefecture": "千葉県",
         "election": "船橋市議会議員選挙",
         "electiondistrict": "",
@@ -3595,10 +4321,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県船橋市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 210,
+        "id": 190,
         "candidatePrefecture": "千葉県",
         "election": "印西市議会議員選挙",
         "electiondistrict": "",
@@ -3620,10 +4352,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県印西市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 211,
+        "id": 191,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -3645,10 +4383,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 212,
+        "id": 192,
         "candidatePrefecture": "大阪府",
         "election": "豊中市議会議員選挙",
         "electiondistrict": "",
@@ -3670,10 +4414,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大阪府豊中市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 213,
+        "id": 193,
         "candidatePrefecture": "大阪府",
         "election": "池田市議会議員選挙",
         "electiondistrict": "",
@@ -3695,10 +4445,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大阪府池田市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 214,
+        "id": 194,
         "candidatePrefecture": "大阪府",
         "election": "熊取町議会議員選挙",
         "electiondistrict": "",
@@ -3720,10 +4476,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大阪府熊取町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 215,
+        "id": 195,
         "candidatePrefecture": "香川県",
         "election": "高松市議会議員選挙",
         "electiondistrict": "",
@@ -3745,10 +4507,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県高松市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 216,
+        "id": 196,
         "candidatePrefecture": "香川県",
         "election": "高松市議会議員選挙",
         "electiondistrict": "",
@@ -3770,10 +4538,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県高松市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 217,
+        "id": 197,
         "candidatePrefecture": "香川県",
         "election": "高松市議会議員選挙",
         "electiondistrict": "",
@@ -3795,10 +4569,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県高松市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 218,
+        "id": 198,
         "candidatePrefecture": "香川県",
         "election": "坂出市議会議員選挙",
         "electiondistrict": "",
@@ -3820,10 +4600,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県坂出市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 219,
+        "id": 199,
         "candidatePrefecture": "香川県",
         "election": "さぬき市議会議員選挙",
         "electiondistrict": "",
@@ -3845,10 +4631,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県さぬき市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 220,
+        "id": 200,
         "candidatePrefecture": "香川県",
         "election": "さぬき市議会議員選挙",
         "electiondistrict": "",
@@ -3870,10 +4662,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県さぬき市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 221,
+        "id": 201,
         "candidatePrefecture": "香川県",
         "election": "さぬき市議会議員選挙",
         "electiondistrict": "",
@@ -3895,10 +4693,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県さぬき市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 222,
+        "id": 202,
         "candidatePrefecture": "香川県",
         "election": "東かがわ市議会議員選挙",
         "electiondistrict": "",
@@ -3920,10 +4724,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県東かがわ市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 223,
+        "id": 203,
         "candidatePrefecture": "香川県",
         "election": "東かがわ市議会議員選挙",
         "electiondistrict": "",
@@ -3945,10 +4755,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県東かがわ市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 224,
+        "id": 204,
         "candidatePrefecture": "香川県",
         "election": "三木町議会議員選挙",
         "electiondistrict": "",
@@ -3970,10 +4786,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県三木町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 225,
+        "id": 205,
         "candidatePrefecture": "香川県",
         "election": "宇多津町議会議員選挙",
         "electiondistrict": "",
@@ -3995,10 +4817,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県宇多津町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 226,
+        "id": 206,
         "candidatePrefecture": "香川県",
         "election": "宇多津町議会議員選挙",
         "electiondistrict": "",
@@ -4020,10 +4848,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県宇多津町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 227,
+        "id": 207,
         "candidatePrefecture": "福岡県",
         "election": "大野城市議会議員選挙",
         "electiondistrict": "",
@@ -4045,10 +4879,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県大野城市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 228,
+        "id": 208,
         "candidatePrefecture": "埼玉県",
         "election": "熊谷市議会議員選挙",
         "electiondistrict": "",
@@ -4070,10 +4910,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "埼玉県熊谷市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 229,
+        "id": 209,
         "candidatePrefecture": "神奈川県",
         "election": "藤沢市議会議員選挙",
         "electiondistrict": "",
@@ -4095,10 +4941,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県藤沢市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 230,
+        "id": 210,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -4120,10 +4972,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 231,
+        "id": 211,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -4145,10 +5003,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 232,
+        "id": 212,
         "candidatePrefecture": "宮崎県",
         "election": "延岡市議会議員選挙",
         "electiondistrict": "",
@@ -4170,10 +5034,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県延岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 233,
+        "id": 213,
         "candidatePrefecture": "宮崎県",
         "election": "宮崎市議会議員選挙",
         "electiondistrict": "",
@@ -4195,10 +5065,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "宮崎県宮崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 234,
+        "id": 214,
         "candidatePrefecture": "和歌山県",
         "election": "和歌山市議会議員選挙",
         "electiondistrict": "",
@@ -4220,10 +5096,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "和歌山県和歌山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 235,
+        "id": 215,
         "candidatePrefecture": "和歌山県",
         "election": "和歌山市議会議員選挙",
         "electiondistrict": "",
@@ -4245,10 +5127,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "和歌山県和歌山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 236,
+        "id": 216,
         "candidatePrefecture": "三重県",
         "election": "四日市市議会議員選挙",
         "electiondistrict": "",
@@ -4270,10 +5158,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "三重県四日市市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 237,
+        "id": 217,
         "candidatePrefecture": "長崎県",
         "election": "佐世保市議会議員選挙",
         "electiondistrict": "",
@@ -4295,10 +5189,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県佐世保市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 238,
+        "id": 218,
         "candidatePrefecture": "長崎県",
         "election": "佐世保市議会議員選挙",
         "electiondistrict": "",
@@ -4320,10 +5220,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県佐世保市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 239,
+        "id": 219,
         "candidatePrefecture": "長崎県",
         "election": "佐世保市議会議員選挙",
         "electiondistrict": "",
@@ -4345,10 +5251,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県佐世保市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 240,
+        "id": 220,
         "candidatePrefecture": "長崎県",
         "election": "佐世保市議会議員選挙",
         "electiondistrict": "",
@@ -4370,10 +5282,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県佐世保市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 241,
+        "id": 221,
         "candidatePrefecture": "石川県",
         "election": "金沢市議会議員選挙",
         "electiondistrict": "",
@@ -4395,10 +5313,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "石川県金沢市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 242,
+        "id": 222,
         "candidatePrefecture": "新潟県",
         "election": "長岡市議会議員選挙",
         "electiondistrict": "",
@@ -4420,10 +5344,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "新潟県長岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 243,
+        "id": 223,
         "candidatePrefecture": "栃木県",
         "election": "宇都宮市議会議員選挙",
         "electiondistrict": "",
@@ -4445,10 +5375,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "栃木県宇都宮市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 244,
+        "id": 224,
         "candidatePrefecture": "栃木県",
         "election": "小山市議会議員選挙",
         "electiondistrict": "",
@@ -4470,10 +5406,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "栃木県小山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 245,
+        "id": 225,
         "candidatePrefecture": "福井県",
         "election": "福井市議会議員選挙",
         "electiondistrict": "",
@@ -4495,10 +5437,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県福井市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 246,
+        "id": 226,
         "candidatePrefecture": "東京都",
         "election": "調布市議会議員選挙",
         "electiondistrict": "",
@@ -4520,10 +5468,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都調布市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 247,
+        "id": 227,
         "candidatePrefecture": "東京都",
         "election": "目黒区議会議員選挙",
         "electiondistrict": "",
@@ -4545,10 +5499,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都目黒区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 248,
+        "id": 228,
         "candidatePrefecture": "東京都",
         "election": "千代田区議会議員選挙",
         "electiondistrict": "",
@@ -4570,10 +5530,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都千代田区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 249,
+        "id": 229,
         "candidatePrefecture": "東京都",
         "election": "荒川区議会議員選挙",
         "electiondistrict": "",
@@ -4595,10 +5561,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都荒川区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 250,
+        "id": 230,
         "candidatePrefecture": "東京都",
         "election": "東久留米市議会議員選挙",
         "electiondistrict": "",
@@ -4620,10 +5592,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都東久留米市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 251,
+        "id": 231,
         "candidatePrefecture": "東京都",
         "election": "世田谷区議会議員選挙",
         "electiondistrict": "",
@@ -4645,10 +5623,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都世田谷区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 252,
+        "id": 232,
         "candidatePrefecture": "東京都",
         "election": "江戸川区議会議員選挙",
         "electiondistrict": "",
@@ -4670,10 +5654,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都江戸川区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 253,
+        "id": 233,
         "candidatePrefecture": "東京都",
         "election": "杉並区議会議員選挙",
         "electiondistrict": "",
@@ -4695,10 +5685,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都杉並区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 254,
+        "id": 234,
         "candidatePrefecture": "東京都",
         "election": "青梅市議会議員選挙",
         "electiondistrict": "",
@@ -4720,10 +5716,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都青梅市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 255,
+        "id": 235,
         "candidatePrefecture": "兵庫県",
         "election": "明石市議会議員選挙",
         "electiondistrict": "",
@@ -4745,10 +5747,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県明石市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 256,
+        "id": 236,
         "candidatePrefecture": "兵庫県",
         "election": "芦屋市議会議員選挙",
         "electiondistrict": "",
@@ -4770,10 +5778,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県芦屋市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 257,
+        "id": 237,
         "candidatePrefecture": "兵庫県",
         "election": "宝塚市議会議員選挙",
         "electiondistrict": "",
@@ -4795,10 +5809,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "兵庫県宝塚市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 258,
+        "id": 238,
         "candidatePrefecture": "埼玉県",
         "election": "川越市議会議員選挙",
         "electiondistrict": "",
@@ -4820,10 +5840,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "埼玉県川越市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 259,
+        "id": 239,
         "candidatePrefecture": "埼玉県",
         "election": "和光市議会議員選挙",
         "electiondistrict": "",
@@ -4845,10 +5871,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "埼玉県和光市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 260,
+        "id": 240,
         "candidatePrefecture": "大阪府",
         "election": "高槻市議会議員選挙",
         "electiondistrict": "",
@@ -4870,10 +5902,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "大阪府高槻市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 261,
+        "id": 241,
         "candidatePrefecture": "京都府",
         "election": "福知山市議会議員選挙",
         "electiondistrict": "",
@@ -4895,10 +5933,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府福知山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 262,
+        "id": 242,
         "candidatePrefecture": "京都府",
         "election": "宇治市議会議員選挙",
         "electiondistrict": "",
@@ -4920,10 +5964,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府宇治市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 263,
+        "id": 243,
         "candidatePrefecture": "京都府",
         "election": "城陽市議会議員選挙",
         "electiondistrict": "",
@@ -4945,10 +5995,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府城陽市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 264,
+        "id": 244,
         "candidatePrefecture": "京都府",
         "election": "木津川市議会議員選挙",
         "electiondistrict": "",
@@ -4970,10 +6026,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府木津川市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 265,
+        "id": 245,
         "candidatePrefecture": "愛媛県",
         "election": "新居浜市議会議員選挙",
         "electiondistrict": "",
@@ -4995,10 +6057,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛媛県新居浜市",
-        "image": ""
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/11/1ab143d07427d3e4f667e988a9020ad6-scaled.jpg",
+        "hp": "加藤 まさのぶ ",
+        "url": "https://go2senkyo.com/seijika/185912",
+        "instagram": "masanobukato2022",
+        "facebook": "masanobu.kato.92",
+        "almaMater": "中日本自動車短期大学",
+        "detail": "自動車整備士\nキッズスクール「エストレージャ新居浜」代表\n新居浜市金子小学校\n新居浜市立南中学校\n新居浜東高等学校\n中日本自動車短期大学卒業"
       },
       {
-        "id": 266,
+        "id": 246,
         "candidatePrefecture": "千葉県",
         "election": "市川市議会議員選挙",
         "electiondistrict": "",
@@ -5007,7 +6075,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲｼｻﾞｷﾋﾃﾞﾕｷ",
         "gender": "男",
         "age": "53",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "",
         "touseki": "有",
         "license": "公認",
@@ -5020,10 +6088,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県市川市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 267,
+        "id": 247,
         "candidatePrefecture": "千葉県",
         "election": "佐倉市議会議員選挙",
         "electiondistrict": "",
@@ -5045,10 +6119,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県佐倉市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 268,
+        "id": 248,
         "candidatePrefecture": "奈良県",
         "election": "大和郡山市議会議員選挙",
         "electiondistrict": "",
@@ -5070,10 +6150,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "奈良県大和郡山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 269,
+        "id": 249,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5095,10 +6181,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 270,
+        "id": 250,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5120,10 +6212,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 271,
+        "id": 251,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5145,10 +6243,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 272,
+        "id": 252,
         "candidatePrefecture": "滋賀県",
         "election": "彦根市議会議員選挙",
         "electiondistrict": "",
@@ -5170,10 +6274,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県彦根市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 273,
+        "id": 253,
         "candidatePrefecture": "東京都",
         "election": "江東区議会議員選挙",
         "electiondistrict": "",
@@ -5195,10 +6305,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都江東区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 274,
+        "id": 254,
         "candidatePrefecture": "秋田県",
         "election": "秋田市議会議員選挙",
         "electiondistrict": "",
@@ -5220,10 +6336,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "秋田県秋田市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 275,
+        "id": 255,
         "candidatePrefecture": "茨城県",
         "election": "常総市議会議員選挙",
         "electiondistrict": "",
@@ -5245,10 +6367,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県常総市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 276,
+        "id": 256,
         "candidatePrefecture": "香川県",
         "election": "坂出市議会議員選挙",
         "electiondistrict": "",
@@ -5270,10 +6398,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "香川県坂出市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 277,
+        "id": 257,
         "candidatePrefecture": "北海道",
         "election": "岩見沢市議会議員選挙",
         "electiondistrict": "",
@@ -5295,10 +6429,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "北海道岩見沢市",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2022/12/d01346d7352c029f49830e1b8e50399e.jpg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2022/12/d01346d7352c029f49830e1b8e50399e.jpg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 278,
+        "id": 258,
         "candidatePrefecture": "大阪府",
         "election": "大阪狭山市議会議員選挙",
         "electiondistrict": "",
@@ -5320,10 +6460,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "〇",
         "candidatedistrict": "大阪府大阪狭山市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 279,
+        "id": 259,
         "candidatePrefecture": "千葉県",
         "election": "船橋市議会議員選挙",
         "electiondistrict": "",
@@ -5345,10 +6491,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県船橋市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 280,
+        "id": 260,
         "candidatePrefecture": "京都府",
         "election": "宇治市議会議員選挙",
         "electiondistrict": "",
@@ -5370,10 +6522,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府宇治市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 281,
+        "id": 261,
         "candidatePrefecture": "北海道",
         "election": "帯広市議会議員選挙",
         "electiondistrict": "",
@@ -5395,10 +6553,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "北海道帯広市",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2023/01/74723635ca835f56b94cdaf3fee6d756.jpg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2023/01/74723635ca835f56b94cdaf3fee6d756.jpg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 282,
+        "id": 262,
         "candidatePrefecture": "北海道",
         "election": "苫小牧市議会議員選挙",
         "electiondistrict": "",
@@ -5420,10 +6584,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "北海道苫小牧市",
-        "image": "https://new-kokumin.jp/wp-content/uploads/2023/01/7143482946d20f3b7dd3f79745ee7c59.jpg"
+        "image": "https://new-kokumin.jp/wp-content/uploads/2023/01/7143482946d20f3b7dd3f79745ee7c59.jpg",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 283,
+        "id": 263,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -5445,10 +6615,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 284,
+        "id": 264,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -5470,10 +6646,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 285,
+        "id": 265,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -5495,10 +6677,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 286,
+        "id": 266,
         "candidatePrefecture": "長崎県",
         "election": "長与町議会議員選挙",
         "electiondistrict": "",
@@ -5520,10 +6708,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長与町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 287,
+        "id": 267,
         "candidatePrefecture": "長崎県",
         "election": "時津町議会議員選挙",
         "electiondistrict": "",
@@ -5545,10 +6739,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県時津町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 288,
+        "id": 268,
         "candidatePrefecture": "東京都",
         "election": "台東区議会議員選挙",
         "electiondistrict": "",
@@ -5570,10 +6770,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都台東区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 289,
+        "id": 269,
         "candidatePrefecture": "東京都",
         "election": "豊島区議会議員選挙",
         "electiondistrict": "",
@@ -5595,10 +6801,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都豊島区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 290,
+        "id": 270,
         "candidatePrefecture": "岐阜県",
         "election": "大垣市議会議員選挙",
         "electiondistrict": "",
@@ -5620,10 +6832,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岐阜県大垣市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 291,
+        "id": 271,
         "candidatePrefecture": "山形県",
         "election": "米沢市議会議員選挙",
         "electiondistrict": "",
@@ -5645,10 +6863,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県米沢市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 292,
+        "id": 272,
         "candidatePrefecture": "千葉県",
         "election": "浦安市議会議員選挙",
         "electiondistrict": "",
@@ -5670,10 +6894,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県浦安市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 293,
+        "id": 273,
         "candidatePrefecture": "福井県",
         "election": "高浜町議会議員選挙",
         "electiondistrict": "",
@@ -5695,10 +6925,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県高浜町",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 294,
+        "id": 274,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5720,10 +6956,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 295,
+        "id": 275,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5745,10 +6987,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 296,
+        "id": 276,
         "candidatePrefecture": "滋賀県",
         "election": "大津市議会議員選挙",
         "electiondistrict": "",
@@ -5770,10 +7018,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "滋賀県大津市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 297,
+        "id": 277,
         "candidatePrefecture": "愛知県",
         "election": "春日井市議会議員選挙",
         "electiondistrict": "",
@@ -5795,10 +7049,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県春日井市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 298,
+        "id": 278,
         "candidatePrefecture": "福井県",
         "election": "敦賀市議会議員選挙",
         "electiondistrict": "",
@@ -5807,7 +7067,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ﾎｳｼﾞｮｳﾀﾀﾞｼ",
         "gender": "男",
         "age": "70",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "5",
         "touseki": "有",
         "license": "推薦",
@@ -5820,10 +7080,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福井県敦賀市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 299,
+        "id": 279,
         "candidatePrefecture": "福岡県",
         "election": "筑紫野市議会議員選挙",
         "electiondistrict": "",
@@ -5845,10 +7111,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県筑紫野市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 300,
+        "id": 280,
         "candidatePrefecture": "京都府",
         "election": "城陽市議会議員選挙",
         "electiondistrict": "",
@@ -5870,10 +7142,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府城陽市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 301,
+        "id": 281,
         "candidatePrefecture": "京都府",
         "election": "京田辺市議会議員選挙",
         "electiondistrict": "",
@@ -5895,10 +7173,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "京都府京田辺市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 302,
+        "id": 282,
         "candidatePrefecture": "東京都",
         "election": "東大和市議会議員選挙",
         "electiondistrict": "",
@@ -5920,10 +7204,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都東大和市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 303,
+        "id": 283,
         "candidatePrefecture": "東京都",
         "election": "新宿区議会議員選挙",
         "electiondistrict": "",
@@ -5945,10 +7235,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都新宿区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 304,
+        "id": 284,
         "candidatePrefecture": "東京都",
         "election": "大田区議会議員選挙",
         "electiondistrict": "",
@@ -5970,10 +7266,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都大田区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 305,
+        "id": 285,
         "candidatePrefecture": "東京都",
         "election": "大田区議会議員選挙",
         "electiondistrict": "",
@@ -5995,10 +7297,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都大田区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 306,
+        "id": 286,
         "candidatePrefecture": "東京都",
         "election": "墨田区議会議員選挙",
         "electiondistrict": "",
@@ -6020,10 +7328,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都墨田区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 307,
+        "id": 287,
         "candidatePrefecture": "東京都",
         "election": "中野区議会議員選挙",
         "electiondistrict": "",
@@ -6045,10 +7359,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都中野区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 308,
+        "id": 288,
         "candidatePrefecture": "東京都",
         "election": "北区議会議員選挙",
         "electiondistrict": "",
@@ -6070,10 +7390,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都北区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 309,
+        "id": 289,
         "candidatePrefecture": "東京都",
         "election": "渋谷区議会議員選挙",
         "electiondistrict": "",
@@ -6095,10 +7421,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都渋谷区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 310,
+        "id": 290,
         "candidatePrefecture": "東京都",
         "election": "三鷹市議会議員選挙",
         "electiondistrict": "",
@@ -6120,10 +7452,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都三鷹市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 311,
+        "id": 291,
         "candidatePrefecture": "東京都",
         "election": "中央区議会議員選挙",
         "electiondistrict": "",
@@ -6145,10 +7483,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都中央区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 312,
+        "id": 292,
         "candidatePrefecture": "東京都",
         "election": "品川区議会議員選挙",
         "electiondistrict": "",
@@ -6157,7 +7501,7 @@ export class InMemoryDataService implements InMemoryDbService {
         "kana": "ｲｼﾀﾞｼﾝｺﾞ",
         "gender": "男",
         "age": "43",
-        "newcomer": "元",
+        "newcomer": "元職",
         "continuecount": "3",
         "touseki": "有",
         "license": "公認",
@@ -6170,10 +7514,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都品川区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 313,
+        "id": 293,
         "candidatePrefecture": "福岡県",
         "election": "古賀市議会議員選挙",
         "electiondistrict": "",
@@ -6195,10 +7545,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "福岡県古賀市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 314,
+        "id": 294,
         "candidatePrefecture": "山形県",
         "election": "山形市議会議員選挙",
         "electiondistrict": "",
@@ -6220,10 +7576,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県山形市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 315,
+        "id": 295,
         "candidatePrefecture": "山形県",
         "election": "山形市議会議員選挙",
         "electiondistrict": "",
@@ -6245,10 +7607,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県山形市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 316,
+        "id": 296,
         "candidatePrefecture": "山形県",
         "election": "新庄市議会議員選挙",
         "electiondistrict": "",
@@ -6270,10 +7638,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "山形県新庄市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 317,
+        "id": 297,
         "candidatePrefecture": "広島県",
         "election": "広島県議会議員選挙",
         "electiondistrict": "尾道市",
@@ -6295,10 +7669,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "広島県尾道市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 318,
+        "id": 298,
         "candidatePrefecture": "長崎県",
         "election": "長崎市議会議員選挙",
         "electiondistrict": "",
@@ -6320,10 +7700,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "長崎県長崎市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 319,
+        "id": 299,
         "candidatePrefecture": "茨城県",
         "election": "水戸市議会議員選挙",
         "electiondistrict": "",
@@ -6345,10 +7731,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "茨城県水戸市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 320,
+        "id": 300,
         "candidatePrefecture": "東京都",
         "election": "足立区議会議員選挙",
         "electiondistrict": "",
@@ -6370,10 +7762,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "東京都足立区",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 321,
+        "id": 301,
         "candidatePrefecture": "千葉県",
         "election": "市原市議会議員選挙",
         "electiondistrict": "",
@@ -6395,10 +7793,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "千葉県市原市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 322,
+        "id": 302,
         "candidatePrefecture": "岩手県",
         "election": "滝沢市議会議員選挙",
         "electiondistrict": "",
@@ -6420,10 +7824,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岩手県滝沢市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 323,
+        "id": 303,
         "candidatePrefecture": "神奈川県",
         "election": "厚木市議会議員選挙",
         "electiondistrict": "",
@@ -6445,10 +7855,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "神奈川県厚木市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 324,
+        "id": 304,
         "candidatePrefecture": "岩手県",
         "election": "盛岡市議会議員選挙",
         "electiondistrict": "",
@@ -6470,10 +7886,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岩手県盛岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 325,
+        "id": 305,
         "candidatePrefecture": "岩手県",
         "election": "岩手県議会議員選挙",
         "electiondistrict": "盛岡市",
@@ -6495,10 +7917,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "岩手県盛岡市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 326,
+        "id": 306,
         "candidatePrefecture": "愛知県",
         "election": "小牧市議会議員選挙",
         "electiondistrict": "",
@@ -6520,10 +7948,16 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県小牧市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       },
       {
-        "id": 327,
+        "id": 307,
         "candidatePrefecture": "愛知県",
         "election": "小牧市議会議員選挙",
         "electiondistrict": "",
@@ -6545,7 +7979,13 @@ export class InMemoryDataService implements InMemoryDbService {
         "birthday": "",
         "portal": "",
         "candidatedistrict": "愛知県小牧市",
-        "image": ""
+        "image": "",
+        "hp": "",
+        "url": "",
+        "instagram": "",
+        "facebook": "",
+        "almaMater": "",
+        "detail": ""
       }
     ];
     return {heroes};

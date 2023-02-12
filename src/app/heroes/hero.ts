@@ -1,6 +1,7 @@
 export interface Hero {
   id: number;
   name: string;
+  kana: string;
   role: string;
   role2: string;
   election: string;

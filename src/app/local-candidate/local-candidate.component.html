@@ -76,6 +76,7 @@
         routerLink="/detail/{{hero.id}}">
       <div *ngIf="hero.license == '推薦'; else entoryBlock" class="recommendation-module hero">
         <h2>{{hero.name}}</h2>
+        <div>{{hero.kana}}</div>
         {{hero.election}}
         <br/>
         {{hero.candidatedistrict}}
@@ -97,6 +98,7 @@
       <ng-template #entoryBlock>
         <div *ngIf="hero.newcomer == '新人'; else notNew" class="new-module hero">
           <h2>{{hero.name}}</h2>
+          <div>{{hero.kana}}</div>
           {{hero.election}}
           <br/>
           {{hero.candidatedistrict}}
@@ -114,6 +116,7 @@
         <ng-template #notNew>
           <div class="module hero">
             <h2>{{hero.name}}</h2>
+            <div>{{hero.kana}}</div>
             {{hero.election}}
             <br/>
             {{hero.candidatedistrict}}

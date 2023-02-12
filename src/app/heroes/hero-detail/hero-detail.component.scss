@@ -28,7 +28,8 @@
 }
 
 .profile {
-  width: max-content;
+  word-break: keep-all;
+  width: 450px;
   display: inline-block;
 }
 
