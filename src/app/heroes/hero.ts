@@ -9,6 +9,7 @@ export interface Hero {
   newcomer: string;
   kokujibi: Date;
   tohyobi: Date;
+  teisu: number
   belongs: string;
   almaMater: string;
   almaMater2: string;

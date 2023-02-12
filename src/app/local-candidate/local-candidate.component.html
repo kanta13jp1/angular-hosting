@@ -77,10 +77,11 @@
       <div *ngIf="hero.license == '推薦'; else entoryBlock" class="recommendation-module hero">
         <h2>{{hero.name}}</h2>
         <div>{{hero.kana}}</div>
-        {{hero.election}}
-        <br/>
-        {{hero.candidatedistrict}}
-        <br/>
+        <div>{{hero.election}}</div>
+        <div>{{hero.candidatedistrict}}</div>
+        <div>告示日: {{hero.kokujibi}}</div>
+        <div>投票日: {{hero.tohyobi}}</div>
+        <div>定数: {{hero.teisu}}</div>
         <div>
           <b>{{hero.license}}</b>
           <b *ngIf="hero.newcomer == '新人'; else notNew">　{{hero.newcomer}}</b>
@@ -99,9 +100,11 @@
         <div *ngIf="hero.newcomer == '新人'; else notNew" class="new-module hero">
           <h2>{{hero.name}}</h2>
           <div>{{hero.kana}}</div>
-          {{hero.election}}
-          <br/>
-          {{hero.candidatedistrict}}
+          <div>{{hero.election}}</div>
+          <div>{{hero.candidatedistrict}}</div>
+          <div>告示日: {{hero.kokujibi}}</div>
+          <div>投票日: {{hero.tohyobi}}</div>
+          <div>定数: {{hero.teisu}}</div>
           <div>
             <b>{{hero.license}}</b>
             <b>　{{hero.newcomer}}</b>
@@ -117,9 +120,11 @@
           <div class="module hero">
             <h2>{{hero.name}}</h2>
             <div>{{hero.kana}}</div>
-            {{hero.election}}
-            <br/>
-            {{hero.candidatedistrict}}
+            <div>{{hero.election}}</div>
+            <div>{{hero.candidatedistrict}}</div>
+            <div>告示日: {{hero.kokujibi}}</div>
+            <div>投票日: {{hero.tohyobi}}</div>
+            <div>定数: {{hero.teisu}}</div>
             <div>
               <b>{{hero.license}}</b>
               <b>　{{hero.newcomer}}・{{hero.continuecount}}期</b>
