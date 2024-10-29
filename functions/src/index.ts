@@ -3,52 +3,73 @@ import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-export const createArticle = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() createArticle");
-  console.log("data = ", data);
-  const id = data.id;
-  console.log("id = ", id);
-  const result = await admin.firestore().collection("articles")
-      .doc(String(id)).set(data);
-  return result;
+export const createArticle = functions.https.onCall(async (data, _context) => {
+  functions.logger.info("createArticle called", { data });
+  const { id, ...articleData } = data;
+
+  if (typeof id !== 'string') {
+    throw new functions.https.HttpsError('invalid-argument', 'The function must be called with a valid id.');
+  }
+
+  try {
+    await admin.firestore().collection("articles").doc(id).set(articleData);
+    return { success: true, id };
+  } catch (error) {
+    functions.logger.error("Error creating article", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while creating the article.');
+  }
 });
 
-export const listArticle = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() listArticle");
-  const dd = await admin.firestore().collection("articles").orderBy("id").get();
-  console.log("dd.docs.map((doc) => doc.data()) = ",
-      dd.docs.map((doc) => doc.data()));
-  return dd.docs.map((doc) => doc.data());
+export const listArticle = functions.https.onCall(async (_data, _context) => {
+  functions.logger.info("listArticle called");
+  try {
+    const snapshot = await admin.firestore().collection("articles").orderBy("id").get();
+    return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+  } catch (error) {
+    functions.logger.error("Error listing articles", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while listing articles.');
+  }
 });
 
-export const getArticle = functions.https.onCall(async (data, context) => {
-  console.log("data = ", data);
-  const id = data.id;
-  console.log("id = ", id);
-  const dd = await admin.firestore().collection("articles").get();
-  dd.docs.forEach((doc) =>
-    console.log("doc.id = ", doc.id));
-  const doc = await admin.firestore().collection("articles").doc(String(id));
-  console.log("doc().id = ", doc.id);
-  return doc;
+export const getArticle = functions.https.onCall(async (data, _context) => {
+  functions.logger.info("getArticle called", { data });
+  const { id } = data;
+
+  if (typeof id !== 'string') {
+    throw new functions.https.HttpsError('invalid-argument', 'The function must be called with a valid id.');
+  }
+
+  try {
+    const doc = await admin.firestore().collection("articles").doc(id).get();
+    if (!doc.exists) {
+      throw new functions.https.HttpsError('not-found', 'The requested article does not exist.');
+    }
+    return { id: doc.id, ...doc.data() };
+  } catch (error) {
+    functions.logger.error("Error getting article", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while retrieving the article.');
+  }
 });
 
-export const deleteArticle = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() deleteArticle");
-  console.log("data = ", data);
-  const id = data.id;
-  console.log("id = ", id);
-  const dd = await admin.firestore().collection("articles").get();
-  dd.docs.forEach((doc) =>
-    console.log("doc.id = ", doc.id));
-  const doc = await admin.firestore().collection("articles").doc(String(id));
-  console.log("doc().id = ", doc.id);
-  const result = await doc.delete();
-  return result;
+export const deleteArticle = functions.https.onCall(async (data, _context) => {
+  functions.logger.info("deleteArticle called", { data });
+  const { id } = data;
+
+  if (typeof id !== 'string') {
+    throw new functions.https.HttpsError('invalid-argument', 'The function must be called with a valid id.');
+  }
+
+  try {
+    await admin.firestore().collection("articles").doc(id).delete();
+    return { success: true, id };
+  } catch (error) {
+    functions.logger.error("Error deleting article", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while deleting the article.');
+  }
 });
 
-export const helloWorld = functions.https.onCall(async (data, context) => {
+export const helloWorld = functions.https.onCall(async (_data, _context) => {
   return {
-    message: "firebase test!!!",
+    message: "Firebase test successful!",
   };
 });

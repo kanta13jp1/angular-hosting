@@ -3,40 +3,72 @@ import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-export const createToDo = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() createArticle");
-  console.log("data = ", data);
-  const id = data.id;
-  console.log("id = ", id);
-  const result = await admin.firestore().collection("articles")
-      .doc(String(id)).set(data);
-  return result;
+interface ToDo {
+  id: string;
+  title: string;
+  completed: boolean;
+  createdAt: admin.firestore.Timestamp;
+}
+
+export const createToDo = functions.https.onCall(async (data: Partial<ToDo>, _context) => {
+  functions.logger.info("createToDo called", { data });
+
+  if (!data.id || typeof data.id !== 'string') {
+    throw new functions.https.HttpsError('invalid-argument', 'The function must be called with a valid id.');
+  }
+
+  const newToDo: ToDo = {
+    id: data.id,
+    title: data.title || '',
+    completed: data.completed || false,
+    createdAt: admin.firestore.Timestamp.now(),
+  };
+
+  try {
+    await admin.firestore().collection("todos").doc(newToDo.id).set(newToDo);
+    return { success: true, id: newToDo.id };
+  } catch (error) {
+    functions.logger.error("Error creating todo", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while creating the todo.');
+  }
 });
 
-export const listArticle = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() listArticle");
-  const dd = await admin.firestore().collection("articles").get();
-  console.log("dd.docs.map((doc) => doc.data()) = ",
-      dd.docs.map((doc) => doc.data()));
-  return dd.docs.map((doc) => doc.data());
+export const listToDos = functions.https.onCall(async (_data, _context) => {
+  functions.logger.info("listToDos called");
+  try {
+    const snapshot = await admin.firestore().collection("todos").get();
+    return snapshot.docs.map((doc) => doc.data() as ToDo);
+  } catch (error) {
+    functions.logger.error("Error listing todos", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while listing todos.');
+  }
 });
 
-export const deleteArticle = functions.https.onCall(async (data, context) => {
-  console.log("functions.https.onCall() deleteArticle");
-  console.log("data = ", data);
-  const id = data.id;
-  console.log("id = ", id);
-  const dd = await admin.firestore().collection("articles").get();
-  dd.docs.forEach((doc) =>
-    console.log("doc.id = ", doc.id));
-  const doc = await admin.firestore().collection("articles").doc(String(id));
-  console.log("doc().id = ", doc.id);
-  const result = await doc.delete();
-  return result;
+export const deleteToDo = functions.https.onCall(async (data: { id: string }, _context) => {
+  functions.logger.info("deleteToDo called", { data });
+
+  if (!data.id || typeof data.id !== 'string') {
+    throw new functions.https.HttpsError('invalid-argument', 'The function must be called with a valid id.');
+  }
+
+  try {
+    const docRef = admin.firestore().collection("todos").doc(data.id);
+    const doc = await docRef.get();
+
+    if (!doc.exists) {
+      throw new functions.https.HttpsError('not-found', 'The requested todo does not exist.');
+    }
+
+    await docRef.delete();
+    return { success: true, id: data.id };
+  } catch (error) {
+    functions.logger.error("Error deleting todo", error);
+    throw new functions.https.HttpsError('internal', 'An error occurred while deleting the todo.');
+  }
 });
 
-export const helloWorld = functions.https.onCall(async (data, context) => {
+export const helloWorld = functions.https.onCall(async (_data, _context) => {
   return {
-    message: "firebase test!!!",
+    message: "Firebase test successful!",
   };
 });
