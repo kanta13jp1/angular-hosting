@@ -21,7 +21,7 @@ export const createArticle = functions.https.onCall(async (request: functions.ht
   }
 });
 
-export const listArticle = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+export const listArticle = functions.https.onCall(async (_request: functions.https.CallableRequest) => {
   functions.logger.info("listArticle called");
   try {
     const snapshot = await admin.firestore().collection("articles").orderBy("id").get();
@@ -71,7 +71,7 @@ export const deleteArticle = functions.https.onCall(async (request: functions.ht
   }
 });
 
-export const helloWorld = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+export const helloWorld = functions.https.onCall(async (_request: functions.https.CallableRequest) => {
   return {
     message: "Firebase test successful!",
   };

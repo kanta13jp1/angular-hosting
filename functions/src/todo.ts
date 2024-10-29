@@ -32,7 +32,7 @@ export const createToDo = functions.https.onCall(async (request: functions.https
   }
 });
 
-export const listToDos = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+export const listToDos = functions.https.onCall(async (_request: functions.https.CallableRequest) => {
   functions.logger.info("listToDos called");
   try {
     const snapshot = await admin.firestore().collection("todos").get();
@@ -67,7 +67,7 @@ export const deleteToDo = functions.https.onCall(async (request: functions.https
   }
 });
 
-export const helloWorld = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+export const helloWorld = functions.https.onCall(async (_request: functions.https.CallableRequest) => {
   return {
     message: "Firebase test successful!",
   };
