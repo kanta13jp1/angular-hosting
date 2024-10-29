@@ -1,8 +1,6 @@
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 
-admin.initializeApp();
-
 interface ToDo {
   id: string;
   title: string;
@@ -10,7 +8,8 @@ interface ToDo {
   createdAt: admin.firestore.Timestamp;
 }
 
-export const createToDo = functions.https.onCall(async (data: Partial<ToDo>, _context) => {
+export const createToDo = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+  const data = request.data as Partial<ToDo>;
   functions.logger.info("createToDo called", { data });
 
   if (!data.id || typeof data.id !== 'string') {
@@ -33,7 +32,7 @@ export const createToDo = functions.https.onCall(async (data: Partial<ToDo>, _co
   }
 });
 
-export const listToDos = functions.https.onCall(async (_data, _context) => {
+export const listToDos = functions.https.onCall(async (request: functions.https.CallableRequest) => {
   functions.logger.info("listToDos called");
   try {
     const snapshot = await admin.firestore().collection("todos").get();
@@ -44,7 +43,8 @@ export const listToDos = functions.https.onCall(async (_data, _context) => {
   }
 });
 
-export const deleteToDo = functions.https.onCall(async (data: { id: string }, _context) => {
+export const deleteToDo = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+  const data = request.data as { id: string };
   functions.logger.info("deleteToDo called", { data });
 
   if (!data.id || typeof data.id !== 'string') {
@@ -67,7 +67,7 @@ export const deleteToDo = functions.https.onCall(async (data: { id: string }, _c
   }
 });
 
-export const helloWorld = functions.https.onCall(async (_data, _context) => {
+export const helloWorld = functions.https.onCall(async (request: functions.https.CallableRequest) => {
   return {
     message: "Firebase test successful!",
   };

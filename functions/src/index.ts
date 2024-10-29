@@ -3,7 +3,8 @@ import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-export const createArticle = functions.https.onCall(async (data, _context) => {
+export const createArticle = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+  const data = request.data;
   functions.logger.info("createArticle called", { data });
   const { id, ...articleData } = data;
 
@@ -20,7 +21,7 @@ export const createArticle = functions.https.onCall(async (data, _context) => {
   }
 });
 
-export const listArticle = functions.https.onCall(async (_data, _context) => {
+export const listArticle = functions.https.onCall(async (request: functions.https.CallableRequest) => {
   functions.logger.info("listArticle called");
   try {
     const snapshot = await admin.firestore().collection("articles").orderBy("id").get();
@@ -31,7 +32,8 @@ export const listArticle = functions.https.onCall(async (_data, _context) => {
   }
 });
 
-export const getArticle = functions.https.onCall(async (data, _context) => {
+export const getArticle = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+  const data = request.data;
   functions.logger.info("getArticle called", { data });
   const { id } = data;
 
@@ -51,7 +53,8 @@ export const getArticle = functions.https.onCall(async (data, _context) => {
   }
 });
 
-export const deleteArticle = functions.https.onCall(async (data, _context) => {
+export const deleteArticle = functions.https.onCall(async (request: functions.https.CallableRequest) => {
+  const data = request.data;
   functions.logger.info("deleteArticle called", { data });
   const { id } = data;
 
@@ -68,7 +71,7 @@ export const deleteArticle = functions.https.onCall(async (data, _context) => {
   }
 });
 
-export const helloWorld = functions.https.onCall(async (_data, _context) => {
+export const helloWorld = functions.https.onCall(async (request: functions.https.CallableRequest) => {
   return {
     message: "Firebase test successful!",
   };
